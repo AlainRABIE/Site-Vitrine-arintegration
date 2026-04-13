@@ -9,10 +9,10 @@ export default function Contact() {
     e.preventDefault()
     const form = e.currentTarget
     emailjs.sendForm(
-      'service_8ml6h64', // Service ID
-      'template_w4kjqcl', // Template ID (à personnaliser dans EmailJS)
+      'service_8ml6h64', 
+      'template_w4kjqcl', 
       form,
-      'MLPRubrisJiF2a_lW' // Remplacez par votre clé publique EmailJS
+      'MLPRubrisJiF2a_lW'
     )
     .then(() => {
       setSent(true)

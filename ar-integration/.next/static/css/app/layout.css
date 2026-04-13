@@ -604,6 +604,9 @@ video {
 .relative {
   position: relative;
 }
+.sticky {
+  position: sticky;
+}
 .block {
   display: block;
 }
@@ -639,6 +642,9 @@ video {
 }
 .italic {
   font-style: italic;
+}
+.line-through {
+  text-decoration-line: line-through;
 }
 .outline {
   outline-style: solid;

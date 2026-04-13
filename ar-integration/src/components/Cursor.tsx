@@ -45,15 +45,17 @@ export default function Cursor() {
   return (
     <>
       <div ref={dot} style={{
-        position:'fixed', width:10, height:10, background:'#f5f5f3',
+        position:'fixed', width:10, height:10, background:'#fff',
         borderRadius:'50%', pointerEvents:'none', zIndex:9999,
         transform:'translate(-50%,-50%)', transition:'transform .15s ease',
         top:0, left:0,
+        mixBlendMode:'difference',
       }}/>
       <div ref={ring} style={{
-        position:'fixed', width:36, height:36, border:'1px solid rgba(245,245,243,.35)',
+        position:'fixed', width:36, height:36, border:'1px solid rgba(255,255,255,.6)',
         borderRadius:'50%', pointerEvents:'none', zIndex:9998,
         transform:'translate(-50%,-50%)', top:0, left:0,
+        mixBlendMode:'difference',
       }}/>
     </>
   )
