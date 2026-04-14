@@ -1,7 +1,42 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import type { ProjectData } from '@/data/projects'
+
+/* ─── Galiya real screenshots ───────────────────────────── */
+
+function ScreenGaliyaHome() {
+  return (
+    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+      <Image src="/Home.png" alt="Galiya accueil" fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
+    </div>
+  )
+}
+
+function ScreenGaliyaProducts() {
+  return (
+    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+      <Image src="/recommandation.png" alt="Galiya recommandations" fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
+    </div>
+  )
+}
+
+function ScreenGaliyaTracking() {
+  return (
+    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+      <Image src="/progression de peau.png" alt="Galiya progression" fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
+    </div>
+  )
+}
+
+function ScreenGaliyaRoutine() {
+  return (
+    <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+      <Image src="/routine.png" alt="Galiya routine" fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
+    </div>
+  )
+}
 
 /* ─── Phone screens ─────────────────────────────────────── */
 
@@ -440,6 +475,10 @@ function renderScreen(screenType: string, device: 'phone' | 'browser') {
       case 'nutrition': return <ScreenNutrition />
       case 'workout': return <ScreenWorkout />
       case 'health': return <ScreenHealth />
+      case 'home-galiya': return <ScreenGaliyaHome />
+      case 'products': return <ScreenGaliyaProducts />
+      case 'tracking': return <ScreenGaliyaTracking />
+      case 'routine': return <ScreenGaliyaRoutine />
     }
   } else {
     switch (screenType) {
@@ -634,32 +673,61 @@ export default function ScrollPhonePage({ project }: { project: ProjectData }) {
       </div>
 
       {/* ── Hero ── */}
-      <div style={{ padding: '160px 48px 80px', borderBottom: '1px solid #1a1a18' }}>
-        <div style={{
-          fontFamily: 'var(--font-dm-mono)', fontSize: 11, letterSpacing: 3,
-          textTransform: 'uppercase', color: '#6b6b69',
-          display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24,
-        }}>
-          <span style={{ display: 'block', width: 32, height: 1, background: '#2e2e2c' }} />
-          {project.cat}
+      <div style={{
+        padding: '160px 48px 80px',
+        borderBottom: '1px solid #1a1a18',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        gap: 48,
+      }}>
+        {/* Text */}
+        <div style={{ flex: '0 0 auto' }}>
+          <div style={{
+            fontFamily: 'var(--font-dm-mono)', fontSize: 11, letterSpacing: 3,
+            textTransform: 'uppercase', color: '#6b6b69',
+            display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24,
+          }}>
+            <span style={{ display: 'block', width: 32, height: 1, background: '#2e2e2c' }} />
+            {project.cat}
+          </div>
+          <h1 style={{
+            fontFamily: 'var(--font-bebas)',
+            fontSize: 'clamp(72px,10vw,140px)',
+            lineHeight: 0.9,
+            marginBottom: 32,
+          }}>
+            {project.name}
+          </h1>
+          <p style={{
+            fontFamily: 'var(--font-dm-sans)',
+            fontSize: 18,
+            color: '#6b6b69',
+            maxWidth: 480,
+            lineHeight: 1.7,
+          }}>
+            {project.tagline}
+          </p>
         </div>
-        <h1 style={{
-          fontFamily: 'var(--font-bebas)',
-          fontSize: 'clamp(72px,10vw,140px)',
-          lineHeight: 0.9,
-          marginBottom: 32,
-        }}>
-          {project.name}
-        </h1>
-        <p style={{
-          fontFamily: 'var(--font-dm-sans)',
-          fontSize: 18,
-          color: '#6b6b69',
-          maxWidth: 480,
-          lineHeight: 1.7,
-        }}>
-          {project.tagline}
-        </p>
+
+        {/* Hero logo */}
+        {project.slug === 'galiya' && (
+          <div style={{
+            position: 'relative',
+            width: 240,
+            height: 240,
+            flexShrink: 0,
+            marginRight: 80,
+            opacity: 0.85,
+          }}>
+            <Image
+              src="/Logo.png"
+              alt="Galiya logo"
+              fill
+              style={{ objectFit: 'contain' }}
+            />
+          </div>
+        )}
       </div>
 
       {/* ── Scroll content ── */}

@@ -1,10 +1,11 @@
 'use client'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const projects = [
-  { slug: 'loenora',        cat: 'E-Commerce',         name: 'Loenora',        span: true,  wip: true  },
-  { slug: 'galiya',         cat: 'Application Mobile', name: 'Galiya',         span: false, wip: true  },
-  { slug: 'ar-integration', cat: 'Site Vitrine',       name: 'AR-Intégration', span: false, wip: false },
+  { slug: 'loenora',        cat: 'E-Commerce',         name: 'Loenora',        span: true,  wip: true,  image: null },
+  { slug: 'galiya',         cat: 'Application Mobile', name: 'Galiya',         span: false, wip: true,  image: '/image.png' },
+  { slug: 'ar-integration', cat: 'Site Vitrine',       name: 'AR-Intégration', span: false, wip: false, image: '/Site-vitrine.png' },
 ]
 
 export default function Portfolio() {
@@ -56,17 +57,26 @@ export default function Portfolio() {
               </div>
             )}
 
-            {/* Mock UI */}
+            {/* Mock UI / Image */}
             <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <div style={{
-                border: '1px solid #2e2e2c', padding: 20, width: '55%',
-                fontFamily: 'var(--font-dm-mono)', fontSize: 10, color: '#6b6b69',
-              }}>
-                <div style={{ display: 'flex', gap: 6, marginBottom: 16 }}>
-                  {[1, 2, 3].map(d => <div key={d} style={{ width: 8, height: 8, borderRadius: '50%', background: '#2e2e2c' }} />)}
+              {p.image ? (
+                <Image
+                  src={p.image}
+                  alt={p.name}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              ) : (
+                <div style={{
+                  border: '1px solid #2e2e2c', padding: 20, width: '55%',
+                  fontFamily: 'var(--font-dm-mono)', fontSize: 10, color: '#6b6b69',
+                }}>
+                  <div style={{ display: 'flex', gap: 6, marginBottom: 16 }}>
+                    {[1, 2, 3].map(d => <div key={d} style={{ width: 8, height: 8, borderRadius: '50%', background: '#2e2e2c' }} />)}
+                  </div>
+                  {[1, .8, .9, .7].map((w, j) => <div key={j} style={{ height: 1, background: '#2e2e2c', width: `${w * 100}%`, marginBottom: 8 }} />)}
                 </div>
-                {[1, .8, .9, .7].map((w, j) => <div key={j} style={{ height: 1, background: '#2e2e2c', width: `${w * 100}%`, marginBottom: 8 }} />)}
-              </div>
+              )}
             </div>
 
             {/* Info overlay */}
