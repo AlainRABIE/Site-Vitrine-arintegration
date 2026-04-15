@@ -8,7 +8,7 @@
 
 ## Journal des actions
 
-### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### [2026-04-15 12:01:29] `Bash`
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### [2026-04-15 12:01:29] `Bash`
 - Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && ls src public`
 - Résultat : `public:
 App-Mobile.png
@@ -128,3 +128,53 @@ sleep 8 && tail -30 /tmp/next-dev.log`
 ### [2026-04-15 12:17:14] `Bash`
 - Commande : `pkill -f "next dev" 2>/dev/null; echo done`
 - Résultat : `done`
+### [2026-04-15 12:20:35] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && rm -f public/sitemap.xml public/robots.txt && npm run `
+- Résultat : `   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/9) ...
+   Generating stat`
+### [2026-04-15 12:22:25] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && npm run build 2>&1 | tail -3 && ls out 2>&1 | head -5`
+- Résultat : `○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses getStaticProps)
+
+404
+404.html
+App-Mobile.png
+Home.png
+Logo.png`
+### [2026-04-15 12:22:41] `Bash`
+- Commande : `sleep 4 && cat /tmp/serve.log | tail -15 && echo "---" && curl -s -o /dev/null -w "HTTP %{http_code}\n" http://localhost`
+- Résultat : ` INFO  Accepting connections at http://localhost:4000
+---
+HTTP 200`
+### [2026-04-15 12:25:43] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && rm -rf .next out && npm run build 2>&1 | tail -15`
+- Résultat : `├ ● /projects/[slug]                     6.55 kB         105 kB
+├   ├ /projects/galiya
+├   ├ /projects/loenora
+├   └ /projects/ar-integration
+├ ○ /robots.txt                          0 B              `
+### [2026-04-15 12:25:57] `Bash`
+- Commande : `pkill -f "serve out" 2>/dev/null; sleep 1; npx --yes serve out -p 4000 > /tmp/serve.log 2>&1 &
+sleep 3 && curl -s -o /de`
+- Résultat : `HTTP 200`
+### [2026-04-15 14:16:10] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && rm -rf .next out && npm run build 2>&1 | tail -15`
+- Résultat : `├ ● /projects/[slug]                     6.55 kB         106 kB
+├   ├ /projects/galiya
+├   ├ /projects/loenora
+├   └ /projects/ar-integration
+├ ○ /robots.txt                          0 B              `
+### [2026-04-15 14:18:49] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && rm -rf .next out && npm run build 2>&1 | tail -8`
+- Résultat : `  ├ chunks/23-99303bc1498a5290.js        31.6 kB
+  ├ chunks/fd9d1056-4a917af64af6b262.js  53.6 kB
+  └ other shared chunks (total)          1.89 kB
+
+
+○  (Static)  prerendered as static content
+●  (SSG)`

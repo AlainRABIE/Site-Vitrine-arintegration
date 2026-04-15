@@ -62,7 +62,7 @@ export default function Portfolio() {
               {p.image ? (
                 <Image
                   src={p.image}
-                  alt={p.name}
+                  alt={`${p.name} — ${p.cat} réalisé par AR Integration`}
                   fill
                   style={{ objectFit: 'cover' }}
                 />

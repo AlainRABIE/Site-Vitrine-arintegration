@@ -1,3 +1,4 @@
+'use client'
 export default function Footer() {
   return (
     <footer style={{
@@ -11,7 +12,7 @@ export default function Footer() {
         © {new Date().getFullYear()} AR Integration. Tous droits réservés.
       </div>
       <div style={{ display:'flex', gap:32 }}>
-        {[['#services','Services'],['#portfolio','Portfolio'],['#contact','Contact']].map(([href,label]) => (
+        {[['/#services','Services'],['/#portfolio','Portfolio'],['/#contact','Contact'],['/mentions-legales/','Mentions légales']].map(([href,label]) => (
           <a key={href} href={href} style={{
             fontFamily:'var(--font-dm-mono)', fontSize:11, letterSpacing:'1.5px',
             textTransform:'uppercase', color:'#6b6b69', textDecoration:'none',

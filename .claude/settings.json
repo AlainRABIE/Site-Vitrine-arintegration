@@ -7,7 +7,11 @@
       "Read(//tmp/**)",
       "Bash(curl -s http://localhost:3001 -o /tmp/page.html)",
       "Read(//private/tmp/**)",
-      "Bash(pkill -f \"next dev\")"
+      "Bash(pkill -f \"next dev\")",
+      "Bash(npx --yes serve out -p 4000)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:4000)",
+      "Bash(npx --yes lighthouse http://localhost:4000 --only-categories=seo,accessibility,best-practices,performance --chrome-flags=\"--headless\" --output=html --output-path=/tmp/lighthouse.html --quiet)",
+      "Bash(pkill -f \"serve out\")"
     ],
     "additionalDirectories": [
       "/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/projects"

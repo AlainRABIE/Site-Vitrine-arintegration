@@ -6,15 +6,21 @@ const bebas = Bebas_Neue({
   weight: '400',
   subsets: ['latin'],
   variable: '--font-bebas',
+  display: 'swap',
+  preload: true,
 })
 const dmSans = DM_Sans({
   subsets: ['latin'],
   variable: '--font-dm-sans',
+  display: 'swap',
+  preload: true,
 })
 const dmMono = DM_Mono({
   weight: ['400', '500'],
   subsets: ['latin'],
   variable: '--font-dm-mono',
+  display: 'swap',
+  preload: false,
 })
 
 export const metadata: Metadata = {

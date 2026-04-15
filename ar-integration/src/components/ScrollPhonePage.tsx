@@ -722,7 +722,7 @@ export default function ScrollPhonePage({ project }: { project: ProjectData }) {
           }}>
             <Image
               src="/Logo.png"
-              alt="Galiya logo"
+              alt="AR Integration logo"
               fill
               style={{ objectFit: 'contain' }}
             />
