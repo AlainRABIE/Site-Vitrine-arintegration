@@ -67,13 +67,13 @@ export default function Contact() {
         {/* Form */}
         <form onSubmit={handleSubmit} style={{ display:'flex', flexDirection:'column', gap:24 }}>
           {[
-            { label:'Votre nom',      type:'text',  placeholder:'Marie Dupont' },
-            { label:'Email',          type:'email', placeholder:'marie@entreprise.fr' },
-            { label:'Type de projet', type:'text',  placeholder:'Site vitrine, App mobile...' },
+            { label:'Votre nom',      type:'text',  placeholder:'Marie Dupont',              name:'from_name'    },
+            { label:'Email',          type:'email', placeholder:'marie@entreprise.fr',       name:'reply_to'     },
+            { label:'Type de projet', type:'text',  placeholder:'Site vitrine, App mobile...', name:'project_type' },
           ].map(f => (
             <div key={f.label} style={{ display:'flex', flexDirection:'column', gap:8 }}>
               <label style={{ fontFamily:'var(--font-dm-mono)', fontSize:10, letterSpacing:2, textTransform:'uppercase', color:'#6b6b69' }}>{f.label}</label>
-              <input type={f.type} placeholder={f.placeholder} required={f.type !== 'text' || f.label !== 'Type de projet'} style={{
+              <input name={f.name} type={f.type} placeholder={f.placeholder} required={f.type !== 'text' || f.label !== 'Type de projet'} style={{
                 background:'transparent', border:'none', borderBottom:'1px solid #b0b0ae',
                 padding:'12px 0', fontFamily:'var(--font-dm-sans)', fontSize:15, color:'#0a0a0a',
                 outline:'none', width:'100%',
@@ -82,7 +82,7 @@ export default function Contact() {
           ))}
           <div style={{ display:'flex', flexDirection:'column', gap:8 }}>
             <label style={{ fontFamily:'var(--font-dm-mono)', fontSize:10, letterSpacing:2, textTransform:'uppercase', color:'#6b6b69' }}>Message</label>
-            <textarea placeholder="Décrivez votre projet..." rows={4} style={{
+            <textarea name="message" placeholder="Décrivez votre projet..." rows={4} required style={{
               background:'transparent', border:'none', borderBottom:'1px solid #b0b0ae',
               padding:'12px 0', fontFamily:'var(--font-dm-sans)', fontSize:15, color:'#0a0a0a',
               outline:'none', resize:'none', width:'100%',

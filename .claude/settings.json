@@ -1,5 +1,14 @@
 {
   "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(wc -l src/components/*.tsx src/app/**/*.tsx)",
+      "Read(//tmp/**)",
+      "Bash(curl -s http://localhost:3001 -o /tmp/page.html)",
+      "Read(//private/tmp/**)",
+      "Bash(pkill -f \"next dev\")"
+    ],
     "additionalDirectories": [
       "/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/projects"
     ]

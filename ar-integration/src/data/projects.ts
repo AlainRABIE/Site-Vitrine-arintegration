@@ -92,7 +92,7 @@ export const projects: ProjectData[] = [
     wip: false,
     tagline: 'Notre propre identité numérique.',
     device: 'browser',
-    href: 'https://[MON_URL]',
+    href: 'https://arintegration.fr',
     screens: [
       {
         feature: 'Design sur-mesure',
