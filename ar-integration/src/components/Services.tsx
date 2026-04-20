@@ -1,6 +1,3 @@
-'use client'
-import { useState } from 'react'
-
 const services = [
   {
     num:'01', icon:'◻', name:'Site Web Vitrine',
@@ -20,9 +17,9 @@ const services = [
 ]
 
 export default function Services() {
-  const [hovered, setHovered] = useState<number|null>(null)
   return (
     <section id="services" style={{ padding:'120px 48px', background:'#0a0a0a' }}>
+      <style>{`.svc-card{transition:background .3s}.svc-card:hover{background:#1a1a18}`}</style>
       <div style={{
         fontFamily:'var(--font-dm-mono)', fontSize:11, letterSpacing:3,
         textTransform:'uppercase', color:'#6b6b69', marginBottom:64,
@@ -43,14 +40,10 @@ export default function Services() {
 
       <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', border:'1px solid #2e2e2c' }}>
         {services.map((s, i) => (
-          <div key={i}
-            onMouseEnter={()=>setHovered(i)}
-            onMouseLeave={()=>setHovered(null)}
+          <div key={i} className="svc-card"
             style={{
               padding:'48px 40px',
               borderRight: i < 2 ? '1px solid #2e2e2c' : 'none',
-              background: hovered === i ? '#1a1a18' : 'transparent',
-              transition:'background .3s',
               position:'relative', overflow:'hidden',
             }}
           >

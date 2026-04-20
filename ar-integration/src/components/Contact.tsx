@@ -1,27 +1,26 @@
 'use client'
 import { useState } from 'react'
-import emailjs from '@emailjs/browser'
 
 export default function Contact() {
   const [sent, setSent] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const form = e.currentTarget
-    emailjs.sendForm(
-      'service_8ml6h64', 
-      'template_w4kjqcl', 
-      form,
-      'MLPRubrisJiF2a_lW'
-    )
-    .then(() => {
+    try {
+      const { default: emailjs } = await import('@emailjs/browser')
+      await emailjs.sendForm(
+        'service_8ml6h64',
+        'template_w4kjqcl',
+        form,
+        'MLPRubrisJiF2a_lW'
+      )
       setSent(true)
       setTimeout(() => setSent(false), 3000)
       form.reset()
-    })
-    .catch(() => {
+    } catch {
       alert('Erreur lors de l\'envoi du message.')
-    })
+    }
   }
 
   return (

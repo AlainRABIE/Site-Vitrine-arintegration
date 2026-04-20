@@ -8,7 +8,7 @@
 
 ## Journal des actions
 
-### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### [2026-04-15 12:01:29] `Bash`
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### [2026-04-15 12:01:29] `Bash`
 - Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && ls src public`
 - Résultat : `public:
 App-Mobile.png
@@ -197,3 +197,18 @@ Route (app)                              Size     First Load JS
  ✓ Compiled successfully
    Linting and checking validity of types ...
    Collecting page d`
+### [2026-04-20 13:14:23] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && rm -rf .next && npm run build 2>&1 | tail -30`
+- Résultat : ` ⚠ Using edge runtime on a page currently disables static generation for that page
+   Generating static pages (0/10) ...
+   Generating static pages (2/10) 
+   Generating static pages (4/10) 
+   Gene`
+### [2026-04-20 13:21:08] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && rm -rf .next && npm run build 2>&1 | tail -25`
+- Résultat : ` ✓ Generating static pages (10/10)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                            `

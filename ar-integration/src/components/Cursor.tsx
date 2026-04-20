@@ -1,13 +1,16 @@
 'use client'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export default function Cursor() {
   const dot  = useRef<HTMLDivElement>(null)
   const ring = useRef<HTMLDivElement>(null)
   const pos  = useRef({ x: 0, y: 0 })
   const ring_pos = useRef({ x: 0, y: 0 })
+  const [enabled, setEnabled] = useState(false)
 
   useEffect(() => {
+    if (!window.matchMedia('(pointer: fine)').matches) return
+    setEnabled(true)
     const move = (e: MouseEvent) => {
       pos.current = { x: e.clientX, y: e.clientY }
       if (dot.current) {
@@ -41,6 +44,8 @@ export default function Cursor() {
       cancelAnimationFrame(raf)
     }
   }, [])
+
+  if (!enabled) return null
 
   return (
     <>

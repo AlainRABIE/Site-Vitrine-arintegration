@@ -8,70 +8,6 @@
 
 ## Journal des actions
 
-### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### [2026-04-15 12:01:23] `Bash`
-- Commande : `ls /Users/alainrabie/Site-Vitrine-arintegration`
-- Résultat : `ar-integration
-generate-ar-integration.py
-package-lock.json
-package.json`
-### [2026-04-15 12:01:26] `Bash`
-- Commande : `ls /Users/alainrabie/Site-Vitrine-arintegration/ar-integration`
-- Résultat : `README.md
-favicon-32x32.png
-next-env.d.ts
-next.config.js
-node_modules
-package-lock.json
-package.json
-postcss.config.js
-public
-src
-tailwind.config.ts
-tsconfig.json`
-### [2026-04-15 12:06:38] `Edit`
-- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Contact.tsx`
-- Remplacement : `          {[↵            { label:'Votre nom',      type:'text',  placeholder:'Ma…`
-### [2026-04-15 12:10:34] `Edit`
-- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Contact.tsx`
-- Remplacement : `            <textarea placeholder="Décrivez votre projet..." rows={4} style={{…`
-### [2026-04-15 12:10:45] `Read`
-- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/layout.tsx`
-### [2026-04-15 12:10:52] `Edit`
-- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/layout.tsx`
-- Remplacement : `export const metadata: Metadata = {↵  title: 'AR Integration — Création Web & Mo…`
-### [2026-04-15 12:10:56] `Write`
-- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/public/robots.txt`
-### [2026-04-15 12:11:01] `Write`
-- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/public/sitemap.xml`
-### [2026-04-15 12:11:09] `Edit`
-- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/data/projects.ts`
-- Remplacement : `    href: 'https://[MON_URL]',…`
-### [2026-04-15 12:11:13] `Bash`
-- Commande : `npm run build 2>&1 | tail -25`
-- Résultat : `npm error Missing script: "build"
-npm error
-npm error To see a list of scripts, run:
-npm error   npm run
-npm error A complete log of this run can be found in: /Users/alainrabie/.npm/_logs/2026-04-15T1`
-### [2026-04-15 12:15:32] `Read`
-- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/page.tsx`
-### [2026-04-15 12:15:32] `Read`
-- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Hero.tsx`
-### [2026-04-15 12:15:45] `Read`
-- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Cursor.tsx`
-### [2026-04-15 12:15:46] `Read`
-- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/globals.css`
-### [2026-04-15 12:16:02] `Read`
-- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Navbar.tsx`
-### [2026-04-15 12:18:38] `Edit`
-- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/projects/[slug]/page.tsx`
-- Remplacement : `import { notFound } from 'next/navigation'↵import { getProject } from '@/data/pr…`
-### [2026-04-15 12:18:46] `Edit`
-- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/page.tsx`
-- Remplacement : `export default function Home() {↵  return (↵    <>↵      <Cursor />↵      <Navba…`
-### [2026-04-15 12:18:55] `Grep`
-### [2026-04-15 12:19:00] `Grep`
-### [2026-04-15 12:19:07] `Grep`
 ### [2026-04-15 12:19:10] `Read`
 - Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Portfolio.tsx`
 ### [2026-04-15 12:19:11] `Read`
@@ -307,3 +243,50 @@ Changes not staged for commit:
  M HANDOFF_CODEX.md
  M ar-integration/CONTEXT.md
  M ar-integration/HANDOFF_CODEX.md`
+### [2026-04-20 13:13:25] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Hero.tsx`
+### [2026-04-20 13:13:42] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Hero.tsx`
+### [2026-04-20 13:13:45] `Grep`
+### [2026-04-20 13:13:57] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Contact.tsx`
+- Remplacement : `'use client'↵import { useState } from 'react'↵import emailjs from '@emailjs/brow…`
+### [2026-04-20 13:14:04] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Portfolio.tsx`
+- Remplacement : `              {p.image ? (↵                <Image↵                  src={p.image…`
+### [2026-04-20 13:19:00] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Services.tsx`
+### [2026-04-20 13:19:02] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Stats.tsx`
+### [2026-04-20 13:19:05] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Cursor.tsx`
+### [2026-04-20 13:19:18] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Process.tsx`
+### [2026-04-20 13:19:21] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Pricing.tsx`
+### [2026-04-20 13:19:26] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Marquee.tsx`
+### [2026-04-20 13:19:33] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/page.tsx`
+### [2026-04-20 13:19:53] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/page.tsx`
+- Remplacement : `'use client'↵import Navbar from '@/components/Navbar'↵import Hero from '@/compon…`
+### [2026-04-20 13:20:12] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Services.tsx`
+### [2026-04-20 13:20:16] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Pricing.tsx`
+- Remplacement : `'use client'↵↵const plans = […`
+### [2026-04-20 13:20:21] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Pricing.tsx`
+- Remplacement : `  return (↵    <section id="tarifs" style={{ padding: '120px 48px', background: …`
+### [2026-04-20 13:20:29] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Pricing.tsx`
+- Remplacement : `            <a href="#contact" style={{↵              display: 'block', textAlig…`
+### [2026-04-20 13:20:38] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Footer.tsx`
+### [2026-04-20 13:20:45] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Cursor.tsx`
+- Remplacement : `'use client'↵import { useEffect, useRef } from 'react'↵↵export default function …`
+### [2026-04-20 13:20:50] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Cursor.tsx`
+- Remplacement : `  return (↵    <>↵      <div ref={dot} style={{…`

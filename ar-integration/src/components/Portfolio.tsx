@@ -64,6 +64,8 @@ export default function Portfolio() {
                   src={p.image}
                   alt={`${p.name} — ${p.cat} réalisé par AR Integration`}
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority={i === 0}
                   style={{ objectFit: 'cover' }}
                 />
               ) : (

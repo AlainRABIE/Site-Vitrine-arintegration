@@ -1,5 +1,3 @@
-'use client'
-
 const plans = [
   {
     name: 'Site Vitrine',
@@ -24,6 +22,7 @@ const plans = [
 export default function Pricing() {
   return (
     <section id="tarifs" style={{ padding: '120px 48px', background: '#0a0a0a' }}>
+      <style>{`.pricing-cta{transition:opacity .2s}.pricing-cta:hover{opacity:.7}`}</style>
       <div style={{
         fontFamily: 'var(--font-dm-mono)', fontSize: 11, letterSpacing: 3,
         textTransform: 'uppercase', color: '#6b6b69', marginBottom: 64,
@@ -78,17 +77,14 @@ export default function Pricing() {
                 </li>
               ))}
             </ul>
-            <a href="#contact" style={{
+            <a href="#contact" className="pricing-cta" style={{
               display: 'block', textAlign: 'center', padding: '14px 24px',
               fontFamily: 'var(--font-dm-mono)', fontSize: 11, letterSpacing: 2,
               textTransform: 'uppercase', textDecoration: 'none',
               background: p.featured ? '#0a0a0a' : 'transparent',
               color: p.featured ? '#f5f5f3' : '#f5f5f3',
               border: p.featured ? 'none' : '1px solid #2e2e2c',
-              transition: 'opacity .2s',
             }}
-              onMouseEnter={e => (e.currentTarget.style.opacity = '.7')}
-              onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
             >Demander un devis</a>
           </div>
         ))}

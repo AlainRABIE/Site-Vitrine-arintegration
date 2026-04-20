@@ -1,28 +1,23 @@
 # 🤝 Handoff Codex — ar-integration
-> Snapshot : 2026-04-20 12:22:33
+> Snapshot : 2026-04-20 13:21:08
 > Projet : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration`
 
 ## Fichiers modifiés (git diff)
 - `CONTEXT.md`
 - `HANDOFF_CODEX.md`
 - `ar-integration/CONTEXT.md`
-- `ar-integration/src/app/layout.tsx`
+- `ar-integration/HANDOFF_CODEX.md`
 - `ar-integration/src/app/page.tsx`
-- `ar-integration/src/app/projects/[slug]/page.tsx`
+- `ar-integration/src/components/Contact.tsx`
+- `ar-integration/src/components/Cursor.tsx`
+- `ar-integration/src/components/Footer.tsx`
+- `ar-integration/src/components/Hero.tsx`
+- `ar-integration/src/components/Portfolio.tsx`
+- `ar-integration/src/components/Pricing.tsx`
+- `ar-integration/src/components/Services.tsx`
 
 ## Dernières 10 actions
 
-### [2026-04-15 12:17:14] `Bash`
-- Commande : `pkill -f "next dev" 2>/dev/null; echo done`
-- Résultat : `done`
-### [2026-04-15 12:20:35] `Bash`
-- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && rm -f public/sitemap.xml public/robots.txt && npm run `
-- Résultat : `   Creating an optimized production build ...
- ✓ Compiled successfully
-   Linting and checking validity of types ...
-   Collecting page data ...
-   Generating static pages (0/9) ...
-   Generating stat`
 ### [2026-04-15 12:22:25] `Bash`
 - Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && npm run build 2>&1 | tail -3 && ls out 2>&1 | head -5`
 - Résultat : `○  (Static)  prerendered as static content
@@ -84,6 +79,21 @@ Route (app)                              Size     First Load JS
  ✓ Compiled successfully
    Linting and checking validity of types ...
    Collecting page d`
+### [2026-04-20 13:14:23] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && rm -rf .next && npm run build 2>&1 | tail -30`
+- Résultat : ` ⚠ Using edge runtime on a page currently disables static generation for that page
+   Generating static pages (0/10) ...
+   Generating static pages (2/10) 
+   Generating static pages (4/10) 
+   Gene`
+### [2026-04-20 13:21:08] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && rm -rf .next && npm run build 2>&1 | tail -25`
+- Résultat : ` ✓ Generating static pages (10/10)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                            `
 
 ## Instructions pour Codex
 1. Lis CONTEXT.md pour l historique complet

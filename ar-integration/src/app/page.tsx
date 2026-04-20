@@ -1,4 +1,4 @@
-'use client'
+import dynamic from 'next/dynamic'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import Marquee from '@/components/Marquee'
@@ -7,9 +7,10 @@ import Process from '@/components/Process'
 import Stats from '@/components/Stats'
 import Portfolio from '@/components/Portfolio'
 import Pricing from '@/components/Pricing'
-import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
-import Cursor from '@/components/Cursor'
+
+const Contact = dynamic(() => import('@/components/Contact'), { loading: () => <div style={{ minHeight: '600px', background: '#f5f5f3' }} /> })
+const Cursor = dynamic(() => import('@/components/Cursor'), { ssr: false })
 
 const jsonLd = {
   '@context': 'https://schema.org',
