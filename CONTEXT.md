@@ -8,7 +8,7 @@
 
 ## Journal des actions
 
-### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### [2026-04-15 12:01:23] `Bash`
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### [2026-04-15 12:01:23] `Bash`
 - Commande : `ls /Users/alainrabie/Site-Vitrine-arintegration`
 - Résultat : `ar-integration
 generate-ar-integration.py
@@ -141,3 +141,84 @@ npm error A complete log of this run can be found in: /Users/alainrabie/.npm/_lo
 ### [2026-04-15 14:18:23] `Edit`
 - Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/mentions-legales/page.tsx`
 - Remplacement : `          <Row label="Adresse"    value="[À COMPLÉTER — adresse d'hébergement]" …`
+### [2026-04-15 16:46:44] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/opengraph-image.tsx`
+### [2026-04-20 10:37:17] `Grep`
+### [2026-04-20 10:37:20] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Testimonials.tsx`
+### [2026-04-20 10:37:26] `Grep`
+### [2026-04-20 10:37:29] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/page.tsx`
+### [2026-04-20 10:37:33] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/page.tsx`
+- Remplacement : `import Portfolio from '@/components/Portfolio'↵import Testimonials from '@/compo…`
+### [2026-04-20 10:37:37] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/page.tsx`
+- Remplacement : `        <Portfolio />↵        <Testimonials />↵        <Pricing />…`
+### [2026-04-20 10:37:41] `Bash`
+- Commande : `rm /Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Testimonials.tsx`
+### [2026-04-20 10:37:43] `Grep`
+### [2026-04-20 10:44:31] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Portfolio.tsx`
+### [2026-04-20 10:44:48] `Bash`
+- Commande : `ls /Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/projects/ 2>/dev/null && ls /Users/alainrabie/Sit`
+- Résultat : `[slug]
+App-Mobile.png
+Home.png
+Logo.png
+Site-vitrine.png
+image.png
+progression de peau.png
+recommandation.png
+routine.png`
+### [2026-04-20 10:44:51] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/projects/[slug]/page.tsx`
+### [2026-04-20 10:44:58] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/data/projects.ts`
+### [2026-04-20 10:45:22] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Portfolio.tsx`
+- Remplacement : `const projects = [↵  { slug: 'loenora',        cat: 'E-Commerce',         name: …`
+### [2026-04-20 10:45:33] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Portfolio.tsx`
+- Remplacement : `        {projects.map((p, i) => (↵          <Link↵            key={i}↵          …`
+### [2026-04-20 10:45:37] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Portfolio.tsx`
+- Remplacement : `          </Link>↵        ))}↵      </div>↵    </section>↵  )↵}…`
+### [2026-04-20 10:45:50] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/data/projects.ts`
+- Remplacement : `  {↵    slug: 'loenora',↵    cat: 'E-Commerce',↵    name: 'Loenora',↵    wip: tr…`
+### [2026-04-20 10:45:54] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Portfolio.tsx`
+### [2026-04-20 10:51:33] `Bash`
+- Commande : `ls "/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/public/" | grep -i luxe`
+- Résultat : `Luxe & Co.png`
+### [2026-04-20 10:51:38] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Portfolio.tsx`
+- Remplacement : `  { slug: 'luxe-co',        cat: 'E-Commerce',         name: 'Luxe & Co',      s…`
+### [2026-04-20 10:51:45] `Bash`
+- Commande : `mv "/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/public/Luxe & Co.png" "/Users/alainrabie/Site-Vitrine-ar`
+### [2026-04-20 10:51:49] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Portfolio.tsx`
+- Remplacement : `image: '/Luxe%20%26%20Co.png'…`
+### [2026-04-20 10:55:11] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/ScrollPhonePage.tsx`
+### [2026-04-20 10:55:34] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Portfolio.tsx`
+- Remplacement : `'use client'↵import Link from 'next/link'↵import Image from 'next/image'↵↵type P…`
+### [2026-04-20 10:55:46] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Portfolio.tsx`
+- Remplacement : `        {projects.map((p, i) => {↵          const cardStyle = {↵            disp…`
+### [2026-04-20 11:33:27] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Portfolio.tsx`
+### [2026-04-20 12:09:35] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Portfolio.tsx`
+- Remplacement : `          </Wrapper>↵          )↵        })}↵      </div>↵    </section>↵  )↵}…`
+### [2026-04-20 12:09:50] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/data/projects.ts`
+- Remplacement : `export const projects: ProjectData[] = [↵  {↵    slug: 'galiya',…`
+### [2026-04-20 12:09:56] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/ScrollPhonePage.tsx`
+- Remplacement : `        <div style={{ fontFamily: 'var(--font-dm-mono)', fontSize: 9, color: '#f…`
+### [2026-04-20 12:10:09] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/ScrollPhonePage.tsx`
+- Remplacement : `        <h2 style={{ fontFamily: 'var(--font-bebas)', fontSize: 'clamp(40px,5vw,…`

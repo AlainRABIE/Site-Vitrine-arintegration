@@ -18,6 +18,41 @@ export type ProjectData = {
 
 export const projects: ProjectData[] = [
   {
+    slug: 'luxe-co',
+    cat: 'E-Commerce',
+    name: 'Luxe & Co',
+    wip: false,
+    tagline: 'Une maison parisienne sublimée en ligne, où chaque pièce devient désir.',
+    device: 'browser',
+    href: 'https://vitrine-site-ecommerce.vercel.app',
+    screens: [
+      {
+        feature: 'Catalogue',
+        title: 'Chaque pièce mise en valeur',
+        description: 'Un catalogue épuré où chaque pièce respire. Filtres par silhouette, matière et occasion. Photos haute définition, animations au scroll — l\'élégance avant tout.',
+        screenType: 'catalogue',
+      },
+      {
+        feature: 'Panier & paiement',
+        title: 'De l\'envie à l\'achat, sans friction',
+        description: 'Tunnel de commande en 3 étapes, paiement sécurisé via Stripe, récapitulatif visuel des pièces choisies. Conçu pour que rien ne brise l\'élan d\'achat.',
+        screenType: 'cart',
+      },
+      {
+        feature: 'Espace client',
+        title: 'Une relation qui dure',
+        description: 'Suivi de commandes en temps réel, historique d\'achats, tailles et préférences sauvegardées. L\'espace client pensé pour fidéliser une clientèle exigeante.',
+        screenType: 'account',
+      },
+      {
+        feature: 'Dashboard admin',
+        title: 'Gérer sa boutique, simplement',
+        description: 'Chiffre d\'affaires, stocks, nouvelles commandes — tout en un seul écran. Un back-office pensé pour piloter son activité sans technicité.',
+        screenType: 'admin',
+      },
+    ],
+  },
+  {
     slug: 'galiya',
     cat: 'Application Mobile',
     name: 'Galiya',
@@ -48,40 +83,6 @@ export const projects: ProjectData[] = [
         title: 'Une routine adaptée, matin et soir',
         description: 'Galiya construit automatiquement ta routine AM/PM selon ton profil de peau. Chaque étape est minutée, ordonnée et expliquée pour maximiser les résultats.',
         screenType: 'routine',
-      },
-    ],
-  },
-  {
-    slug: 'loenora',
-    cat: 'E-Commerce',
-    name: 'Loenora',
-    wip: true,
-    tagline: 'La mode féminine haut de gamme, sublimée en ligne.',
-    device: 'browser',
-    screens: [
-      {
-        feature: 'Catalogue',
-        title: 'Chaque robe mise en valeur',
-        description: 'Un catalogue épuré où chaque pièce respire. Filtres par silhouette, matière et occasion. Photos haute définition, animations au scroll — l\'élégance avant tout.',
-        screenType: 'catalogue',
-      },
-      {
-        feature: 'Panier & paiement',
-        title: 'De l\'envie à l\'achat, sans friction',
-        description: 'Tunnel de commande en 3 étapes, paiement sécurisé via Stripe, récapitulatif visuel des pièces choisies. Conçu pour que rien ne brise l\'élan d\'achat.',
-        screenType: 'cart',
-      },
-      {
-        feature: 'Espace client',
-        title: 'Une relation qui dure',
-        description: 'Suivi de commandes en temps réel, historique d\'achats, tailles et préférences sauvegardées. L\'espace client pensé pour fidéliser une clientèle exigeante.',
-        screenType: 'account',
-      },
-      {
-        feature: 'Dashboard admin',
-        title: 'Gérer sa boutique, simplement',
-        description: 'Chiffre d\'affaires, stocks, nouvelles commandes — tout en un seul écran. Un back-office pensé pour qu\'une créatrice puisse piloter son activité sans technicité.',
-        screenType: 'admin',
       },
     ],
   },

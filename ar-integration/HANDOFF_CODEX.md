@@ -1,37 +1,14 @@
 # 🤝 Handoff Codex — ar-integration
-> Snapshot : 2026-04-15 14:18:49
+> Snapshot : 2026-04-15 16:48:05
 > Projet : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration`
 
 ## Fichiers modifiés (git diff)
-- `.claude/settings.json`
 - `CONTEXT.md`
 - `HANDOFF_CODEX.md`
 - `ar-integration/CONTEXT.md`
-- `ar-integration/HANDOFF_CODEX.md`
-- `ar-integration/package.json`
-- `ar-integration/public/robots.txt`
-- `ar-integration/public/sitemap.xml`
-- `ar-integration/src/app/layout.tsx`
-- `ar-integration/src/app/page.tsx`
-- `ar-integration/src/app/projects/[slug]/page.tsx`
-- `ar-integration/src/components/Footer.tsx`
-- `ar-integration/src/components/Portfolio.tsx`
-- `ar-integration/src/components/ScrollPhonePage.tsx`
 
 ## Dernières 10 actions
 
-### [2026-04-15 12:16:51] `Bash`
-- Commande : `npm run dev > /tmp/next-dev.log 2>&1 &
-sleep 8 && tail -30 /tmp/next-dev.log`
-- Résultat : `> ar-integration@0.1.0 dev
-> next dev
-
- ⚠ Port 3000 is in use, trying 3001 instead.
-  ▲ Next.js 14.2.3
-  - Local:        http://localhost:3001
-
- ✓ Starting...
- ✓ Ready in 1241ms`
 ### [2026-04-15 12:16:59] `Bash`
 - Commande : `curl -s http://localhost:3001 -o /tmp/page.html && grep -c "Votre présence\|opacity:0" /tmp/page.html; echo "---errors--`
 - Résultat : `1
@@ -100,6 +77,14 @@ sleep 3 && curl -s -o /de`
 
 ○  (Static)  prerendered as static content
 ●  (SSG)`
+### [2026-04-15 16:48:05] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && rm -rf .next out && npm run build 2>&1 | tail -25`
+- Résultat : ` ✓ Generating static pages (10/10)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                            `
 
 ## Instructions pour Codex
 1. Lis CONTEXT.md pour l historique complet

@@ -214,7 +214,7 @@ function BrowserScreenCatalogue() {
     <div style={{ padding: '12px', display: 'flex', flexDirection: 'column', gap: 10 }}>
       {/* Header */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div style={{ fontFamily: 'var(--font-dm-mono)', fontSize: 9, color: '#f5f5f3', letterSpacing: 1 }}>LOENORA</div>
+        <div style={{ fontFamily: 'var(--font-dm-mono)', fontSize: 9, color: '#f5f5f3', letterSpacing: 1 }}>LUXE & CO</div>
         <div style={{ fontFamily: 'var(--font-dm-mono)', fontSize: 7, color: '#6b6b69' }}>18 pièces</div>
       </div>
       {/* Filtres */}
@@ -848,20 +848,38 @@ export default function ScrollPhonePage({ project }: { project: ProjectData }) {
         <h2 style={{ fontFamily: 'var(--font-bebas)', fontSize: 'clamp(40px,5vw,72px)', lineHeight: 1 }}>
           Travaillons ensemble
         </h2>
-        <Link href="/#contact" style={{
-          display: 'inline-flex', alignItems: 'center', gap: 12,
-          fontFamily: 'var(--font-dm-mono)', fontSize: 11,
-          letterSpacing: 2, textTransform: 'uppercase',
-          color: '#fff', textDecoration: 'none',
-          border: '1px solid #2e2e2c', padding: '16px 32px',
-          transition: 'border-color .2s',
-        }}
-          onMouseEnter={e => (e.currentTarget.style.borderColor = '#fff')}
-          onMouseLeave={e => (e.currentTarget.style.borderColor = '#2e2e2c')}
-        >
-          Démarrer un projet
-          <span style={{ fontSize: 14 }}>→</span>
-        </Link>
+        <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', justifyContent: 'center' }}>
+          {project.href && (
+            <a href={project.href} target="_blank" rel="noopener noreferrer" style={{
+              display: 'inline-flex', alignItems: 'center', gap: 12,
+              fontFamily: 'var(--font-dm-mono)', fontSize: 11,
+              letterSpacing: 2, textTransform: 'uppercase',
+              color: '#0a0a0a', textDecoration: 'none',
+              background: '#f5f5f3', padding: '16px 32px',
+              transition: 'background .2s',
+            }}
+              onMouseEnter={e => (e.currentTarget.style.background = '#fff')}
+              onMouseLeave={e => (e.currentTarget.style.background = '#f5f5f3')}
+            >
+              Voir le site
+              <span style={{ fontSize: 14 }}>↗</span>
+            </a>
+          )}
+          <Link href="/#contact" style={{
+            display: 'inline-flex', alignItems: 'center', gap: 12,
+            fontFamily: 'var(--font-dm-mono)', fontSize: 11,
+            letterSpacing: 2, textTransform: 'uppercase',
+            color: '#fff', textDecoration: 'none',
+            border: '1px solid #2e2e2c', padding: '16px 32px',
+            transition: 'border-color .2s',
+          }}
+            onMouseEnter={e => (e.currentTarget.style.borderColor = '#fff')}
+            onMouseLeave={e => (e.currentTarget.style.borderColor = '#2e2e2c')}
+          >
+            Démarrer un projet
+            <span style={{ fontSize: 14 }}>→</span>
+          </Link>
+        </div>
       </div>
     </div>
   )

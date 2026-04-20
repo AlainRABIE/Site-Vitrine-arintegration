@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const projects = [
-  { slug: 'loenora',        cat: 'E-Commerce',         name: 'Loenora',        span: true,  wip: true,  image: null },
+  { slug: 'luxe-co',        cat: 'E-Commerce',         name: 'Luxe & Co',      span: true,  wip: false, image: '/luxe-co.png' },
   { slug: 'galiya',         cat: 'Application Mobile', name: 'Galiya',         span: false, wip: true,  image: '/image.png' },
   { slug: 'ar-integration', cat: 'Site Vitrine',       name: 'AR-Intégration', span: false, wip: false, image: '/Site-vitrine.png' },
 ]
