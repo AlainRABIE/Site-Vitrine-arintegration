@@ -1,29 +1,17 @@
 # 🤝 Handoff Codex — ar-integration
-> Snapshot : 2026-04-15 16:48:05
+> Snapshot : 2026-04-20 12:22:33
 > Projet : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration`
 
 ## Fichiers modifiés (git diff)
 - `CONTEXT.md`
 - `HANDOFF_CODEX.md`
 - `ar-integration/CONTEXT.md`
+- `ar-integration/src/app/layout.tsx`
+- `ar-integration/src/app/page.tsx`
+- `ar-integration/src/app/projects/[slug]/page.tsx`
 
 ## Dernières 10 actions
 
-### [2026-04-15 12:16:59] `Bash`
-- Commande : `curl -s http://localhost:3001 -o /tmp/page.html && grep -c "Votre présence\|opacity:0" /tmp/page.html; echo "---errors--`
-- Résultat : `1
----errors---
-
-> ar-integration@0.1.0 dev
-> next dev
-
- ⚠ Port 3000 is in use, trying 3001 instead.
-  ▲ Next.js 14.2.3
-  - Local:        http://localhost:3001
-
- ✓ Starting...
- ✓ Ready in 1241ms
- ○ Com`
 ### [2026-04-15 12:17:14] `Bash`
 - Commande : `pkill -f "next dev" 2>/dev/null; echo done`
 - Résultat : `done`
@@ -85,6 +73,17 @@ sleep 3 && curl -s -o /de`
 
 Route (app)                              Size     First Load JS
 ┌ ○ /                            `
+### [2026-04-20 12:22:33] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && npm run build 2>&1 | tail -80`
+- Résultat : `> ar-integration@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.3
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page d`
 
 ## Instructions pour Codex
 1. Lis CONTEXT.md pour l historique complet

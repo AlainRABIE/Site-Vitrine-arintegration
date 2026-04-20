@@ -8,7 +8,7 @@
 
 ## Journal des actions
 
-### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### [2026-04-15 12:01:29] `Bash`
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### [2026-04-15 12:01:29] `Bash`
 - Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && ls src public`
 - Résultat : `public:
 App-Mobile.png
@@ -186,3 +186,14 @@ sleep 3 && curl -s -o /de`
 
 Route (app)                              Size     First Load JS
 ┌ ○ /                            `
+### [2026-04-20 12:22:33] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && npm run build 2>&1 | tail -80`
+- Résultat : `> ar-integration@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.3
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page d`

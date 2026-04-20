@@ -8,7 +8,7 @@
 
 ## Journal des actions
 
-### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### [2026-04-15 12:01:23] `Bash`
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### [2026-04-15 12:01:23] `Bash`
 - Commande : `ls /Users/alainrabie/Site-Vitrine-arintegration`
 - Résultat : `ar-integration
 generate-ar-integration.py
@@ -222,3 +222,88 @@ routine.png`
 ### [2026-04-20 12:10:09] `Edit`
 - Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/ScrollPhonePage.tsx`
 - Remplacement : `        <h2 style={{ fontFamily: 'var(--font-bebas)', fontSize: 'clamp(40px,5vw,…`
+### [2026-04-20 12:18:26] `Bash`
+- Commande : `ls /Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/ /Users/alainrabie/Site-Vitrine-arintegration/ar-`
+- Résultat : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/public/:
+App-Mobile.png
+Home.png
+Logo.png
+Site-vitrine.png
+image.png
+luxe-co.png
+progression de peau.png
+recommandation.png
+routine.png
+
+/Us`
+### [2026-04-20 12:18:29] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/layout.tsx`
+### [2026-04-20 12:18:32] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/sitemap.ts`
+### [2026-04-20 12:18:34] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/robots.ts`
+### [2026-04-20 12:18:37] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/opengraph-image.tsx`
+### [2026-04-20 12:18:46] `Bash`
+- Commande : `ls /Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/`
+- Résultat : `App-Mobile.png
+Contact.tsx
+Cursor.tsx
+Footer.tsx
+Hero.tsx
+Marquee.tsx
+Navbar.tsx
+Portfolio.tsx
+Pricing.tsx
+Process.tsx
+ProjectShowcase.tsx
+ScrollPhonePage.tsx
+Services.tsx
+Stats.tsx`
+### [2026-04-20 12:18:50] `Grep`
+### [2026-04-20 12:18:53] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Hero.tsx`
+### [2026-04-20 12:20:11] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Contact.tsx`
+### [2026-04-20 12:20:20] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Navbar.tsx`
+### [2026-04-20 12:20:37] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/layout.tsx`
+- Remplacement : `export const metadata: Metadata = {↵  metadataBase: new URL('https://arintegrati…`
+### [2026-04-20 12:20:54] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/page.tsx`
+- Remplacement : `const jsonLd = {↵  '@context': 'https://schema.org',↵  '@graph': [↵    {↵      '…`
+### [2026-04-20 12:21:05] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/projects/[slug]/page.tsx`
+- Remplacement : `export default async function ProjectPage({ params }: { params: Promise<{ slug: …`
+### [2026-04-20 12:21:09] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Footer.tsx`
+### [2026-04-20 12:35:20] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Portfolio.tsx`
+### [2026-04-20 12:35:29] `Bash`
+- Commande : `rm -rf /Users/alainrabie/Site-Vitrine-arintegration/ar-integration/.next`
+### [2026-04-20 12:36:08] `Bash`
+- Commande : `git status`
+- Résultat : `On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard chan`
+### [2026-04-20 12:36:19] `Bash`
+- Commande : `git status --short && echo "---untracked---" && git ls-files --others --exclude-standard`
+- Résultat : ` M CONTEXT.md
+ M HANDOFF_CODEX.md
+ M ar-integration/CONTEXT.md
+ M ar-integration/HANDOFF_CODEX.md
+ M ar-integration/src/app/layout.tsx
+ M ar-integration/src/app/page.tsx
+ M ar-integration/src/app/proj`
+### [2026-04-20 12:36:35] `Bash`
+- Commande : `git restore ar-integration/src/app/layout.tsx ar-integration/src/app/page.tsx "ar-integration/src/app/projects/[slug]/pa`
+### [2026-04-20 12:36:38] `Bash`
+- Commande : `git status --short`
+- Résultat : ` M CONTEXT.md
+ M HANDOFF_CODEX.md
+ M ar-integration/CONTEXT.md
+ M ar-integration/HANDOFF_CODEX.md`
