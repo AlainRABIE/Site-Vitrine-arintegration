@@ -1,5 +1,5 @@
 # 🤝 Handoff Codex — Site-Vitrine-arintegration
-> Snapshot : 2026-04-20 13:20:50
+> Snapshot : 2026-05-08 22:10:46
 > Projet : `/Users/alainrabie/Site-Vitrine-arintegration`
 
 ## Fichiers modifiés (git diff)
@@ -7,43 +7,37 @@
 - `HANDOFF_CODEX.md`
 - `ar-integration/CONTEXT.md`
 - `ar-integration/HANDOFF_CODEX.md`
-- `ar-integration/src/app/page.tsx`
-- `ar-integration/src/components/Contact.tsx`
-- `ar-integration/src/components/Cursor.tsx`
-- `ar-integration/src/components/Footer.tsx`
-- `ar-integration/src/components/Hero.tsx`
-- `ar-integration/src/components/Portfolio.tsx`
 - `ar-integration/src/components/Pricing.tsx`
-- `ar-integration/src/components/Services.tsx`
+- `ar-integration/src/components/Stats.tsx`
 
 ## Dernières 10 actions
 
-### [2026-04-20 13:19:26] `Read`
-- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Marquee.tsx`
-### [2026-04-20 13:19:33] `Read`
-- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/page.tsx`
-### [2026-04-20 13:19:53] `Edit`
-- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/page.tsx`
-- Remplacement : `'use client'↵import Navbar from '@/components/Navbar'↵import Hero from '@/compon…`
-### [2026-04-20 13:20:12] `Write`
-- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Services.tsx`
-### [2026-04-20 13:20:16] `Edit`
+### [2026-05-08 19:43:54] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/globals.css`
+### [2026-05-08 19:44:55] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/globals.css`
+- Remplacement : `/* Noise overlay */↵body::before {↵  content: '';↵  position: fixed; inset: 0; p…`
+### [2026-05-08 22:03:00] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Stats.tsx`
+### [2026-05-08 22:03:09] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/globals.css`
+- Remplacement : `/* ─── Responsive (tablet/mobile) ──────────────────────────────── */↵@media (ma…`
+### [2026-05-08 22:03:20] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/globals.css`
+- Remplacement : `  /* Reduce huge headings on mobile when not using clamp */↵  h2 { word-wrap: br…`
+### [2026-05-08 22:03:28] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/globals.css`
+- Remplacement : `  /* Project page back nav: shrink */↵  [style*="padding: 20px 48px"][style*="po…`
+### [2026-05-08 22:08:03] `Edit`
 - Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Pricing.tsx`
-- Remplacement : `'use client'↵↵const plans = […`
-### [2026-04-20 13:20:21] `Edit`
+- Remplacement : `const plans = [↵  {↵    name: 'Site Vitrine',↵    featured: false,↵    desc: "Id…`
+### [2026-05-08 22:08:09] `Edit`
 - Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Pricing.tsx`
-- Remplacement : `  return (↵    <section id="tarifs" style={{ padding: '120px 48px', background: …`
-### [2026-04-20 13:20:29] `Edit`
-- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Pricing.tsx`
-- Remplacement : `            <a href="#contact" style={{↵              display: 'block', textAlig…`
-### [2026-04-20 13:20:38] `Write`
-- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Footer.tsx`
-### [2026-04-20 13:20:45] `Edit`
-- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Cursor.tsx`
-- Remplacement : `'use client'↵import { useEffect, useRef } from 'react'↵↵export default function …`
-### [2026-04-20 13:20:50] `Edit`
-- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Cursor.tsx`
-- Remplacement : `  return (↵    <>↵      <div ref={dot} style={{…`
+- Remplacement : `            <div style={{ fontFamily: 'var(--font-bebas)', fontSize: 42, lineHei…`
+### [2026-05-08 22:10:37] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/globals.css`
+### [2026-05-08 22:10:46] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/globals.css`
 
 ## Instructions pour Codex
 1. Lis CONTEXT.md pour l historique complet

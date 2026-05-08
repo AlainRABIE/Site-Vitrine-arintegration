@@ -1,18 +1,21 @@
 const plans = [
   {
     name: 'Site Vitrine',
+    price: '899 €',
     featured: false,
     desc: "Idéal pour les entrepreneurs et petites entreprises qui souhaitent établir leur présence en ligne.",
     features: ["Site jusqu'à 5 pages", "Design responsive & mobile", "Optimisation SEO de base", "Formulaire de contact", "Livraison en 2 semaines"],
   },
   {
     name: 'Site Business',
+    price: '2 990 €',
     featured: true,
     desc: "Pour les entreprises qui veulent se démarquer et générer de la croissance avec un site performant.",
     features: ["Site jusqu'à 15 pages", 'Design premium sur-mesure', 'SEO avancé & analytics', 'Blog / Espace client', 'Intégrations CRM', 'Livraison en 4 semaines'],
   },
   {
     name: 'Application Mobile',
+    price: '5 990 €',
     featured: false,
     desc: "Application mobile iOS & Android complète, de la conception au déploiement sur les stores.",
     features: ['App iOS & Android', 'Design UI/UX complet', 'Backend & API inclus', 'Publication sur les stores', '3 mois de support', 'Livraison en 8 semaines'],
@@ -60,8 +63,15 @@ export default function Pricing() {
               marginBottom: 32, display: 'block',
             }}>{p.name}</span>
 
-            <div style={{ fontFamily: 'var(--font-bebas)', fontSize: 42, lineHeight: 1, marginBottom: 4, letterSpacing: 1 }}>
-              Sur devis
+            <div style={{ marginBottom: 4 }}>
+              <div style={{
+                fontFamily: 'var(--font-dm-mono)', fontSize: 10, letterSpacing: 2,
+                textTransform: 'uppercase', color: p.featured ? '#6b6b69' : '#6b6b69',
+                marginBottom: 4,
+              }}>À partir de</div>
+              <div style={{ fontFamily: 'var(--font-bebas)', fontSize: 56, lineHeight: 1, letterSpacing: 1 }}>
+                {p.price}
+              </div>
             </div>
 
             <p style={{ fontSize: 13, color: '#6b6b69', marginBottom: 32, lineHeight: 1.6 }}>{p.desc}</p>

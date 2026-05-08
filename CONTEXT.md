@@ -8,44 +8,6 @@
 
 ## Journal des actions
 
-### [2026-04-15 12:19:10] `Read`
-- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Portfolio.tsx`
-### [2026-04-15 12:19:11] `Read`
-- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/ScrollPhonePage.tsx`
-### [2026-04-15 12:19:11] `Read`
-- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/ProjectShowcase.tsx`
-### [2026-04-15 12:19:20] `Edit`
-- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Portfolio.tsx`
-- Remplacement : `                <Image↵                  src={p.image}↵                  alt={p.…`
-### [2026-04-15 12:19:27] `Edit`
-- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/ScrollPhonePage.tsx`
-- Remplacement : `            <Image↵              src="/Logo.png"↵              alt="Galiya logo"…`
-### [2026-04-15 12:19:32] `Write`
-- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/sitemap.ts`
-### [2026-04-15 12:19:37] `Write`
-- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/robots.ts`
-### [2026-04-15 12:25:06] `Write`
-- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/public/.htaccess`
-### [2026-04-15 12:25:15] `Edit`
-- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/layout.tsx`
-- Remplacement : `const bebas = Bebas_Neue({↵  weight: '400',↵  subsets: ['latin'],↵  variable: '-…`
-### [2026-04-15 12:25:19] `Read`
-- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/package.json`
-### [2026-04-15 12:25:24] `Edit`
-- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/package.json`
-- Remplacement : `  "devDependencies": {↵    "@types/node": "^20",↵    "@types/react": "^18",↵    …`
-### [2026-04-15 12:27:26] `Bash`
-- Commande : `rm /Users/alainrabie/Site-Vitrine-arintegration/ar-integration/public/.htaccess && echo done`
-- Résultat : `done`
-### [2026-04-15 12:28:56] `Bash`
-- Commande : `mkdir -p /Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/mentions-legales`
-### [2026-04-15 12:29:30] `Write`
-- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/mentions-legales/page.tsx`
-### [2026-04-15 12:29:35] `Read`
-- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Footer.tsx`
-### [2026-04-15 12:29:38] `Edit`
-- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Footer.tsx`
-- Remplacement : `        {[['#services','Services'],['#portfolio','Portfolio'],['#contact','Conta…`
 ### [2026-04-15 12:29:44] `Edit`
 - Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/sitemap.ts`
 - Remplacement : `  return [↵    { url: `${BASE}/`, lastModified: now, changeFrequency: 'monthly',…`
@@ -290,3 +252,65 @@ Changes not staged for commit:
 ### [2026-04-20 13:20:50] `Edit`
 - Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Cursor.tsx`
 - Remplacement : `  return (↵    <>↵      <div ref={dot} style={{…`
+### [2026-04-20 14:04:58] `Bash`
+- Commande : `dig arintegration.fr A +short && echo "---www---" && dig www.arintegration.fr A +short`
+- Résultat : `---www---`
+### [2026-04-20 14:05:05] `Bash`
+- Commande : `echo "=== Google DNS ===" && dig @8.8.8.8 arintegration.fr A +short && echo "=== Cloudflare DNS ===" && dig @1.1.1.1 ari`
+- Résultat : `=== Google DNS ===
+=== Cloudflare DNS ===
+=== IONOS auth ===
+suzanne.ns.cloudflare.com.
+max.ns.cloudflare.com.`
+### [2026-04-20 14:06:36] `Bash`
+- Commande : `echo "=== A @ ===" && dig @1.1.1.1 arintegration.fr A +short && echo "=== A www ===" && dig @1.1.1.1 www.arintegration.f`
+- Résultat : `=== A @ ===
+87.106.215.6
+=== A www ===
+87.106.215.6
+=== AAAA @ ===
+=== AAAA www ===`
+### [2026-04-20 14:07:48] `Bash`
+- Commande : `curl -sI https://arintegration.fr | head -5 && echo "---" && curl -sI http://arintegration.fr | head -5`
+- Résultat : `---`
+### [2026-04-20 14:07:56] `Bash`
+- Commande : `curl -vI https://arintegration.fr 2>&1 | head -30`
+- Résultat : `  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0   `
+### [2026-04-20 14:08:04] `Bash`
+- Commande : `curl -sI --resolve arintegration.fr:443:87.106.215.6 https://arintegration.fr | head -8 && echo "--- HTTP → HTTPS redire`
+- Résultat : `HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 20 Apr 2026 12:08:04 GMT
+Content-Type: text/html
+Content-Length: 81935
+Last-Modified: Mon, 20 Apr 2026 11:45:06 GMT
+Connection: keep-aliv`
+### [2026-05-08 19:43:54] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/globals.css`
+### [2026-05-08 19:44:55] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/globals.css`
+- Remplacement : `/* Noise overlay */↵body::before {↵  content: '';↵  position: fixed; inset: 0; p…`
+### [2026-05-08 22:03:00] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Stats.tsx`
+### [2026-05-08 22:03:09] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/globals.css`
+- Remplacement : `/* ─── Responsive (tablet/mobile) ──────────────────────────────── */↵@media (ma…`
+### [2026-05-08 22:03:20] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/globals.css`
+- Remplacement : `  /* Reduce huge headings on mobile when not using clamp */↵  h2 { word-wrap: br…`
+### [2026-05-08 22:03:28] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/globals.css`
+- Remplacement : `  /* Project page back nav: shrink */↵  [style*="padding: 20px 48px"][style*="po…`
+### [2026-05-08 22:08:03] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Pricing.tsx`
+- Remplacement : `const plans = [↵  {↵    name: 'Site Vitrine',↵    featured: false,↵    desc: "Id…`
+### [2026-05-08 22:08:09] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Pricing.tsx`
+- Remplacement : `            <div style={{ fontFamily: 'var(--font-bebas)', fontSize: 42, lineHei…`
+### [2026-05-08 22:10:37] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/globals.css`
+### [2026-05-08 22:10:46] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/globals.css`

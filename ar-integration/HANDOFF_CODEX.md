@@ -1,5 +1,5 @@
 # 🤝 Handoff Codex — ar-integration
-> Snapshot : 2026-04-20 13:21:08
+> Snapshot : 2026-05-08 22:11:16
 > Projet : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration`
 
 ## Fichiers modifiés (git diff)
@@ -7,78 +7,11 @@
 - `HANDOFF_CODEX.md`
 - `ar-integration/CONTEXT.md`
 - `ar-integration/HANDOFF_CODEX.md`
-- `ar-integration/src/app/page.tsx`
-- `ar-integration/src/components/Contact.tsx`
-- `ar-integration/src/components/Cursor.tsx`
-- `ar-integration/src/components/Footer.tsx`
-- `ar-integration/src/components/Hero.tsx`
-- `ar-integration/src/components/Portfolio.tsx`
 - `ar-integration/src/components/Pricing.tsx`
-- `ar-integration/src/components/Services.tsx`
+- `ar-integration/src/components/Stats.tsx`
 
 ## Dernières 10 actions
 
-### [2026-04-15 12:22:25] `Bash`
-- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && npm run build 2>&1 | tail -3 && ls out 2>&1 | head -5`
-- Résultat : `○  (Static)  prerendered as static content
-●  (SSG)     prerendered as static HTML (uses getStaticProps)
-
-404
-404.html
-App-Mobile.png
-Home.png
-Logo.png`
-### [2026-04-15 12:22:41] `Bash`
-- Commande : `sleep 4 && cat /tmp/serve.log | tail -15 && echo "---" && curl -s -o /dev/null -w "HTTP %{http_code}\n" http://localhost`
-- Résultat : ` INFO  Accepting connections at http://localhost:4000
----
-HTTP 200`
-### [2026-04-15 12:25:43] `Bash`
-- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && rm -rf .next out && npm run build 2>&1 | tail -15`
-- Résultat : `├ ● /projects/[slug]                     6.55 kB         105 kB
-├   ├ /projects/galiya
-├   ├ /projects/loenora
-├   └ /projects/ar-integration
-├ ○ /robots.txt                          0 B              `
-### [2026-04-15 12:25:57] `Bash`
-- Commande : `pkill -f "serve out" 2>/dev/null; sleep 1; npx --yes serve out -p 4000 > /tmp/serve.log 2>&1 &
-sleep 3 && curl -s -o /de`
-- Résultat : `HTTP 200`
-### [2026-04-15 14:16:10] `Bash`
-- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && rm -rf .next out && npm run build 2>&1 | tail -15`
-- Résultat : `├ ● /projects/[slug]                     6.55 kB         106 kB
-├   ├ /projects/galiya
-├   ├ /projects/loenora
-├   └ /projects/ar-integration
-├ ○ /robots.txt                          0 B              `
-### [2026-04-15 14:18:49] `Bash`
-- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && rm -rf .next out && npm run build 2>&1 | tail -8`
-- Résultat : `  ├ chunks/23-99303bc1498a5290.js        31.6 kB
-  ├ chunks/fd9d1056-4a917af64af6b262.js  53.6 kB
-  └ other shared chunks (total)          1.89 kB
-
-
-○  (Static)  prerendered as static content
-●  (SSG)`
-### [2026-04-15 16:48:05] `Bash`
-- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && rm -rf .next out && npm run build 2>&1 | tail -25`
-- Résultat : ` ✓ Generating static pages (10/10)
-   Finalizing page optimization ...
-   Collecting build traces ...
-
-Route (app)                              Size     First Load JS
-┌ ○ /                            `
-### [2026-04-20 12:22:33] `Bash`
-- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && npm run build 2>&1 | tail -80`
-- Résultat : `> ar-integration@0.1.0 build
-> next build
-
-  ▲ Next.js 14.2.3
-
-   Creating an optimized production build ...
- ✓ Compiled successfully
-   Linting and checking validity of types ...
-   Collecting page d`
 ### [2026-04-20 13:14:23] `Bash`
 - Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && rm -rf .next && npm run build 2>&1 | tail -30`
 - Résultat : ` ⚠ Using edge runtime on a page currently disables static generation for that page
@@ -94,6 +27,48 @@ Route (app)                              Size     First Load JS
 
 Route (app)                              Size     First Load JS
 ┌ ○ /                            `
+### [2026-05-08 19:45:09] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && npm run build 2>&1 | tail -10`
+- Résultat : `+ First Load JS shared by all            87.1 kB
+  ├ chunks/23-e858a605c389406c.js        31.6 kB
+  ├ chunks/fd9d1056-4e1a26e2d413ba3c.js  53.6 kB
+  └ other shared chunks (total)          1.93 kB
+
+
+○ `
+### [2026-05-08 22:03:41] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && npm run build 2>&1 | tail -8`
+- Résultat : `  ├ chunks/fd9d1056-4e1a26e2d413ba3c.js  53.6 kB
+  └ other shared chunks (total)          1.93 kB
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses getStatic`
+### [2026-05-08 22:08:23] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && npm run build 2>&1 | tail -5`
+- Résultat : `○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses getStaticProps)
+ƒ  (Dynamic)  server-rendered on demand`
+### [2026-05-08 22:08:41] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Pricing.tsx`
+- Remplacement : `const plans = [↵  {↵    name: 'Site Vitrine',↵    price: 'À partir de 899 €',↵  …`
+### [2026-05-08 22:08:49] `Edit`
+- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Pricing.tsx`
+- Remplacement : `            <div style={{ fontFamily: 'var(--font-bebas)', fontSize: 42, lineHei…`
+### [2026-05-08 22:09:02] `Bash`
+- Commande : `npm run build 2>&1 | tail -3`
+- Résultat : `●  (SSG)      prerendered as static HTML (uses getStaticProps)
+ƒ  (Dynamic)  server-rendered on demand`
+### [2026-05-08 22:11:01] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && npm run build 2>&1 | tail -3`
+- Résultat : `  syscall: 'open',
+  path: '/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/.next/server/app/_not-found/page.js.nft.json'
+}`
+### [2026-05-08 22:11:16] `Bash`
+- Commande : `rm -rf .next && npm run build 2>&1 | tail -5`
+- Résultat : `○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses getStaticProps)
+ƒ  (Dynamic)  server-rendered on demand`
 
 ## Instructions pour Codex
 1. Lis CONTEXT.md pour l historique complet

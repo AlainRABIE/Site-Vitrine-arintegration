@@ -1,8 +1,8 @@
 const stats = [
-  { num:'98%', label:'Clients satisfaits' },
-  { num:'48H', label:'Délai de réponse' },
-  { num:'50+', label:'Projets livrés' },
-  { num:'3×',  label:'ROI moyen client' },
+  { num:'100%', label:'Sur-mesure, aucun template' },
+  { num:'48H',  label:'Réponse à toute demande' },
+  { num:'90+',  label:'Score Lighthouse garanti' },
+  { num:'∞',    label:'Code source à vous' },
 ]
 
 export default function Stats() {
