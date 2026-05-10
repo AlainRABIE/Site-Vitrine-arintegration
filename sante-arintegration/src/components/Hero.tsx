@@ -22,7 +22,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, delay: 0.05 }}
           className="heading-display mx-auto max-w-5xl text-pretty text-ink dark:text-white"
-          style={{ fontSize: 'clamp(2rem, 4.4vw, 3.5rem)' }}
+          style={{ fontSize: 'clamp(2rem, 5vw, 4.5rem)' }}
         >
           Votre cabinet médical mérite un site qui inspire confiance dès la première seconde.
         </motion.h1>

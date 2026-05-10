@@ -60,7 +60,7 @@ export default function Header() {
 
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <Link href="/#contact" className="btn-primary !h-10 !px-4 text-[13px]">
+          <Link href="/#contact" className="btn-primary !h-10 !px-4 text-[13px] hidden sm:inline-flex">
             Réserver un appel 15&nbsp;min
           </Link>
           <button
