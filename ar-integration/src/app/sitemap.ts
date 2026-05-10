@@ -1,18 +1,12 @@
 import type { MetadataRoute } from 'next'
-import { projects } from '@/data/projects'
-
-const BASE = 'https://arintegration.fr'
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const base = 'https://arintegration.fr'
   const now = new Date()
   return [
-    { url: `${BASE}/`, lastModified: now, changeFrequency: 'monthly', priority: 1 },
-    ...projects.map(p => ({
-      url: `${BASE}/projects/${p.slug}/`,
-      lastModified: now,
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    })),
-    { url: `${BASE}/mentions-legales/`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${base}/`, lastModified: now, changeFrequency: 'monthly', priority: 1 },
+    { url: `${base}/contact/`, lastModified: now, changeFrequency: 'yearly', priority: 0.8 },
+    { url: `${base}/mentions-legales/`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${base}/politique-confidentialite/`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
   ]
 }

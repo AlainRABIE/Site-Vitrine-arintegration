@@ -1,115 +1,139 @@
 import type { Metadata } from 'next'
-import Navbar from '@/components/Navbar'
+import Link from 'next/link'
+import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import Cursor from '@/components/Cursor'
 
 export const metadata: Metadata = {
-  title: 'Mentions légales — AR Integration',
-  description: 'Mentions légales du site AR Integration : éditeur, hébergeur, données personnelles.',
+  title: 'Mentions légales',
+  description: 'Mentions légales du site arintegration.fr (éditeur AR Intégration, Alain Rabie).',
   alternates: { canonical: '/mentions-legales/' },
   robots: { index: true, follow: true },
+}
+
+function Section({ title, children, id }: { title: string; children: React.ReactNode; id?: string }) {
+  return (
+    <section id={id} className="border-t border-line py-10 dark:border-white/10">
+      <h2 className="text-[20px] font-semibold tracking-tight text-ink dark:text-white md:text-[22px]">{title}</h2>
+      <div className="mt-5 space-y-4 text-[15px] leading-relaxed text-muted dark:text-white/70">{children}</div>
+    </section>
+  )
+}
+
+function Row({ label, value }: { label: string; value: React.ReactNode }) {
+  return (
+    <div className="flex flex-col gap-1 sm:flex-row sm:gap-6">
+      <span className="min-w-[180px] text-[12px] font-semibold uppercase tracking-wider text-dim dark:text-white/45">
+        {label}
+      </span>
+      <span className="text-ink dark:text-white/90">{value}</span>
+    </div>
+  )
 }
 
 export default function MentionsLegales() {
   return (
     <>
-      <Cursor />
-      <Navbar />
-      <main style={{
-        maxWidth: 780, margin: '0 auto', padding: '160px 48px 120px',
-        color: '#f5f5f3', fontFamily: 'var(--font-dm-sans)',
-      }}>
-        <h1 style={{
-          fontFamily: 'var(--font-bebas)', fontSize: 'clamp(48px,7vw,96px)',
-          lineHeight: .9, marginBottom: 64,
-        }}>
-          Mentions légales
-        </h1>
+      <Header />
+      <main>
+        <article className="mx-auto max-w-3xl px-5 py-16 md:px-8 md:py-20">
+          <Link href="/" className="inline-block text-[13.5px] font-medium text-muted transition-colors hover:text-ink dark:text-white/65 dark:hover:text-white">
+            ← Retour à l'accueil
+          </Link>
 
-        <Section title="Éditeur">
-          <Row label="Société"      value="AR Intégration" />
-          <Row label="Dirigeant"    value="Alain Rabie" />
-          <Row label="Statut"       value="Entrepreneur individuel (auto-entrepreneur)" />
-          <Row label="Siège"        value="59 rue Louis Becker, 69100 Villeurbanne" />
-          <Row label="SIRET"        value="102 520 624 00010" />
-          <Row label="Code APE"     value="6201Z — Programmation informatique" />
-          <Row label="TVA"          value="Non applicable, art. 293 B du CGI" />
-          <Row label="Email"        value="contact@arintegration.fr" link="mailto:contact@arintegration.fr" />
-          <Row label="Directeur de la publication" value="Alain Rabie" />
-        </Section>
-
-        <Section title="Hébergement">
-          <Row label="Hébergeur"  value="Auto-hébergement" />
-          <Row label="Responsable" value="Alain Rabie" />
-          <Row label="Adresse"    value="59 rue Louis Becker, 69100 Villeurbanne" />
-          <Row label="Contact"    value="contact@arintegration.fr" link="mailto:contact@arintegration.fr" />
-        </Section>
-
-        <Section title="Propriété intellectuelle">
-          <p>
-            L'ensemble des contenus du site (textes, visuels, code, identité graphique) est la propriété exclusive
-            d'AR Intégration. Toute reproduction ou exploitation sans autorisation écrite préalable est interdite.
+          <h1
+            className="heading-display mt-8 text-balance text-ink dark:text-white"
+            style={{ fontSize: 'clamp(2.25rem, 4.6vw, 3.6rem)' }}
+          >
+            Mentions légales
+          </h1>
+          <p className="mt-5 text-[15.5px] leading-relaxed text-muted dark:text-white/70">
+            Conformes à la loi pour la confiance dans l'économie numérique (LCEN) du 21 juin 2004
+            et au Règlement Général sur la Protection des Données (RGPD).
           </p>
-        </Section>
 
-        <Section title="Données personnelles (RGPD)">
-          <p>
-            Les données collectées via le formulaire de contact (nom, email, message) servent uniquement à traiter
-            votre demande. Elles ne sont ni cédées ni revendues. Durée de conservation : 3 ans.
-          </p>
-          <p>
-            Sous-traitant email : <a href="https://www.emailjs.com" target="_blank" rel="noopener noreferrer" style={linkStyle}>EmailJS</a>.
-          </p>
-          <p>
-            Vous disposez d'un droit d'accès, rectification, suppression et opposition sur vos données. Pour l'exercer :{' '}
-            <a href="mailto:contact@arintegration.fr" style={linkStyle}>contact@arintegration.fr</a>. Réclamations
-            éventuelles auprès de la <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" style={linkStyle}>CNIL</a>.
-          </p>
-        </Section>
+          <div className="mt-10">
+            <Section title="Éditeur du site">
+              <Row label="Raison sociale" value="AR Intégration (auto-entreprise)" />
+              <Row label="Représentant légal" value="Alain Rabie" />
+              <Row label="SIRET" value="102 520 624 00010" />
+              <Row label="Adresse" value="Villeurbanne, Lyon, France" />
+              <Row
+                label="Téléphone"
+                value={<a href="tel:+33667755850" className="font-medium underline-offset-4 hover:underline dark:text-white">06 67 75 58 50</a>}
+              />
+              <Row
+                label="Email"
+                value={<a href="mailto:contact@arintegration.fr" className="font-medium underline-offset-4 hover:underline dark:text-white">contact@arintegration.fr</a>}
+              />
+              <Row label="Directeur de la publication" value="Alain Rabie" />
+              <Row label="TVA" value="Non applicable, art. 293 B du CGI" />
+            </Section>
 
-        <Section title="Cookies">
-          <p>Ce site n'utilise aucun cookie de suivi, analytique ou publicitaire.</p>
-        </Section>
+            <Section title="Hébergement">
+              <Row label="Hébergeur" value="Vercel Inc. — région France (Paris, eu-west)" />
+              <Row label="Adresse" value="440 N Barranca Ave #4133, Covina, CA 91723, USA" />
+              <Row label="Données serveur" value="Région Europe uniquement (Vercel Edge Network)" />
+              <p className="pt-2">
+                Pour un hébergement souverain dédié (OVHcloud Roubaix ou Strasbourg) avec
+                engagement contractuel de localisation France, contactez-nous : option disponible
+                sur devis.
+              </p>
+            </Section>
 
-        <Section title="Droit applicable">
-          <p>Droit français. Tribunaux français compétents en cas de litige.</p>
-        </Section>
+            <Section title="Propriété intellectuelle">
+              <p>
+                L'ensemble des éléments présents sur le site (textes, images, mises en page, code
+                source) est la propriété d'AR Intégration ou de partenaires l'ayant autorisé à les
+                diffuser. Toute reproduction sans autorisation est interdite.
+              </p>
+            </Section>
+
+            <Section title="Cookies">
+              <p>
+                Ce site utilise uniquement des cookies techniques nécessaires à son bon fonctionnement.
+                Aucun cookie publicitaire ni de mesure d'audience tierce n'est déposé sans votre
+                consentement explicite.
+              </p>
+            </Section>
+
+            <Section title="Conditions générales de vente" id="cgv">
+              <p>
+                Les prestations d'AR Intégration sont régies par des conditions générales de vente
+                spécifiques transmises lors de l'établissement du devis. Aucune commande n'est
+                engagée sans signature préalable du devis et acceptation explicite des CGV.
+              </p>
+              <p>
+                <strong className="text-ink dark:text-white">Délais :</strong> 7 à 15 jours ouvrés selon offre site vitrine. 4 à 8 semaines pour une application mobile. À compter du paiement de l'acompte.{' '}
+                <strong className="text-ink dark:text-white">Acompte :</strong> 30% à la commande, solde à la livraison.{' '}
+                <strong className="text-ink dark:text-white">Paiement :</strong> CB, virement, ou prélèvement échelonné en 3 fois sans frais.{' '}
+                <strong className="text-ink dark:text-white">Garantie :</strong> 3 mois de support inclus minimum, 6 mois pour offres Premium.
+              </p>
+            </Section>
+
+            <Section title="Droit applicable">
+              <p>
+                Les présentes mentions sont soumises au droit français. Tout litige relatif à
+                l'interprétation ou l'exécution sera de la compétence exclusive des tribunaux
+                français du ressort de Lyon.
+              </p>
+            </Section>
+
+            <Section title="Contact">
+              <p>
+                Pour toute question relative à ces mentions légales :{' '}
+                <a href="mailto:contact@arintegration.fr" className="font-medium text-ink underline-offset-4 hover:underline dark:text-white">
+                  contact@arintegration.fr
+                </a>{' '}
+                ou{' '}
+                <a href="tel:+33667755850" className="font-medium text-ink underline-offset-4 hover:underline dark:text-white">
+                  06 67 75 58 50
+                </a>.
+              </p>
+            </Section>
+          </div>
+        </article>
       </main>
       <Footer />
     </>
   )
-}
-
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <section style={{ marginBottom: 56 }}>
-      <h2 style={{
-        fontFamily: 'var(--font-bebas)', fontSize: 24, letterSpacing: 1,
-        marginBottom: 20, color: '#f5f5f3',
-      }}>
-        {title}
-      </h2>
-      <div style={{ fontSize: 14, lineHeight: 1.7, color: '#b0b0ae', display: 'flex', flexDirection: 'column', gap: 10 }}>
-        {children}
-      </div>
-    </section>
-  )
-}
-
-function Row({ label, value, link }: { label: string; value: string; link?: string }) {
-  return (
-    <div style={{ display: 'grid', gridTemplateColumns: '200px 1fr', gap: 16, alignItems: 'baseline' }}>
-      <span style={{
-        fontFamily: 'var(--font-dm-mono)', fontSize: 10, letterSpacing: 2,
-        textTransform: 'uppercase', color: '#6b6b69',
-      }}>{label}</span>
-      <span style={{ color: '#f5f5f3' }}>
-        {link ? <a href={link} style={linkStyle}>{value}</a> : value}
-      </span>
-    </div>
-  )
-}
-
-const linkStyle: React.CSSProperties = {
-  color: '#f5f5f3', textDecoration: 'underline', textDecorationColor: '#6b6b69',
 }

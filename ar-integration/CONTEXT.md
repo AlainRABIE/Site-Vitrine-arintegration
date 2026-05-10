@@ -8,7 +8,7 @@
 
 ## Journal des actions
 
-### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### [2026-04-15 12:01:29] `Bash`
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### [2026-04-15 12:01:29] `Bash`
 - Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && ls src public`
 - Résultat : `public:
 App-Mobile.png
@@ -254,3 +254,90 @@ Route (app)                              Size     First Load JS
 - Résultat : `○  (Static)   prerendered as static content
 ●  (SSG)      prerendered as static HTML (uses getStaticProps)
 ƒ  (Dynamic)  server-rendered on demand`
+### [2026-05-10 11:23:18] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && \
+echo "=== backup data + clean ===" && \
+mkdir -p /tm`
+- Résultat : `=== backup data + clean ===
+=== copy santé src as base ===
+=== restore data folder ===
+=== delete sector-specific files (will rewrite) ===
+AnimatedStat.tsx
+Reveal.tsx
+ThemeProvider.tsx
+ThemeToggle.tsx`
+### [2026-05-10 11:23:22] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/package.json`
+### [2026-05-10 11:23:29] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/package.json`
+### [2026-05-10 11:24:05] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/layout.tsx`
+### [2026-05-10 11:24:16] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Header.tsx`
+### [2026-05-10 11:24:28] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Hero.tsx`
+### [2026-05-10 11:24:44] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Secteurs.tsx`
+### [2026-05-10 11:24:54] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Services.tsx`
+### [2026-05-10 11:25:06] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Process.tsx`
+### [2026-05-10 11:25:13] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Stats.tsx`
+### [2026-05-10 11:25:23] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Realisations.tsx`
+### [2026-05-10 11:25:50] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Tarifs.tsx`
+### [2026-05-10 11:26:07] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Apropos.tsx`
+### [2026-05-10 11:26:33] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/FAQ.tsx`
+### [2026-05-10 11:26:42] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/ContactSection.tsx`
+### [2026-05-10 11:27:12] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/ContactForm.tsx`
+### [2026-05-10 11:27:28] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Footer.tsx`
+### [2026-05-10 11:27:34] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/sitemap.ts`
+### [2026-05-10 11:27:36] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/robots.ts`
+### [2026-05-10 11:27:44] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/opengraph-image.tsx`
+### [2026-05-10 11:27:55] `TodoWrite`
+### [2026-05-10 11:27:59] `Bash`
+- Commande : `rm -f /Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/page.tsx && echo "deleted"`
+- Résultat : `deleted`
+### [2026-05-10 11:28:06] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/page.tsx`
+### [2026-05-10 11:28:37] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/projects/[slug]/page.tsx`
+### [2026-05-10 11:28:48] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/contact/page.tsx`
+### [2026-05-10 11:29:14] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/mentions-legales/page.tsx`
+### [2026-05-10 11:29:38] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/politique-confidentialite/page.tsx`
+### [2026-05-10 11:29:47] `TodoWrite`
+### [2026-05-10 11:30:06] `Bash`
+- Commande : `npm install 2>&1 | tail -3 && echo '---' && rm -rf .next out && npm run build 2>&1 | tail -25`
+- Résultat : `  npm audit fix --force
+
+Run `npm audit` for details.
+---
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /     `
+### [2026-05-10 11:30:14] `Bash`
+- Commande : `npx tsc --noEmit 2>&1 | tail -5; echo '---DONE---'`
+- Résultat : `---DONE---`
+### [2026-05-10 11:30:49] `Write`
+- Fichier écrit : `/Users/alainrabie/.claude/projects/-Users-alainrabie-Site-Vitrine-arintegration/memory/project_arintegration_main.md`
+### [2026-05-10 11:30:56] `Read`
+- Fichier lu : `/Users/alainrabie/.claude/projects/-Users-alainrabie-Site-Vitrine-arintegration/memory/MEMORY.md`
+### [2026-05-10 11:31:02] `Edit`
+- Fichier modifié : `/Users/alainrabie/.claude/projects/-Users-alainrabie-Site-Vitrine-arintegration/memory/MEMORY.md`
+- Remplacement : `- [Alain Rabie — AR Intégration](user_profile.md) — Fondateur solo AR Intégratio…`
+### [2026-05-10 11:31:08] `TodoWrite`

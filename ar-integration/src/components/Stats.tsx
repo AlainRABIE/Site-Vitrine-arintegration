@@ -1,24 +1,39 @@
-const stats = [
-  { num:'100%', label:'Sur-mesure, aucun template' },
-  { num:'48H',  label:'Réponse à toute demande' },
-  { num:'90+',  label:'Score Lighthouse garanti' },
-  { num:'∞',    label:'Code source à vous' },
+import { Reveal } from './Reveal'
+import { AnimatedStat } from './AnimatedStat'
+
+const STATS = [
+  { value: 7, suffix: ' j', label: 'Délai moyen de livraison d\'un site vitrine' },
+  { value: 98, suffix: '/100', label: 'Score Lighthouse moyen sur les sites livrés' },
+  { value: 100, suffix: '%', label: 'Hébergement Union Européenne, conforme RGPD' },
+  { value: 48, suffix: ' h', label: 'Délai max pour traiter une demande de modification' },
 ]
 
 export default function Stats() {
   return (
-    <div style={{ background:'#f5f5f3', padding:'80px 48px' }}>
-      <div style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', border:'1px solid #e8e8e6' }}>
-        {stats.map((s, i) => (
-          <div key={i} style={{
-            padding:'48px 40px', textAlign:'center',
-            borderRight: i < 3 ? '1px solid #e8e8e6' : 'none',
-          }}>
-            <span style={{ fontFamily:'var(--font-bebas)', fontSize:80, lineHeight:1, color:'#0a0a0a', display:'block', marginBottom:8 }}>{s.num}</span>
-            <span style={{ fontFamily:'var(--font-dm-mono)', fontSize:11, letterSpacing:2, textTransform:'uppercase', color:'#6b6b69' }}>{s.label}</span>
-          </div>
-        ))}
+    <section className="bg-ink-soft text-white">
+      <div className="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-24">
+        <Reveal>
+          <span className="mx-auto mb-5 flex w-fit items-center gap-2 rounded-full border border-white/15 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-white/70">
+            Engagements
+          </span>
+          <h2 className="heading-section mx-auto max-w-3xl text-center text-[30px] text-white md:text-[42px]">
+            Des chiffres qui engagent, pas du marketing.
+          </h2>
+        </Reveal>
+
+        <div className="mt-12 grid gap-px overflow-hidden rounded-2xl bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
+          {STATS.map((stat, i) => (
+            <Reveal key={stat.label} delay={i * 0.08}>
+              <div className="h-full bg-ink-soft p-8">
+                <div className="text-[44px] font-bold leading-none tracking-tight text-white md:text-[52px]">
+                  <AnimatedStat value={stat.value} suffix={stat.suffix} />
+                </div>
+                <p className="mt-4 text-[14px] leading-relaxed text-white/65">{stat.label}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   )
 }

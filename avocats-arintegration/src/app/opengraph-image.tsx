@@ -1,0 +1,47 @@
+import { ImageResponse } from 'next/og'
+
+export const alt = 'AR Intégration — Sites web pour avocats, conformes RGPD'
+export const size = { width: 1200, height: 630 }
+export const contentType = 'image/png'
+
+export default async function Image() {
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          width: '100%',
+          height: '100%',
+          background: '#000000',
+          color: '#FFFFFF',
+          display: 'flex',
+          flexDirection: 'column',
+          padding: 80,
+          fontFamily: 'sans-serif',
+        }}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 'auto' }}>
+          <div style={{ fontSize: 24, fontWeight: 700, letterSpacing: -0.6, color: '#FFFFFF', display: 'flex' }}>
+            AR Intégration
+          </div>
+          <div style={{ borderRadius: 999, border: '1px solid rgba(255,255,255,0.2)', padding: '4px 10px', fontSize: 13, color: 'rgba(255,255,255,0.7)', display: 'flex' }}>
+            Spécialité : Droit
+          </div>
+        </div>
+
+        <div style={{ fontSize: 84, fontWeight: 700, lineHeight: 1.02, letterSpacing: -3, display: 'flex', flexDirection: 'column', color: '#FFFFFF', marginBottom: 56 }}>
+          <span style={{ display: 'flex' }}>Sites web pour avocats.</span>
+          <span style={{ display: 'flex', color: 'rgba(255,255,255,0.55)' }}>Conformes RGPD.</span>
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'center', gap: 28, paddingTop: 28, borderTop: '1px solid rgba(255,255,255,0.15)', fontSize: 20, color: 'rgba(255,255,255,0.7)' }}>
+          <span style={{ display: 'flex' }}>Hébergement France</span>
+          <span style={{ display: 'flex' }}>·</span>
+          <span style={{ display: 'flex' }}>Livré en 7 jours</span>
+          <span style={{ display: 'flex' }}>·</span>
+          <span style={{ display: 'flex' }}>À partir de 990 €</span>
+        </div>
+      </div>
+    ),
+    { ...size }
+  )
+}

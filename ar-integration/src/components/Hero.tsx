@@ -1,74 +1,70 @@
+'use client'
+
+import { motion } from 'framer-motion'
+import { ArrowRight } from 'lucide-react'
+
 export default function Hero() {
   return (
-    <section style={{
-      minHeight:'100vh', display:'flex', flexDirection:'column',
-      justifyContent:'flex-end', padding:'0 48px 80px', position:'relative', overflow:'hidden',
-    }}>
-      <style>{`
-        @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-        @keyframes heroFadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
-        .hero-fade{opacity:0;animation:heroFadeUp .8s ease-out forwards}
-        .hero-fade-1{animation-delay:.15s}
-        .hero-fade-2{animation-delay:.25s}
-        .hero-fade-3{animation-delay:.45s}
-        .hero-cta{transition:transform .2s}
-        .hero-cta:hover{transform:translateY(-2px)}
-      `}</style>
+    <section className="relative overflow-hidden border-b border-line dark:border-white/10">
+      <div className="mx-auto max-w-6xl px-5 py-14 text-center md:px-8 md:py-20 lg:py-24">
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0 }}
+          className="mb-5 inline-flex items-center gap-2 rounded-full border border-line bg-white px-3.5 py-1.5 text-[12px] font-medium text-muted dark:border-white/15 dark:bg-white/[0.04] dark:text-white/70"
+        >
+          <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+          Disponible — réponse sous 24h
+        </motion.div>
 
-      {/* Grid overlay */}
-      <div style={{
-        position:'absolute', inset:0, pointerEvents:'none',
-        backgroundImage:'linear-gradient(rgba(245,245,243,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(245,245,243,.03) 1px,transparent 1px)',
-        backgroundSize:'80px 80px',
-      }}/>
+        <motion.h1
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.55, delay: 0.05 }}
+          className="heading-display mx-auto max-w-5xl text-pretty text-ink dark:text-white"
+          style={{ fontSize: 'clamp(2rem, 4.4vw, 3.5rem)' }}
+        >
+          Agence web et apps mobiles, conçues à Lyon, pensées pour vos clients.
+        </motion.h1>
 
-      {/* Badge */}
-      <div className="hero-fade hero-fade-1" style={{
-        display:'inline-flex', alignItems:'center', gap:10,
-        border:'1px solid #2e2e2c', padding:'8px 16px',
-        marginBottom:48, width:'fit-content',
-      }}>
-        <span style={{
-          width:6, height:6, background:'#f5f5f3', borderRadius:'50%',
-          animation:'pulse 2s infinite',
-        }}/>
-        <span style={{ fontFamily:'var(--font-dm-mono)', fontSize:11, letterSpacing:2, color:'#b0b0ae', textTransform:'uppercase' }}>
-          Disponible pour nouveaux projets
-        </span>
-      </div>
+        <motion.p
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.15 }}
+          className="mx-auto mt-5 max-w-2xl text-[16px] leading-relaxed text-muted dark:text-white/70 md:text-[18px]"
+        >
+          Sites internet, applications mobiles iOS/Android, e-commerce sur-mesure pour PME, indépendants et professions libérales. Conformes RGPD, hébergés en France, livrés rapidement.
+        </motion.p>
 
-      {/* Title */}
-      <h1 className="hero-fade hero-fade-2" style={{
-        fontFamily:'var(--font-bebas)', fontSize:'clamp(72px,11vw,160px)',
-        lineHeight:.9, letterSpacing:-1, marginBottom:48,
-      }}>
-        Votre présence<br/>
-        <span style={{ color:'#6b6b69' }}>digitale,</span><br/>
-        réinventée.
-      </h1>
-
-      {/* Bottom */}
-      <div className="hero-fade hero-fade-3" style={{
-        display:'flex', alignItems:'flex-end', justifyContent:'space-between', flexWrap:'wrap', gap:32,
-      }}>
-        <p style={{ maxWidth:360, fontSize:15, lineHeight:1.7, color:'#b0b0ae', fontWeight:300 }}>
-          AR Integration crée des <strong style={{ color:'#f5f5f3', fontWeight:500 }}>sites web</strong> et des{' '}
-          <strong style={{ color:'#f5f5f3', fontWeight:500 }}>applications mobiles</strong> qui transforment
-          votre vision en expériences digitales qui convertissent.
-        </p>
-        <div style={{ display:'flex', flexDirection:'column', alignItems:'flex-end', gap:16 }}>
-          <a href="#contact" className="hero-cta" style={{
-            background:'#f5f5f3', color:'#0a0a0a', padding:'18px 40px',
-            fontFamily:'var(--font-dm-mono)', fontSize:12, letterSpacing:3,
-            textTransform:'uppercase', textDecoration:'none', fontWeight:500,
-          }}>
-            Lancer mon projet
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.22 }}
+          className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row"
+        >
+          <a href="#contact" className="btn-primary">
+            Demander un devis gratuit
+            <ArrowRight size={16} />
           </a>
-          <a href="#services" style={{
-            color:'#6b6b69', fontFamily:'var(--font-dm-mono)', fontSize:11,
-            letterSpacing:2, textTransform:'uppercase', textDecoration:'none',
-          }}>↓ Découvrir nos services</a>
-        </div>
+          <a href="#tarifs" className="btn-outline">
+            Voir nos tarifs
+          </a>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[13px] text-muted dark:text-white/60"
+        >
+          <span>🇫🇷 Hébergement France</span>
+          <span className="hidden h-1 w-1 rounded-full bg-line-strong dark:bg-white/20 sm:block" />
+          <span>🔒 RGPD by design</span>
+          <span className="hidden h-1 w-1 rounded-full bg-line-strong dark:bg-white/20 sm:block" />
+          <span>⚡ Sites livrés en 7 jours</span>
+          <span className="hidden h-1 w-1 rounded-full bg-line-strong dark:bg-white/20 sm:block" />
+          <span>📞 Disponible en 48h</span>
+        </motion.div>
       </div>
     </section>
   )

@@ -1,5 +1,5 @@
 # 🤝 Handoff Codex — ar-integration
-> Snapshot : 2026-05-08 22:11:16
+> Snapshot : 2026-05-10 11:31:08
 > Projet : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration`
 
 ## Fichiers modifiés (git diff)
@@ -7,68 +7,65 @@
 - `HANDOFF_CODEX.md`
 - `ar-integration/CONTEXT.md`
 - `ar-integration/HANDOFF_CODEX.md`
+- `ar-integration/next.config.js`
+- `ar-integration/package-lock.json`
+- `ar-integration/package.json`
+- `ar-integration/src/app/globals.css`
+- `ar-integration/src/app/layout.tsx`
+- `ar-integration/src/app/mentions-legales/page.tsx`
+- `ar-integration/src/app/opengraph-image.tsx`
+- `ar-integration/src/app/page.tsx`
+- `ar-integration/src/app/projects/[slug]/page.tsx`
+- `ar-integration/src/app/robots.ts`
+- `ar-integration/src/app/sitemap.ts`
+- `ar-integration/src/components/App-Mobile.png`
+- `ar-integration/src/components/Contact.tsx`
+- `ar-integration/src/components/Cursor.tsx`
+- `ar-integration/src/components/Footer.tsx`
+- `ar-integration/src/components/Hero.tsx`
+- `ar-integration/src/components/Marquee.tsx`
+- `ar-integration/src/components/Navbar.tsx`
+- `ar-integration/src/components/Portfolio.tsx`
 - `ar-integration/src/components/Pricing.tsx`
+- `ar-integration/src/components/Process.tsx`
+- `ar-integration/src/components/ProjectShowcase.tsx`
+- `ar-integration/src/components/ScrollPhonePage.tsx`
+- `ar-integration/src/components/Services.tsx`
 - `ar-integration/src/components/Stats.tsx`
+- `ar-integration/tailwind.config.ts`
+- `ar-integration/tsconfig.tsbuildinfo`
 
 ## Dernières 10 actions
 
-### [2026-04-20 13:14:23] `Bash`
-- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && rm -rf .next && npm run build 2>&1 | tail -30`
-- Résultat : ` ⚠ Using edge runtime on a page currently disables static generation for that page
-   Generating static pages (0/10) ...
-   Generating static pages (2/10) 
-   Generating static pages (4/10) 
-   Gene`
-### [2026-04-20 13:21:08] `Bash`
-- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && rm -rf .next && npm run build 2>&1 | tail -25`
-- Résultat : ` ✓ Generating static pages (10/10)
+### [2026-05-10 11:28:48] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/contact/page.tsx`
+### [2026-05-10 11:29:14] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/mentions-legales/page.tsx`
+### [2026-05-10 11:29:38] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/politique-confidentialite/page.tsx`
+### [2026-05-10 11:29:47] `TodoWrite`
+### [2026-05-10 11:30:06] `Bash`
+- Commande : `npm install 2>&1 | tail -3 && echo '---' && rm -rf .next out && npm run build 2>&1 | tail -25`
+- Résultat : `  npm audit fix --force
+
+Run `npm audit` for details.
+---
    Finalizing page optimization ...
    Collecting build traces ...
 
 Route (app)                              Size     First Load JS
-┌ ○ /                            `
-### [2026-05-08 19:45:09] `Bash`
-- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && npm run build 2>&1 | tail -10`
-- Résultat : `+ First Load JS shared by all            87.1 kB
-  ├ chunks/23-e858a605c389406c.js        31.6 kB
-  ├ chunks/fd9d1056-4e1a26e2d413ba3c.js  53.6 kB
-  └ other shared chunks (total)          1.93 kB
-
-
-○ `
-### [2026-05-08 22:03:41] `Bash`
-- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && npm run build 2>&1 | tail -8`
-- Résultat : `  ├ chunks/fd9d1056-4e1a26e2d413ba3c.js  53.6 kB
-  └ other shared chunks (total)          1.93 kB
-
-
-○  (Static)   prerendered as static content
-●  (SSG)      prerendered as static HTML (uses getStatic`
-### [2026-05-08 22:08:23] `Bash`
-- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && npm run build 2>&1 | tail -5`
-- Résultat : `○  (Static)   prerendered as static content
-●  (SSG)      prerendered as static HTML (uses getStaticProps)
-ƒ  (Dynamic)  server-rendered on demand`
-### [2026-05-08 22:08:41] `Edit`
-- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Pricing.tsx`
-- Remplacement : `const plans = [↵  {↵    name: 'Site Vitrine',↵    price: 'À partir de 899 €',↵  …`
-### [2026-05-08 22:08:49] `Edit`
-- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Pricing.tsx`
-- Remplacement : `            <div style={{ fontFamily: 'var(--font-bebas)', fontSize: 42, lineHei…`
-### [2026-05-08 22:09:02] `Bash`
-- Commande : `npm run build 2>&1 | tail -3`
-- Résultat : `●  (SSG)      prerendered as static HTML (uses getStaticProps)
-ƒ  (Dynamic)  server-rendered on demand`
-### [2026-05-08 22:11:01] `Bash`
-- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && npm run build 2>&1 | tail -3`
-- Résultat : `  syscall: 'open',
-  path: '/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/.next/server/app/_not-found/page.js.nft.json'
-}`
-### [2026-05-08 22:11:16] `Bash`
-- Commande : `rm -rf .next && npm run build 2>&1 | tail -5`
-- Résultat : `○  (Static)   prerendered as static content
-●  (SSG)      prerendered as static HTML (uses getStaticProps)
-ƒ  (Dynamic)  server-rendered on demand`
+┌ ○ /     `
+### [2026-05-10 11:30:14] `Bash`
+- Commande : `npx tsc --noEmit 2>&1 | tail -5; echo '---DONE---'`
+- Résultat : `---DONE---`
+### [2026-05-10 11:30:49] `Write`
+- Fichier écrit : `/Users/alainrabie/.claude/projects/-Users-alainrabie-Site-Vitrine-arintegration/memory/project_arintegration_main.md`
+### [2026-05-10 11:30:56] `Read`
+- Fichier lu : `/Users/alainrabie/.claude/projects/-Users-alainrabie-Site-Vitrine-arintegration/memory/MEMORY.md`
+### [2026-05-10 11:31:02] `Edit`
+- Fichier modifié : `/Users/alainrabie/.claude/projects/-Users-alainrabie-Site-Vitrine-arintegration/memory/MEMORY.md`
+- Remplacement : `- [Alain Rabie — AR Intégration](user_profile.md) — Fondateur solo AR Intégratio…`
+### [2026-05-10 11:31:08] `TodoWrite`
 
 ## Instructions pour Codex
 1. Lis CONTEXT.md pour l historique complet

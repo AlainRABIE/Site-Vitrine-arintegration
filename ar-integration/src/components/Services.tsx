@@ -1,67 +1,65 @@
-const services = [
+import { Globe, Smartphone, ShoppingBag, Code2 } from 'lucide-react'
+import { Reveal } from './Reveal'
+
+const SERVICES = [
   {
-    num:'01', icon:'◻', name:'Site Web Vitrine',
-    desc:"Un site professionnel qui reflète votre image de marque et capte l'attention de vos clients dès les premières secondes.",
-    tags:['Design','SEO','Responsive','Performance'],
+    icon: Globe,
+    title: 'Sites vitrine',
+    text: 'Sites web professionnels responsive, conformes RGPD, hébergés en France. SEO local inclus, livrés en 7 jours.',
+    starter: 'À partir de 990 €',
   },
   {
-    num:'02', icon:'◈', name:'E-Commerce',
-    desc:"Une boutique en ligne optimisée pour convertir vos visiteurs en clients, avec une expérience d'achat fluide et intuitive.",
-    tags:['Shopify','WooCommerce','Paiement sécurisé'],
+    icon: ShoppingBag,
+    title: 'E-commerce',
+    text: 'Boutiques en ligne complètes : catalogue, panier, paiement Stripe, gestion stocks et back-office sans complexité.',
+    starter: 'À partir de 2990 €',
   },
   {
-    num:'03', icon:'◉', name:'Application Mobile',
-    desc:"Une app iOS & Android native ou cross-platform qui engage vos utilisateurs et développe votre business sur mobile.",
-    tags:['iOS','Android','React Native'],
+    icon: Smartphone,
+    title: 'Applications mobiles',
+    text: 'Apps iOS et Android sur-mesure, avec back-office, notifications push, authentification, paiement intégré.',
+    starter: 'À partir de 4990 €',
+  },
+  {
+    icon: Code2,
+    title: 'Sur-mesure & SaaS',
+    text: 'Projets complexes : SaaS, dashboards, intégrations API, automatisation. Devis personnalisé sous 48h.',
+    starter: 'Sur devis',
   },
 ]
 
 export default function Services() {
   return (
-    <section id="services" style={{ padding:'120px 48px', background:'#0a0a0a' }}>
-      <style>{`.svc-card{transition:background .3s}.svc-card:hover{background:#1a1a18}`}</style>
-      <div style={{
-        fontFamily:'var(--font-dm-mono)', fontSize:11, letterSpacing:3,
-        textTransform:'uppercase', color:'#6b6b69', marginBottom:64,
-        display:'flex', alignItems:'center', gap:16,
-      }}>
-        <span style={{ display:'block', width:32, height:1, background:'#2e2e2c' }}/>
-        Services
-      </div>
+    <section id="services" className="border-b border-line dark:border-white/10">
+      <div className="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
+        <Reveal>
+          <span className="mx-auto mb-5 flex w-fit items-center gap-2 rounded-full border border-line px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-muted dark:border-white/15 dark:text-white/65">
+            Services
+          </span>
+          <h2 className="heading-section mx-auto max-w-3xl text-center text-[34px] text-ink dark:text-white md:text-[48px]">
+            Tout ce dont vous avez besoin pour exister en ligne.
+          </h2>
+        </Reveal>
 
-      <div style={{ display:'flex', alignItems:'flex-end', justifyContent:'space-between', marginBottom:80, flexWrap:'wrap', gap:24 }}>
-        <h2 style={{ fontFamily:'var(--font-bebas)', fontSize:'clamp(48px,6vw,80px)', lineHeight:1 }}>
-          Ce que nous <span style={{ color:'#6b6b69' }}>créons</span> pour vous
-        </h2>
-        <p style={{ maxWidth:280, fontSize:14, color:'#b0b0ae', lineHeight:1.7, fontWeight:300 }}>
-          Des solutions sur-mesure, pensées pour votre croissance et l'expérience de vos utilisateurs.
-        </p>
-      </div>
-
-      <div style={{ display:'grid', gridTemplateColumns:'repeat(3,1fr)', border:'1px solid #2e2e2c' }}>
-        {services.map((s, i) => (
-          <div key={i} className="svc-card"
-            style={{
-              padding:'48px 40px',
-              borderRight: i < 2 ? '1px solid #2e2e2c' : 'none',
-              position:'relative', overflow:'hidden',
-            }}
-          >
-            <span style={{ fontFamily:'var(--font-dm-mono)', fontSize:11, color:'#2e2e2c', letterSpacing:2, display:'block', marginBottom:32 }}>{s.num}</span>
-            <span style={{ fontSize:28, display:'block', marginBottom:24 }}>{s.icon}</span>
-            <h3 style={{ fontFamily:'var(--font-bebas)', fontSize:32, letterSpacing:1, marginBottom:16, lineHeight:1 }}>{s.name}</h3>
-            <p style={{ fontSize:14, color:'#b0b0ae', lineHeight:1.7, fontWeight:300, marginBottom:32 }}>{s.desc}</p>
-            <div style={{ display:'flex', flexWrap:'wrap', gap:8 }}>
-              {s.tags.map(t => (
-                <span key={t} style={{
-                  fontFamily:'var(--font-dm-mono)', fontSize:10, letterSpacing:'1.5px',
-                  textTransform:'uppercase', padding:'4px 10px',
-                  border:'1px solid #2e2e2c', color:'#6b6b69',
-                }}>{t}</span>
-              ))}
-            </div>
-          </div>
-        ))}
+        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          {SERVICES.map((service, i) => {
+            const Icon = service.icon
+            return (
+              <Reveal key={service.title} delay={(i % 4) * 0.08}>
+                <article className="card-bordered flex h-full flex-col p-7 transition-shadow hover:shadow-[0_4px_20px_rgba(0,0,0,0.04)] dark:hover:shadow-[0_4px_24px_rgba(0,0,0,0.4)]">
+                  <div className="mb-5 inline-flex h-11 w-11 items-center justify-center rounded-xl border border-line text-ink dark:border-white/15 dark:text-white">
+                    <Icon size={20} strokeWidth={1.7} />
+                  </div>
+                  <h3 className="text-[17px] font-semibold tracking-tight text-ink dark:text-white">{service.title}</h3>
+                  <p className="mt-2 flex-1 text-[14px] leading-relaxed text-muted dark:text-white/65">{service.text}</p>
+                  <div className="mt-5 text-[13px] font-medium text-ink dark:text-white">
+                    {service.starter}
+                  </div>
+                </article>
+              </Reveal>
+            )
+          })}
+        </div>
       </div>
     </section>
   )
