@@ -1,0 +1,349 @@
+{
+  "metadata": {
+    "title": "AR Intégration — Web- und App-Agentur in Lyon",
+    "description": "Web- und Mobile-Agentur in Lyon. Maßgeschneiderte Websites, iOS/Android-Apps, E-Commerce. DSGVO-konform, in Frankreich gehostet, schnelle Lieferung.",
+    "ogDescription": "Maßgeschneiderte Websites, iOS/Android-Apps, E-Commerce. DSGVO-konform, in Frankreich gehostet, schnelle Lieferung."
+  },
+  "header": {
+    "locationBadge": "Lyon",
+    "nav": {
+      "solutions": "Lösungen",
+      "services": "Leistungen",
+      "tarifs": "Preise",
+      "apropos": "Über uns",
+      "contact": "Kontakt"
+    },
+    "cta": "Angebot anfragen",
+    "menuOpen": "Menü öffnen",
+    "themeToLight": "Hellen Modus aktivieren",
+    "themeToDark": "Dunklen Modus aktivieren"
+  },
+  "hero": {
+    "badgeStatus": "Verfügbar — Antwort innerhalb 24h",
+    "h1": "Web- und Mobile-Apps, in Lyon entwickelt, für Ihre Kunden gedacht.",
+    "subtitle": "Websites, iOS/Android-Apps, maßgeschneiderter E-Commerce für KMU, Selbstständige und freie Berufe. DSGVO-konform, in Frankreich gehostet, schnelle Lieferung.",
+    "ctaPrimary": "Kostenloses Angebot anfragen",
+    "ctaSecondary": "Preise ansehen",
+    "trustHosting": "🇫🇷 Hosting in Frankreich",
+    "trustRgpd": "🔒 DSGVO by Design",
+    "trustDelivery": "⚡ Sites in 7 Tagen",
+    "trustAvailable": "📞 In 48h verfügbar"
+  },
+  "secteurs": {
+    "kicker": "Branchenlösungen",
+    "title": "Spezialisiert auf mehrere Branchen, achtsam Ihrer Tätigkeit.",
+    "subtitle": "3 dedizierte Branchen-Submarken mit integrierter Compliance (Gesundheits-DSGVO, Anwaltsgeheimnis, französisches Immobilienrecht). Für andere Branchen entwickeln wir die Lösung gemeinsam mit Ihnen.",
+    "medecins": {
+      "name": "Niedergelassene Ärzte",
+      "tagline": "Arzt-, Zahnarzt-, Physio-, Osteopathie-, Hebammenpraxen. DSGVO-konform für Gesundheitsdaten."
+    },
+    "avocats": {
+      "name": "Anwaltskanzleien",
+      "tagline": "Anwälte, Notare, Juristen. Mit Anwaltsgeheimnis kompatibel (RIN Art. 2)."
+    },
+    "immobilier": {
+      "name": "Immobilienagenturen",
+      "tagline": "Agenturen, Makler, Berater. Sync mit Branchensoftware + Hoguet-Gesetz konform."
+    },
+    "autre": {
+      "name": "Andere Branche?",
+      "tagline": "Restaurants, Handwerker, Coaches, E-Commerce, SaaS, Selbstständige. Wir lieben Herausforderungen."
+    },
+    "ctaExternal": "Dedizierte Seite ansehen",
+    "ctaInternal": "Angebot anfragen"
+  },
+  "services": {
+    "kicker": "Leistungen",
+    "title": "Alles, was Sie für Ihre Online-Präsenz brauchen.",
+    "vitrine": {
+      "title": "Showcase-Websites",
+      "text": "Professionelle responsive Websites, DSGVO-konform, in Frankreich gehostet. Lokales SEO inklusive, Lieferung in 7 Tagen.",
+      "starter": "Ab 690 €"
+    },
+    "ecom": {
+      "title": "E-Commerce",
+      "text": "Komplette Online-Shops: Katalog, Warenkorb, Stripe-Bezahlung, Bestandsverwaltung und Back-Office ohne Komplexität.",
+      "starter": "Ab 2.090 €"
+    },
+    "apps": {
+      "title": "Mobile Apps",
+      "text": "Maßgeschneiderte iOS- und Android-Apps mit Back-Office, Push-Benachrichtigungen, Authentifizierung, integrierter Bezahlung.",
+      "starter": "Ab 3.490 €"
+    },
+    "custom": {
+      "title": "Maßgeschneidert & SaaS",
+      "text": "Komplexe Projekte: SaaS, Dashboards, API-Integrationen, Automatisierung. Individuelles Angebot binnen 48h.",
+      "starter": "Auf Anfrage"
+    }
+  },
+  "process": {
+    "kicker": "Methode",
+    "title": "Ein einfacher, transparenter Prozess — keine Überraschungen.",
+    "step": "SCHRITT",
+    "step1": {
+      "title": "Erstgespräch (15 Min.)",
+      "text": "Wir telefonieren zu der Zeit, die Ihnen passt. Sie stellen Ihr Projekt, Ihre Bedürfnisse, Ihr Budget vor. Unverbindlich."
+    },
+    "step2": {
+      "title": "Individuelles Angebot (24h)",
+      "text": "Sie erhalten innerhalb 24 Stunden ein detailliertes Angebot und einen Entwurf Ihrer zukünftigen Website / App. Alles wird klar erklärt, ohne Fachjargon."
+    },
+    "step3": {
+      "title": "Entwicklung (1-8 Wochen)",
+      "text": "Wir programmieren Ihr Projekt mit Echtzeit-Zugang zum Fortschritt. Sie validieren jeden Schritt per E-Mail, ohne überflüssige Meetings."
+    },
+    "step4": {
+      "title": "Lieferung und Einführung (1h)",
+      "text": "Online. Wir besprechen alles gemeinsam, übergeben die Zugänge, sichern den Support für mindestens 3 Monate. Änderungen binnen 48 Werktagsstunden."
+    }
+  },
+  "stats": {
+    "kicker": "Verpflichtungen",
+    "title": "Zahlen, die verpflichten — kein Marketing.",
+    "stat1Label": "Durchschnittliche Lieferzeit für Showcase-Site",
+    "stat2Label": "Durchschnittlicher Lighthouse-Score auf gelieferten Sites",
+    "stat3Label": "Hosting in der EU, DSGVO-konform",
+    "stat4Label": "Maximale Bearbeitungsdauer für Änderungswünsche"
+  },
+  "tarifs": {
+    "kicker": "Preise",
+    "title": "Klare Angebote, keine Überraschungen.",
+    "launchBanner": "Launch-Preise <strong>−30 %</strong> · erste 10 Kunden · bis 31. März 2026",
+    "category": {
+      "vitrine": "Showcase-Websites",
+      "ecom": "E-Commerce",
+      "apps": "Mobile Apps"
+    },
+    "vatNotice": "Launch-Preis −30 % · MwSt. nicht anwendbar, Art. 293 B französisches Steuergesetzbuch",
+    "recommended": "Empfohlen",
+    "choose": "Dieses Angebot wählen",
+    "customQuote": "💼 Maßgeschneidertes Projekt, SaaS, Dashboard, API-Integration?",
+    "customQuoteLink": "Individuelles Angebot binnen 48h",
+    "plans": {
+      "siteEssentielle": {
+        "name": "Essentielle Präsenz",
+        "features": [
+          "Responsive 4-seitige Website",
+          "DSGVO-Kontaktformular",
+          "Lokales Google Maps SEO",
+          "1 Jahr Hosting in Frankreich inklusive",
+          "Lieferung in 7 Tagen"
+        ]
+      },
+      "siteConnecte": {
+        "name": "Connected Site",
+        "features": [
+          "Alles aus Essentielle",
+          "Online-Termin-Modul (Calendly)",
+          "Erweiterte Team-Seite",
+          "Kunden-Newsletter",
+          "3 Monate Wartung inklusive"
+        ]
+      },
+      "sitePremium": {
+        "name": "Premium Site",
+        "features": [
+          "Alles aus Connected",
+          "Sicherer Kundenbereich",
+          "Google Calendar-Sync",
+          "3 SEO-Artikel verfasst",
+          "6 Monate Wartung",
+          "2 monatliche Änderungen inklusive"
+        ]
+      },
+      "ecomStarter": {
+        "name": "E-Commerce Starter",
+        "features": [
+          "30-Produkte-Shop",
+          "Sichere Stripe-Zahlung",
+          "Komplettes Back-Office",
+          "Mobile-first",
+          "1 Jahr Hosting in Frankreich"
+        ]
+      },
+      "ecomPro": {
+        "name": "E-Commerce Pro",
+        "features": [
+          "Alles aus Starter",
+          "Unbegrenzter Katalog",
+          "Kundenbereich + Bestellverfolgung",
+          "Multi-Bezahlung (Karte, Apple Pay)",
+          "Automatisierter Newsletter",
+          "3 Monate Wartung"
+        ]
+      },
+      "appMvp": {
+        "name": "App MVP",
+        "features": [
+          "iOS + Android (Cross-Platform)",
+          "5 Hauptbildschirme",
+          "Auth + Back-Office",
+          "Veröffentlichung App Store + Play Store",
+          "Lieferung in 4 Wochen"
+        ]
+      },
+      "appPro": {
+        "name": "App Pro",
+        "features": [
+          "Alles aus MVP",
+          "Push-Benachrichtigungen",
+          "Integrierte Zahlungen",
+          "Custom API + Integrationen",
+          "Lieferung in 8 Wochen",
+          "6 Monate Wartung"
+        ]
+      }
+    }
+  },
+  "apropos": {
+    "kicker": "Über uns",
+    "title": "Ein Einzelunternehmer, der programmiert, in Lyon.",
+    "intro1": "AR Intégration ist <strong>Alain Rabie</strong>, Web- und Mobile-Entwickler in Villeurbanne (Lyon).",
+    "intro2": "Mein Prinzip: keine leeren Versprechen, kein Fachjargon, keine versteckten Kosten. Direktes Gespräch, klares Angebot, sauberer Code, schnelle Lieferung. Und dahinter ein erreichbarer Mensch für jede zukünftige Änderung.",
+    "infoSiret": "SIRET",
+    "infoStatut": "Status",
+    "infoStatutValue": "Selbstständig (MwSt. nicht anwendbar)",
+    "infoAdresse": "Adresse",
+    "infoAdresseValue": "Villeurbanne, Lyon (69100)",
+    "infoZone": "Einsatzgebiet",
+    "infoZoneValue": "Lyon, Metropolregion, Auvergne-Rhône-Alpes, ganz Frankreich (Videocall)",
+    "pillar1": {
+      "title": "Lyon, persönlich",
+      "text": "Einzelunternehmer in Villeurbanne (69100). Keine ausgelagerte Hotline, keine Offshore-Agentur: Sie sprechen direkt mit Ihrem Entwickler."
+    },
+    "pillar2": {
+      "title": "Maßgeschneiderter Code",
+      "text": "Kein WordPress / Wix / Shopify. Moderner Stack (Next.js, TypeScript, Tailwind) für schnelle, sichere, DSGVO-by-Design-Websites."
+    },
+    "pillar3": {
+      "title": "Langfristige Verpflichtung",
+      "text": "Keine 'Wegwerf-Site': Wartung 200€/Monat, Änderungen binnen 48h, keine Provision, 100% Eigentum an Code und Daten."
+    }
+  },
+  "faq": {
+    "kicker": "FAQ",
+    "title": "Häufig gestellte Fragen.",
+    "q1": "Wie viel kostet eine professionelle Website?",
+    "a1": "Eine professionelle Showcase-Website bei AR Intégration startet bei 690€ (Launch-Preis) für Essentielle Präsenz, 1.050€ für Connected mit Termin-Modul, 1.750€ für Premium mit Kundenbereich. Ein E-Commerce-Shop startet bei 2.090€, eine mobile App bei 3.490€.",
+    "q2": "Wie lange dauert die Lieferung meiner Website oder App?",
+    "a2": "7 Werktage für eine Showcase-Site Essentielle Präsenz. 10 Tage für Connected, 15 Tage für Premium. 4 bis 8 Wochen für eine mobile App je nach Komplexität. Vertragliche Verpflichtung.",
+    "q3": "Wird meine Site bei Google gut ranken?",
+    "a3": "Ja. Lokales SEO inklusive (Google My Business, Schema.org, Meta-Tags). Sites mit Next.js und statischem Export für Lighthouse-Scores 95+. Für fortgeschrittenes nationales SEO können maßgeschneiderte SEO-Artikel hinzugefügt werden.",
+    "q4": "Werden meine Daten in Frankreich gehostet?",
+    "a4": "Ja. OVHcloud Roubaix oder Strasbourg Hosting auf dedizierter Option (oder Vercel Edge Region Europa als Standard). DSGVO-by-Design-Konformität, keine US-Drittanbieter-Dienste (Google Analytics, Facebook Pixel) ohne Ihre ausdrückliche Zustimmung.",
+    "q5": "Kann ich meine Site selbst bearbeiten?",
+    "a5": "Nein, AR Intégration-Websites sind maßgeschneidert programmiert (kein WordPress-CMS) — das garantiert Geschwindigkeit, Sicherheit und DSGVO-Konformität. Änderungen werden von AR Intégration binnen 48 Werktagsstunden im Rahmen des Wartungsvertrags abgewickelt (200€/Monat nach den 3 inklusiven Monaten).",
+    "q6": "Arbeiten Sie mit bestimmten Branchen?",
+    "a6": "Ja. Drei dedizierte Branchen-Submarken mit integrierter Compliance: medecins.arintegration.fr (Gesundheits-DSGVO), avocats.arintegration.fr (Anwaltsgeheimnis), immobilier.arintegration.fr (Hoguet-Gesetz, Sync mit Branchensoftware). Und alle anderen Branchen auf arintegration.fr.",
+    "q7": "Was ist der Unterschied zu einer klassischen Agentur oder Wix / Shopify?",
+    "a7": "Wix und Shopify sind Mietplattformen: Sie besitzen den Code nicht, SEO ist begrenzt, DSGVO nicht garantiert. Eine klassische Agentur berechnet oft das 5-10-fache. AR Intégration: Sie besitzen 100%, performanten maßgeschneiderten Code, und einen direkt erreichbaren Menschen in Lyon.",
+    "q8": "Akzeptieren Sie Bezahlung mit Geschäftskreditkarte?",
+    "a8": "Ja. Karte, Überweisung, oder Ratenzahlung in 3 Raten ohne Gebühren auf Anfrage. 30% Anzahlung bei Bestellung, Restbetrag bei Lieferung."
+  },
+  "contact": {
+    "section": {
+      "kicker": "Kostenloses Angebot · Unverbindlich",
+      "h2": "Sprechen wir über Ihr Projekt.",
+      "subtitle": "Lassen Sie uns 15 Minuten telefonieren. Unverbindlich, ohne Schnickschnack. Antwort binnen <strong>24 Werktagsstunden</strong>.",
+      "phoneLabel": "Direktes Telefon",
+      "emailLabel": "E-Mail",
+      "addressLabel": "Adresse",
+      "addressValue": "Villeurbanne, Lyon — Auvergne-Rhône-Alpes, Frankreich"
+    },
+    "form": {
+      "labelNom": "Vor- und Nachname",
+      "labelEmail": "Berufliche E-Mail",
+      "labelTelephone": "Telefon",
+      "labelEntreprise": "Unternehmen (optional)",
+      "labelType": "Projekttyp",
+      "labelBudget": "Geplantes Budget",
+      "labelOffre": "Interessantes Angebot (optional)",
+      "labelCreneau": "Bevorzugte Anrufzeit",
+      "labelMessage": "Beschreiben Sie Ihr Projekt (optional)",
+      "labelIndicatif": "Ländervorwahl",
+      "messagePlaceholder": "Ein paar Zeilen zur Vorbereitung unseres Gesprächs…",
+      "phonePlaceholder": "667 75 58 50",
+      "choose": "Wählen…",
+      "submit": "Anfrage senden",
+      "submitting": "Senden…",
+      "rgpd": "Ich stimme zu, dass meine Daten ausschließlich verwendet werden, um mich im Rahmen dieser Anfrage zu kontaktieren. Ich kann meine DSGVO-Rechte jederzeit ausüben unter",
+      "phoneAlt": "Lieber direkt sprechen?",
+      "successTitle": "Danke.",
+      "successText": "Wir rufen Sie binnen 24 Werktagsstunden unter der angegebenen Nummer zurück.",
+      "errorFallback": "Ein Fehler ist aufgetreten. Versuchen Sie es erneut oder schreiben Sie an contact@arintegration.fr.",
+      "offreNone": "Kein spezifisches Angebot",
+      "types": {
+        "vitrine": "Showcase-Website",
+        "ecom": "E-Commerce-Site",
+        "app": "Mobile App (iOS/Android)",
+        "saas": "SaaS / Dashboard",
+        "refonte": "Redesign bestehender Site",
+        "autre": "Beratung / sonstiges"
+      },
+      "budgets": {
+        "b1": "< 1.500 €",
+        "b2": "1.500 € — 3.000 €",
+        "b3": "3.000 € — 6.000 €",
+        "b4": "6.000 € — 12.000 €",
+        "b5": "> 12.000 €",
+        "b6": "Gemeinsam zu definieren"
+      },
+      "creneaux": {
+        "c1": "Früher Morgen (vor 9 Uhr)",
+        "c2": "Mittags (12-14 Uhr)",
+        "c3": "Tagesende (17-19 Uhr)",
+        "c4": "Abend (nach 19 Uhr)"
+      },
+      "offres": {
+        "siteEssentielle": "Essentielle Site (690€ Launch)",
+        "siteConnecte": "Connected Site (1.050€ Launch)",
+        "sitePremium": "Premium Site (1.750€ Launch)",
+        "ecomStarter": "E-Commerce Starter (2.090€ Launch)",
+        "ecomPro": "E-Commerce Pro (3.490€ Launch)",
+        "appMvp": "App MVP (3.490€ Launch)",
+        "appPro": "App Pro (6.990€ Launch)",
+        "surMesure": "Maßgeschneidertes Projekt / SaaS",
+        "autre": "Weiß ich noch nicht"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Web- und Mobile-Agentur in Lyon. Websites, iOS/Android-Apps, maßgeschneiderter E-Commerce.",
+    "secteurs": {
+      "title": "Branchen",
+      "medecins": "Sites für Ärzte",
+      "avocats": "Sites für Anwälte",
+      "immo": "Sites für Immobilienagenturen",
+      "autre": "Andere Branche"
+    },
+    "services": {
+      "title": "Leistungen",
+      "vitrine": "Showcase-Sites",
+      "ecom": "E-Commerce",
+      "apps": "Mobile Apps",
+      "custom": "Maßgeschneidert / SaaS"
+    },
+    "ressources": {
+      "title": "Ressourcen",
+      "process": "Methode",
+      "apropos": "Über uns",
+      "faq": "FAQ",
+      "contact": "Kontakt"
+    },
+    "legal": {
+      "mentions": "Impressum",
+      "privacy": "Datenschutz",
+      "cgv": "AGB",
+      "rgpd": "DSGVO-Kontakt"
+    },
+    "copyright": "© 2026 AR Intégration · Konzipiert und programmiert in Lyon · Hosting in Frankreich"
+  },
+  "language": {
+    "fr": "Français",
+    "en": "English",
+    "es": "Español",
+    "de": "Deutsch",
+    "it": "Italiano",
+    "switcherLabel": "Sprache wechseln"
+  }
+}

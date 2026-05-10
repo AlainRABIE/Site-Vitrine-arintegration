@@ -1,12 +1,29 @@
 import type { MetadataRoute } from 'next'
+import { routing } from '@/i18n/routing'
+
+const ROUTES = ['', '/contact/', '/mentions-legales/', '/politique-confidentialite/']
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://arintegration.fr'
   const now = new Date()
-  return [
-    { url: `${base}/`, lastModified: now, changeFrequency: 'monthly', priority: 1 },
-    { url: `${base}/contact/`, lastModified: now, changeFrequency: 'yearly', priority: 0.8 },
-    { url: `${base}/mentions-legales/`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
-    { url: `${base}/politique-confidentialite/`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
-  ]
+  const entries: MetadataRoute.Sitemap = []
+
+  for (const route of ROUTES) {
+    const altLanguages = Object.fromEntries(
+      routing.locales.map((l) => [l, `${base}/${l}${route}`])
+    )
+    for (const locale of routing.locales) {
+      const priority = route === '' ? 1 : route === '/contact/' ? 0.8 : 0.3
+      const changeFrequency = route === '' ? 'monthly' as const : 'yearly' as const
+      entries.push({
+        url: `${base}/${locale}${route}`,
+        lastModified: now,
+        changeFrequency,
+        priority,
+        alternates: { languages: altLanguages },
+      })
+    }
+  }
+
+  return entries
 }

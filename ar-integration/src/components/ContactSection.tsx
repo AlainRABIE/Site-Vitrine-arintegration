@@ -1,8 +1,10 @@
 import { Suspense } from 'react'
+import { useTranslations } from 'next-intl'
 import ContactForm from './ContactForm'
 import { Reveal } from './Reveal'
 
 export default function ContactSection() {
+  const t = useTranslations('contact.section')
   return (
     <section id="contact" className="bg-ink-soft text-white">
       <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-28">
@@ -10,41 +12,41 @@ export default function ContactSection() {
           <div>
             <Reveal>
               <span className="inline-flex items-center gap-2 rounded-full border border-white/15 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-white/70">
-                Devis gratuit · Sans engagement
+                {t('kicker')}
               </span>
               <h2
                 className="heading-display mt-6 text-balance text-white"
                 style={{ fontSize: 'clamp(2rem, 4.6vw, 3.6rem)' }}
               >
-                Parlons de votre projet.
+                {t('h2')}
               </h2>
             </Reveal>
 
             <Reveal delay={0.1}>
-              <p className="mt-6 text-[17px] leading-relaxed text-white/70">
-                Échangeons 15 minutes par téléphone. Sans engagement, sans bullshit.
-                Réponse sous <strong className="text-white">24h ouvrées</strong>.
-              </p>
+              <p
+                className="mt-6 text-[17px] leading-relaxed text-white/70"
+                dangerouslySetInnerHTML={{ __html: t.raw('subtitle') as string }}
+              />
             </Reveal>
 
             <Reveal delay={0.2}>
               <div className="mt-10 space-y-5 border-t border-white/10 pt-8">
                 <div>
-                  <div className="text-[11px] font-semibold uppercase tracking-wider text-white/40">Téléphone direct</div>
+                  <div className="text-[11px] font-semibold uppercase tracking-wider text-white/40">{t('phoneLabel')}</div>
                   <a href="tel:+33667755850" className="mt-1 block text-[18px] font-semibold tracking-tight text-white transition-colors hover:text-white/80">
                     06 67 75 58 50
                   </a>
                 </div>
                 <div>
-                  <div className="text-[11px] font-semibold uppercase tracking-wider text-white/40">Email</div>
+                  <div className="text-[11px] font-semibold uppercase tracking-wider text-white/40">{t('emailLabel')}</div>
                   <a href="mailto:contact@arintegration.fr" className="mt-1 block text-[18px] font-semibold tracking-tight text-white transition-colors hover:text-white/80">
                     contact@arintegration.fr
                   </a>
                 </div>
                 <div>
-                  <div className="text-[11px] font-semibold uppercase tracking-wider text-white/40">Adresse</div>
+                  <div className="text-[11px] font-semibold uppercase tracking-wider text-white/40">{t('addressLabel')}</div>
                   <div className="mt-1 text-[15px] text-white/85">
-                    Villeurbanne, Lyon — Auvergne-Rhône-Alpes
+                    {t('addressValue')}
                   </div>
                 </div>
               </div>

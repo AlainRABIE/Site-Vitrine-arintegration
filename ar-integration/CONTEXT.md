@@ -8,76 +8,6 @@
 
 ## Journal des actions
 
-### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### [2026-04-15 12:01:29] `Bash`
-- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && ls src public`
-- Résultat : `public:
-App-Mobile.png
-Home.png
-Logo.png
-Site-vitrine.png
-image.png
-progression de peau.png
-recommandation.png
-routine.png
-
-src:
-app
-components
-data`
-### [2026-04-15 12:01:31] `Bash`
-- Commande : `find src -type f | head -50 && cat package.json`
-- Résultat : `src/app/projects/[slug]/page.tsx
-src/app/layout.tsx
-src/app/page.tsx
-src/app/globals.css
-src/components/Hero.tsx
-src/components/Navbar.tsx
-src/components/Pricing.tsx
-src/components/Cursor.tsx
-src/comp`
-### [2026-04-15 12:01:45] `Bash`
-- Commande : `npx tsc --noEmit 2>&1 | head -60`
-### [2026-04-15 12:01:48] `Bash`
-- Commande : `pwd && npx tsc --noEmit 2>&1 | head -60`
-- Résultat : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration`
-### [2026-04-15 12:02:17] `Bash`
-- Commande : `npm run build 2>&1 | tail -80`
-- Résultat : `> ar-integration@0.1.0 build
-> next build
-
-  ▲ Next.js 14.2.3
-
-   Creating an optimized production build ...
- ✓ Compiled successfully
-   Linting and checking validity of types ...
-   Collecting page d`
-### [2026-04-15 12:02:21] `Bash`
-- Commande : `ls public/ && cat src/app/layout.tsx`
-- Résultat : `App-Mobile.png
-Home.png
-Logo.png
-Site-vitrine.png
-image.png
-progression de peau.png
-recommandation.png
-routine.png
-import type { Metadata } from 'next'
-import { Bebas_Neue, DM_Sans, DM_Mono } from 'ne`
-### [2026-04-15 12:02:24] `Grep`
-### [2026-04-15 12:02:25] `Grep`
-### [2026-04-15 12:02:28] `Read`
-- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Contact.tsx`
-### [2026-04-15 12:03:03] `Bash`
-- Commande : `grep -l "name=" src/components/Contact.tsx; echo "---"; wc -l src/components/*.tsx src/app/**/*.tsx 2>&1`
-- Résultat : `---
-     103 src/components/Contact.tsx
-      62 src/components/Cursor.tsx
-      27 src/components/Footer.tsx
-      79 src/components/Hero.tsx
-      26 src/components/Marquee.tsx
-      60 src/componen`
-### [2026-04-15 12:03:08] `Read`
-- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/projects/[slug]/page.tsx`
 ### [2026-04-15 12:03:09] `Read`
 - Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/data/projects.ts`
 ### [2026-04-15 12:03:09] `Read`
@@ -341,3 +271,135 @@ Route (app)                              Size     First Load JS
 - Fichier modifié : `/Users/alainrabie/.claude/projects/-Users-alainrabie-Site-Vitrine-arintegration/memory/MEMORY.md`
 - Remplacement : `- [Alain Rabie — AR Intégration](user_profile.md) — Fondateur solo AR Intégratio…`
 ### [2026-05-10 11:31:08] `TodoWrite`
+### [2026-05-10 17:49:34] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/ar-integration && rm -f package-lock.json && npm install 2>&1 | tail -3`
+- Résultat : `  npm audit fix --force
+
+Run `npm audit` for details.`
+### [2026-05-10 17:49:40] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/i18n/routing.ts`
+### [2026-05-10 17:49:42] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/i18n/request.ts`
+### [2026-05-10 17:49:47] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/next.config.js`
+### [2026-05-10 17:49:52] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/next.config.js`
+### [2026-05-10 17:51:27] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/messages/fr.json`
+### [2026-05-10 17:52:50] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/messages/en.json`
+### [2026-05-10 17:54:28] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/messages/es.json`
+### [2026-05-10 17:56:05] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/messages/de.json`
+### [2026-05-10 17:57:36] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/messages/it.json`
+### [2026-05-10 17:58:44] `Bash`
+- Commande : `\
+mkdir -p src/app/\[locale\]/contact src/app/\[locale\]/mentions-legales src/app/\[locale\]/politique-confidentialite s`
+- Résultat : `[locale]
+contact
+globals.css
+layout.tsx
+mentions-legales
+opengraph-image.tsx
+page.tsx
+politique-confidentialite
+projects
+robots.ts
+sitemap.ts`
+### [2026-05-10 17:58:51] `TodoWrite`
+### [2026-05-10 17:59:26] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/[locale]/layout.tsx`
+### [2026-05-10 17:59:29] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/[locale]/page.tsx`
+### [2026-05-10 18:00:57] `Bash`
+- Commande : `\
+rm src/app/layout.tsx src/app/page.tsx && \
+rm -rf src/app/contact src/app/mentions-legales src/app/politique-confiden`
+- Résultat : `[locale]
+globals.css
+opengraph-image.tsx
+robots.ts
+sitemap.ts`
+### [2026-05-10 18:01:03] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/layout.tsx`
+### [2026-05-10 18:01:05] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/page.tsx`
+### [2026-05-10 18:01:25] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/LanguageSwitcher.tsx`
+### [2026-05-10 18:01:48] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Hero.tsx`
+### [2026-05-10 18:01:59] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Secteurs.tsx`
+### [2026-05-10 18:02:06] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Services.tsx`
+### [2026-05-10 18:02:12] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Process.tsx`
+### [2026-05-10 18:02:18] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Stats.tsx`
+### [2026-05-10 18:02:42] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Tarifs.tsx`
+### [2026-05-10 18:02:53] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Apropos.tsx`
+### [2026-05-10 18:03:01] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/FAQ.tsx`
+### [2026-05-10 18:03:09] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/ContactSection.tsx`
+### [2026-05-10 18:03:46] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/ContactForm.tsx`
+### [2026-05-10 18:04:03] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Footer.tsx`
+### [2026-05-10 18:04:09] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Header.tsx`
+### [2026-05-10 18:04:24] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/components/Header.tsx`
+### [2026-05-10 18:04:50] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/[locale]/contact/page.tsx`
+### [2026-05-10 18:05:13] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/[locale]/mentions-legales/page.tsx`
+### [2026-05-10 18:05:32] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/[locale]/politique-confidentialite/page.tsx`
+### [2026-05-10 18:05:48] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/[locale]/projects/[slug]/page.tsx`
+### [2026-05-10 18:05:56] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/sitemap.ts`
+### [2026-05-10 18:06:01] `Write`
+- Fichier écrit : `/Users/alainrabie/Site-Vitrine-arintegration/ar-integration/src/app/sitemap.ts`
+### [2026-05-10 18:06:08] `TodoWrite`
+### [2026-05-10 18:06:24] `Bash`
+- Commande : `rm -rf .next out && npm run build 2>&1 | tail -40`
+- Résultat : `Route (app)                              Size     First Load JS
+┌ ○ /                                    180 B          95.5 kB
+├ ○ /_not-found                          871 B            88 kB
+├ ● /[lo`
+### [2026-05-10 18:06:35] `Bash`
+- Commande : `echo "=== Verify root / redirect to /fr ===" && \
+ls out/ | head && echo && \
+echo "=== Sample of root redirect content `
+- Résultat : `=== Verify root / redirect to /fr ===
+404
+404.html
+App-Mobile.png
+Home.png
+Logo.png
+Site-vitrine.png
+_next
+de
+en
+es
+
+=== Sample of root redirect content ===
+<!DOCTYPE html><html id="__next_error__"><h`
+### [2026-05-10 18:06:44] `Bash`
+- Commande : `grep -oE "Web &amp; mobile apps|designed in Lyon" out/en/index.html | head -2 && \
+echo && \
+echo "=== EN page metadata `
+- Résultat : `Web &amp; mobile apps
+designed in Lyon
+
+=== EN page metadata title ===
+<title>AR Intégration — Web &amp; mobile app agency in Lyon</title>
+
+=== Sitemap content sample ===
+<?xml version="1.0" encoding=`

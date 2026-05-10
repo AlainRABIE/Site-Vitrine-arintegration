@@ -1,32 +1,5 @@
-import Link from 'next/link'
-
-const COL_SECTEURS = [
-  { label: 'Sites pour médecins', href: 'https://medecins.arintegration.fr', external: true },
-  { label: "Sites pour avocats", href: 'https://avocats.arintegration.fr', external: true },
-  { label: 'Sites pour agences immo', href: 'https://immobilier.arintegration.fr', external: true },
-  { label: 'Autre secteur', href: '/#contact' },
-]
-
-const COL_SERVICES = [
-  { label: 'Sites vitrine', href: '/#tarifs' },
-  { label: 'E-commerce', href: '/#tarifs' },
-  { label: 'Applications mobiles', href: '/#tarifs' },
-  { label: 'Sur-mesure / SaaS', href: '/#contact?offre=sur-mesure' },
-]
-
-const COL_RESSOURCES = [
-  { label: 'Méthode', href: '/#process' },
-  { label: 'À propos', href: '/#apropos' },
-  { label: 'FAQ', href: '/#faq' },
-  { label: 'Contact', href: '/#contact' },
-]
-
-const COL_LEGAL = [
-  { label: 'Mentions légales', href: '/mentions-legales' },
-  { label: 'Politique de confidentialité', href: '/politique-confidentialite' },
-  { label: 'CGV', href: '/mentions-legales#cgv' },
-  { label: 'Contact RGPD', href: 'mailto:contact@arintegration.fr' },
-]
+import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/routing'
 
 function Column({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -62,6 +35,36 @@ function FooterLink({ href, children, external }: { href: string; children: Reac
 }
 
 export default function Footer() {
+  const t = useTranslations('footer')
+
+  const COL_SECTEURS = [
+    { label: t('secteurs.medecins'), href: 'https://medecins.arintegration.fr', external: true },
+    { label: t('secteurs.avocats'), href: 'https://avocats.arintegration.fr', external: true },
+    { label: t('secteurs.immo'), href: 'https://immobilier.arintegration.fr', external: true },
+    { label: t('secteurs.autre'), href: '/#contact' },
+  ]
+
+  const COL_SERVICES = [
+    { label: t('services.vitrine'), href: '/#tarifs' },
+    { label: t('services.ecom'), href: '/#tarifs' },
+    { label: t('services.apps'), href: '/#tarifs' },
+    { label: t('services.custom'), href: '/#contact?offre=sur-mesure' },
+  ]
+
+  const COL_RESSOURCES = [
+    { label: t('ressources.process'), href: '/#process' },
+    { label: t('ressources.apropos'), href: '/#apropos' },
+    { label: t('ressources.faq'), href: '/#faq' },
+    { label: t('ressources.contact'), href: '/#contact' },
+  ]
+
+  const COL_LEGAL = [
+    { label: t('legal.mentions'), href: '/mentions-legales' },
+    { label: t('legal.privacy'), href: '/politique-confidentialite' },
+    { label: t('legal.cgv'), href: '/mentions-legales#cgv' },
+    { label: t('legal.rgpd'), href: 'mailto:contact@arintegration.fr' },
+  ]
+
   return (
     <footer className="bg-black text-white">
       <div className="mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
@@ -71,7 +74,7 @@ export default function Footer() {
               AR Intégration
             </Link>
             <p className="mt-5 max-w-xs text-[14px] leading-relaxed text-white/70">
-              Agence web et mobile à Lyon. Sites internet, applications iOS/Android, e-commerce sur-mesure.
+              {t('tagline')}
             </p>
             <div className="mt-6 space-y-1.5 text-[13px] text-white/55">
               <div>SIRET&nbsp;: 102 520 624 00010</div>
@@ -85,7 +88,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <Column title="Secteurs">
+          <Column title={t('secteurs.title')}>
             {COL_SECTEURS.map((item) => (
               <FooterLink key={item.label} href={item.href} external={item.external}>
                 {item.label}
@@ -93,7 +96,7 @@ export default function Footer() {
             ))}
           </Column>
 
-          <Column title="Services">
+          <Column title={t('services.title')}>
             {COL_SERVICES.map((item) => (
               <FooterLink key={item.label} href={item.href}>
                 {item.label}
@@ -101,7 +104,7 @@ export default function Footer() {
             ))}
           </Column>
 
-          <Column title="Ressources">
+          <Column title={t('ressources.title')}>
             {COL_RESSOURCES.map((item) => (
               <FooterLink key={item.label} href={item.href}>
                 {item.label}
@@ -113,17 +116,13 @@ export default function Footer() {
         <div className="mt-12 grid gap-6 border-t border-white/10 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex flex-wrap gap-6">
             {COL_LEGAL.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-[12.5px] text-white/55 transition-colors hover:text-white"
-              >
-                {item.label}
-              </a>
+              item.href.startsWith('mailto:')
+                ? <a key={item.label} href={item.href} className="text-[12.5px] text-white/55 transition-colors hover:text-white">{item.label}</a>
+                : <Link key={item.label} href={item.href} className="text-[12.5px] text-white/55 transition-colors hover:text-white">{item.label}</Link>
             ))}
           </div>
           <div className="text-[12.5px] text-white/45">
-            © 2026 AR Intégration · Conçu et codé à Lyon · Hébergement France
+            {t('copyright')}
           </div>
         </div>
       </div>

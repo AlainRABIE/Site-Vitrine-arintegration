@@ -1,0 +1,349 @@
+{
+  "metadata": {
+    "title": "AR Intégration — Web & mobile app agency in Lyon",
+    "description": "Web and mobile agency in Lyon. Custom websites, iOS/Android apps, e-commerce. GDPR compliant, France-hosted, fast delivery.",
+    "ogDescription": "Custom websites, iOS/Android apps, e-commerce. GDPR compliant, France-hosted, fast delivery."
+  },
+  "header": {
+    "locationBadge": "Lyon",
+    "nav": {
+      "solutions": "Solutions",
+      "services": "Services",
+      "tarifs": "Pricing",
+      "apropos": "About",
+      "contact": "Contact"
+    },
+    "cta": "Get a quote",
+    "menuOpen": "Open menu",
+    "themeToLight": "Switch to light mode",
+    "themeToDark": "Switch to dark mode"
+  },
+  "hero": {
+    "badgeStatus": "Available — reply within 24h",
+    "h1": "Web & mobile apps, designed in Lyon, built for your customers.",
+    "subtitle": "Websites, iOS/Android mobile apps, custom e-commerce for SMBs, freelancers and liberal professions. GDPR compliant, hosted in France, delivered fast.",
+    "ctaPrimary": "Request a free quote",
+    "ctaSecondary": "See pricing",
+    "trustHosting": "🇫🇷 France hosting",
+    "trustRgpd": "🔒 GDPR by design",
+    "trustDelivery": "⚡ Sites in 7 days",
+    "trustAvailable": "📞 Available within 48h"
+  },
+  "secteurs": {
+    "kicker": "Industry solutions",
+    "title": "Specialized in several industries, attentive to your activity.",
+    "subtitle": "3 industry sub-brands with built-in compliance (health GDPR, legal privilege, French real-estate law). For other sectors, we build the solution with you.",
+    "medecins": {
+      "name": "Medical practices",
+      "tagline": "GPs, dentists, physios, osteopaths, midwives. Health-grade GDPR compliance."
+    },
+    "avocats": {
+      "name": "Law firms",
+      "tagline": "Lawyers, notaries, jurists. Compatible with French Bar professional secrecy (RIN art. 2)."
+    },
+    "immobilier": {
+      "name": "Real-estate agencies",
+      "tagline": "Agencies, brokers, advisors. Sync with your business software + Hoguet law compliant."
+    },
+    "autre": {
+      "name": "Other industry?",
+      "tagline": "Restaurants, craftsmen, coaches, e-commerce, SaaS, freelancers. We love a challenge."
+    },
+    "ctaExternal": "Visit dedicated site",
+    "ctaInternal": "Get a quote"
+  },
+  "services": {
+    "kicker": "Services",
+    "title": "Everything you need to exist online.",
+    "vitrine": {
+      "title": "Showcase websites",
+      "text": "Professional responsive websites, GDPR compliant, hosted in France. Local SEO included, delivered in 7 days.",
+      "starter": "From €690"
+    },
+    "ecom": {
+      "title": "E-commerce",
+      "text": "Full online stores: catalog, cart, Stripe payment, inventory and back-office without complexity.",
+      "starter": "From €2,090"
+    },
+    "apps": {
+      "title": "Mobile apps",
+      "text": "Custom iOS and Android apps with back-office, push notifications, authentication, integrated payment.",
+      "starter": "From €3,490"
+    },
+    "custom": {
+      "title": "Custom & SaaS",
+      "text": "Complex projects: SaaS, dashboards, API integrations, automation. Tailored quote within 48h.",
+      "starter": "On request"
+    }
+  },
+  "process": {
+    "kicker": "Method",
+    "title": "A simple, transparent process — no surprises.",
+    "step": "STEP",
+    "step1": {
+      "title": "Discovery call (15 min)",
+      "text": "We talk by phone at the time that suits you. You present your project, your needs, your budget. No commitment."
+    },
+    "step2": {
+      "title": "Tailored proposal (24h)",
+      "text": "You receive a detailed quote and a mockup of your future site / app within 24h. Everything is explained clearly, without technical jargon."
+    },
+    "step3": {
+      "title": "Development (1-8 weeks)",
+      "text": "We code your project with real-time access to progress. You validate each step by email, no useless meetings."
+    },
+    "step4": {
+      "title": "Launch and onboarding (1h)",
+      "text": "Live. We review together, hand over access, and provide support for at least 3 months. Updates within 48 business hours."
+    }
+  },
+  "stats": {
+    "kicker": "Commitments",
+    "title": "Numbers that commit, not marketing.",
+    "stat1Label": "Average delivery time for a showcase site",
+    "stat2Label": "Average Lighthouse score on delivered sites",
+    "stat3Label": "European Union hosting, GDPR compliant",
+    "stat4Label": "Max time to handle a modification request"
+  },
+  "tarifs": {
+    "kicker": "Pricing",
+    "title": "Clear offers, no surprises.",
+    "launchBanner": "Launch pricing <strong>−30%</strong> · first 10 clients · until March 31, 2026",
+    "category": {
+      "vitrine": "Showcase websites",
+      "ecom": "E-commerce",
+      "apps": "Mobile apps"
+    },
+    "vatNotice": "Launch pricing −30% · VAT not applicable, art. 293 B French Tax Code",
+    "recommended": "Recommended",
+    "choose": "Choose this offer",
+    "customQuote": "💼 Custom project, SaaS, dashboard, API integration?",
+    "customQuoteLink": "Tailored quote within 48h",
+    "plans": {
+      "siteEssentielle": {
+        "name": "Essential Presence",
+        "features": [
+          "Responsive 4-page site",
+          "GDPR contact form",
+          "Local Google Maps SEO",
+          "1 year France hosting included",
+          "Delivered in 7 days"
+        ]
+      },
+      "siteConnecte": {
+        "name": "Connected Site",
+        "features": [
+          "Everything in Essential",
+          "Online booking module (Calendly)",
+          "Extended team page",
+          "Client newsletter",
+          "3 months of maintenance included"
+        ]
+      },
+      "sitePremium": {
+        "name": "Premium Site",
+        "features": [
+          "Everything in Connected",
+          "Secure client area",
+          "Google Calendar sync",
+          "3 SEO articles written",
+          "6 months of maintenance",
+          "2 monthly modifications included"
+        ]
+      },
+      "ecomStarter": {
+        "name": "E-commerce Starter",
+        "features": [
+          "30-product store",
+          "Secure Stripe payment",
+          "Full back-office",
+          "Mobile-first",
+          "1 year France hosting"
+        ]
+      },
+      "ecomPro": {
+        "name": "E-commerce Pro",
+        "features": [
+          "Everything in Starter",
+          "Unlimited catalog",
+          "Customer area + order tracking",
+          "Multi-payment (cards, Apple Pay)",
+          "Automated newsletter",
+          "3 months of maintenance"
+        ]
+      },
+      "appMvp": {
+        "name": "App MVP",
+        "features": [
+          "iOS + Android (cross-platform)",
+          "5 main screens",
+          "Auth + back-office",
+          "App Store + Play Store publishing",
+          "Delivered in 4 weeks"
+        ]
+      },
+      "appPro": {
+        "name": "App Pro",
+        "features": [
+          "Everything in MVP",
+          "Push notifications",
+          "Integrated payments",
+          "Custom API + integrations",
+          "Delivered in 8 weeks",
+          "6 months of maintenance"
+        ]
+      }
+    }
+  },
+  "apropos": {
+    "kicker": "About",
+    "title": "An indie studio that codes, in Lyon.",
+    "intro1": "AR Intégration is <strong>Alain Rabie</strong>, web and mobile developer based in Villeurbanne (Lyon).",
+    "intro2": "My principle: no empty promises, no jargon, no hidden costs. Direct conversation, clear quote, clean code, fast delivery. And behind it, a real human you can reach for every future change.",
+    "infoSiret": "SIRET",
+    "infoStatut": "Status",
+    "infoStatutValue": "Sole proprietor (VAT not applicable)",
+    "infoAdresse": "Address",
+    "infoAdresseValue": "Villeurbanne, Lyon (69100)",
+    "infoZone": "Service area",
+    "infoZoneValue": "Lyon, metropolitan area, Auvergne-Rhône-Alpes, all of France (remote)",
+    "pillar1": {
+      "title": "Lyon, in person",
+      "text": "Indie studio based in Villeurbanne (69100). No outsourced hotline, no offshore agency: you talk directly with your developer."
+    },
+    "pillar2": {
+      "title": "Custom code",
+      "text": "No WordPress / Wix / Shopify. Modern stack (Next.js, TypeScript, Tailwind) for fast, secure, GDPR-by-design websites."
+    },
+    "pillar3": {
+      "title": "Long-term commitment",
+      "text": "No 'disposable site': maintenance €200/month, modifications within 48h, no commission, you own 100% of your code and data."
+    }
+  },
+  "faq": {
+    "kicker": "FAQ",
+    "title": "Frequently asked questions.",
+    "q1": "How much does a professional website cost?",
+    "a1": "A professional showcase site at AR Intégration starts at €690 (launch pricing) for Essential Presence, €1,050 for Connected with booking module, €1,750 for Premium with client area. An e-commerce store starts at €2,090, a mobile app at €3,490.",
+    "q2": "How long to deliver my website or app?",
+    "a2": "7 business days for an Essential Presence showcase site. 10 days for Connected, 15 days for Premium. 4 to 8 weeks for a mobile app depending on complexity. Contractual commitment.",
+    "q3": "Will my site rank well on Google?",
+    "a3": "Yes. Local SEO included (Google My Business, Schema.org, meta tags). Sites built with Next.js and static export for Lighthouse scores 95+. For advanced national SEO, custom SEO articles can be added.",
+    "q4": "Will my data be hosted in France?",
+    "a4": "Yes. OVHcloud Roubaix or Strasbourg hosting on dedicated option (or Vercel Edge Europe region as standard). GDPR-by-design compliance, no third-party US service (Google Analytics, Facebook Pixel) without your explicit consent.",
+    "q5": "Can I edit my site myself?",
+    "a5": "No, AR Intégration sites are custom-coded (no WordPress-style CMS) — that's what guarantees their speed, security and GDPR compliance. Modifications are handled by AR Intégration within 48 business hours under the maintenance contract (€200/month after the 3 months included).",
+    "q6": "Do you work with specific industries?",
+    "a6": "Yes. Three dedicated industry sub-brands with built-in compliance: medecins.arintegration.fr (health GDPR, HDS mention), avocats.arintegration.fr (professional secrecy, French Bar rules), immobilier.arintegration.fr (Hoguet law, business software sync). And all other sectors on arintegration.fr.",
+    "q7": "What's the difference vs a classic agency or Wix / Shopify?",
+    "a7": "Wix and Shopify are tenant platforms: you don't own the code, SEO is limited, GDPR is not guaranteed. A classic agency often charges 5-10x more. AR Intégration: you own 100%, performant custom code, and a real human reachable directly in Lyon.",
+    "q8": "Do you accept business credit card payment?",
+    "a8": "Yes. Card, transfer, or installment plan in 3 installments without fees on request. 30% deposit at order, balance at delivery."
+  },
+  "contact": {
+    "section": {
+      "kicker": "Free quote · No commitment",
+      "h2": "Let's talk about your project.",
+      "subtitle": "Let's chat 15 minutes by phone. No commitment, no bullshit. Reply within <strong>24 business hours</strong>.",
+      "phoneLabel": "Direct phone",
+      "emailLabel": "Email",
+      "addressLabel": "Address",
+      "addressValue": "Villeurbanne, Lyon — Auvergne-Rhône-Alpes, France"
+    },
+    "form": {
+      "labelNom": "Full name",
+      "labelEmail": "Professional email",
+      "labelTelephone": "Phone",
+      "labelEntreprise": "Company (optional)",
+      "labelType": "Project type",
+      "labelBudget": "Estimated budget",
+      "labelOffre": "Interested offer (optional)",
+      "labelCreneau": "Preferred call slot",
+      "labelMessage": "Describe your project (optional)",
+      "labelIndicatif": "Country code",
+      "messagePlaceholder": "A few lines to prepare our conversation…",
+      "phonePlaceholder": "667 75 58 50",
+      "choose": "Choose…",
+      "submit": "Send my request",
+      "submitting": "Sending…",
+      "rgpd": "I agree that my data will be used only to contact me back regarding this request. I can exercise my GDPR rights at any time at",
+      "phoneAlt": "Prefer to talk directly?",
+      "successTitle": "Thank you.",
+      "successText": "We'll call you back within 24 business hours at the number you provided.",
+      "errorFallback": "An error occurred. Please retry or write to contact@arintegration.fr.",
+      "offreNone": "No specific offer",
+      "types": {
+        "vitrine": "Showcase website",
+        "ecom": "E-commerce site",
+        "app": "Mobile app (iOS/Android)",
+        "saas": "SaaS / dashboard",
+        "refonte": "Existing site redesign",
+        "autre": "Consulting / other"
+      },
+      "budgets": {
+        "b1": "< €1,500",
+        "b2": "€1,500 — €3,000",
+        "b3": "€3,000 — €6,000",
+        "b4": "€6,000 — €12,000",
+        "b5": "> €12,000",
+        "b6": "To define together"
+      },
+      "creneaux": {
+        "c1": "Early morning (before 9am)",
+        "c2": "Lunchtime (12-2pm)",
+        "c3": "End of day (5-7pm)",
+        "c4": "Evening (after 7pm)"
+      },
+      "offres": {
+        "siteEssentielle": "Essential Site (€690 launch)",
+        "siteConnecte": "Connected Site (€1,050 launch)",
+        "sitePremium": "Premium Site (€1,750 launch)",
+        "ecomStarter": "E-commerce Starter (€2,090 launch)",
+        "ecomPro": "E-commerce Pro (€3,490 launch)",
+        "appMvp": "App MVP (€3,490 launch)",
+        "appPro": "App Pro (€6,990 launch)",
+        "surMesure": "Custom project / SaaS",
+        "autre": "I don't know yet"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Web and mobile agency in Lyon. Websites, iOS/Android apps, custom e-commerce.",
+    "secteurs": {
+      "title": "Industries",
+      "medecins": "Sites for doctors",
+      "avocats": "Sites for lawyers",
+      "immo": "Sites for real-estate agencies",
+      "autre": "Other industry"
+    },
+    "services": {
+      "title": "Services",
+      "vitrine": "Showcase sites",
+      "ecom": "E-commerce",
+      "apps": "Mobile apps",
+      "custom": "Custom / SaaS"
+    },
+    "ressources": {
+      "title": "Resources",
+      "process": "Method",
+      "apropos": "About",
+      "faq": "FAQ",
+      "contact": "Contact"
+    },
+    "legal": {
+      "mentions": "Legal notice",
+      "privacy": "Privacy policy",
+      "cgv": "Terms",
+      "rgpd": "GDPR contact"
+    },
+    "copyright": "© 2026 AR Intégration · Designed and coded in Lyon · France hosting"
+  },
+  "language": {
+    "fr": "Français",
+    "en": "English",
+    "es": "Español",
+    "de": "Deutsch",
+    "it": "Italiano",
+    "switcherLabel": "Change language"
+  }
+}

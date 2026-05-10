@@ -1,13 +1,26 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
+import { setRequestLocale } from 'next-intl/server'
+import { Link } from '@/i18n/routing'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { routing } from '@/i18n/routing'
 
-export const metadata: Metadata = {
-  title: 'Mentions légales',
-  description: 'Mentions légales du site arintegration.fr (éditeur AR Intégration, Alain Rabie).',
-  alternates: { canonical: '/mentions-legales/' },
-  robots: { index: true, follow: true },
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }))
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  return {
+    title: 'Mentions légales',
+    description: 'Mentions légales du site arintegration.fr (éditeur AR Intégration, Alain Rabie). Texte juridique en français — droit applicable français.',
+    alternates: { canonical: `/${locale}/mentions-legales/` },
+    robots: { index: true, follow: true },
+  }
 }
 
 function Section({ title, children, id }: { title: string; children: React.ReactNode; id?: string }) {
@@ -30,7 +43,14 @@ function Row({ label, value }: { label: string; value: React.ReactNode }) {
   )
 }
 
-export default function MentionsLegales() {
+export default async function MentionsLegales({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  setRequestLocale(locale)
+
   return (
     <>
       <Header />
@@ -47,8 +67,8 @@ export default function MentionsLegales() {
             Mentions légales
           </h1>
           <p className="mt-5 text-[15.5px] leading-relaxed text-muted dark:text-white/70">
-            Conformes à la loi pour la confiance dans l'économie numérique (LCEN) du 21 juin 2004
-            et au Règlement Général sur la Protection des Données (RGPD).
+            Texte juridique en français — droit applicable français (LCEN du 21 juin 2004 et RGPD UE 2016/679).
+            {locale !== 'fr' && ' This legal page is kept in French as the governing language for this French legal entity.'}
           </p>
 
           <div className="mt-10">
@@ -73,37 +93,17 @@ export default function MentionsLegales() {
               <Row label="Hébergeur" value="Vercel Inc. — région France (Paris, eu-west)" />
               <Row label="Adresse" value="440 N Barranca Ave #4133, Covina, CA 91723, USA" />
               <Row label="Données serveur" value="Région Europe uniquement (Vercel Edge Network)" />
-              <p className="pt-2">
-                Pour un hébergement souverain dédié (OVHcloud Roubaix ou Strasbourg) avec
-                engagement contractuel de localisation France, contactez-nous : option disponible
-                sur devis.
-              </p>
             </Section>
 
             <Section title="Propriété intellectuelle">
               <p>
-                L'ensemble des éléments présents sur le site (textes, images, mises en page, code
-                source) est la propriété d'AR Intégration ou de partenaires l'ayant autorisé à les
-                diffuser. Toute reproduction sans autorisation est interdite.
-              </p>
-            </Section>
-
-            <Section title="Cookies">
-              <p>
-                Ce site utilise uniquement des cookies techniques nécessaires à son bon fonctionnement.
-                Aucun cookie publicitaire ni de mesure d'audience tierce n'est déposé sans votre
-                consentement explicite.
+                L'ensemble des éléments présents sur le site (textes, images, mises en page, code source) est la propriété d'AR Intégration. Toute reproduction sans autorisation est interdite.
               </p>
             </Section>
 
             <Section title="Conditions générales de vente" id="cgv">
               <p>
-                Les prestations d'AR Intégration sont régies par des conditions générales de vente
-                spécifiques transmises lors de l'établissement du devis. Aucune commande n'est
-                engagée sans signature préalable du devis et acceptation explicite des CGV.
-              </p>
-              <p>
-                <strong className="text-ink dark:text-white">Délais :</strong> 7 à 15 jours ouvrés selon offre site vitrine. 4 à 8 semaines pour une application mobile. À compter du paiement de l'acompte.{' '}
+                <strong className="text-ink dark:text-white">Délais :</strong> 7 à 15 jours ouvrés selon offre site vitrine. 4 à 8 semaines pour application mobile.{' '}
                 <strong className="text-ink dark:text-white">Acompte :</strong> 30% à la commande, solde à la livraison.{' '}
                 <strong className="text-ink dark:text-white">Paiement :</strong> CB, virement, ou prélèvement échelonné en 3 fois sans frais.{' '}
                 <strong className="text-ink dark:text-white">Garantie :</strong> 3 mois de support inclus minimum, 6 mois pour offres Premium.
@@ -112,15 +112,13 @@ export default function MentionsLegales() {
 
             <Section title="Droit applicable">
               <p>
-                Les présentes mentions sont soumises au droit français. Tout litige relatif à
-                l'interprétation ou l'exécution sera de la compétence exclusive des tribunaux
-                français du ressort de Lyon.
+                Les présentes mentions sont soumises au droit français. Tout litige relatif à l'interprétation ou l'exécution sera de la compétence exclusive des tribunaux français du ressort de Lyon.
               </p>
             </Section>
 
             <Section title="Contact">
               <p>
-                Pour toute question relative à ces mentions légales :{' '}
+                Pour toute question :{' '}
                 <a href="mailto:contact@arintegration.fr" className="font-medium text-ink underline-offset-4 hover:underline dark:text-white">
                   contact@arintegration.fr
                 </a>{' '}

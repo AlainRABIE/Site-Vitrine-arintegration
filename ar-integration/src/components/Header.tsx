@@ -1,21 +1,24 @@
 'use client'
 
-import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import { useTranslations } from 'next-intl'
 import { Menu, X } from 'lucide-react'
+import { Link } from '@/i18n/routing'
 import ThemeToggle from './ThemeToggle'
-
-const NAV = [
-  { label: 'Solutions', href: '/#secteurs' },
-  { label: 'Services', href: '/#services' },
-  { label: 'Tarifs', href: '/#tarifs' },
-  { label: 'À propos', href: '/#apropos' },
-  { label: 'Contact', href: '/#contact' },
-]
+import LanguageSwitcher from './LanguageSwitcher'
 
 export default function Header() {
+  const t = useTranslations('header')
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+
+  const NAV = [
+    { label: t('nav.solutions'), href: '/#secteurs' },
+    { label: t('nav.services'), href: '/#services' },
+    { label: t('nav.tarifs'), href: '/#tarifs' },
+    { label: t('nav.apropos'), href: '/#apropos' },
+    { label: t('nav.contact'), href: '/#contact' },
+  ]
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8)
@@ -43,7 +46,7 @@ export default function Header() {
             AR Intégration
           </span>
           <span className="hidden rounded-full border border-line px-2 py-0.5 text-[11px] font-medium text-muted dark:border-white/15 dark:text-white/70 sm:inline-block">
-            Lyon
+            {t('locationBadge')}
           </span>
         </Link>
 
@@ -60,13 +63,14 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <LanguageSwitcher />
           <ThemeToggle />
           <Link href="/#contact" className="btn-primary !h-10 !px-4 text-[13px] hidden sm:inline-flex">
-            Demander un devis
+            {t('cta')}
           </Link>
           <button
             type="button"
-            aria-label="Menu"
+            aria-label={t('menuOpen')}
             onClick={() => setOpen((v) => !v)}
             className="flex h-10 w-10 items-center justify-center rounded-full border border-line text-ink dark:border-white/15 dark:text-white md:hidden"
           >

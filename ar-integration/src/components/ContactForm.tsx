@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { useTranslations, useLocale } from 'next-intl'
 import { useSearchParams } from 'next/navigation'
 import { CheckCircle2, AlertCircle, Loader2 } from 'lucide-react'
 import { countries } from '@/data/countries'
@@ -11,46 +12,26 @@ const EMAILJS_SERVICE_ID = 'service_8ml6h64'
 const EMAILJS_TEMPLATE_ID = 'template_w4kjqcl'
 const EMAILJS_PUBLIC_KEY = 'MLPRubrisJiF2a_lW'
 
-const TYPES_PROJET = [
-  'Site vitrine',
-  'Site e-commerce',
-  'Application mobile (iOS/Android)',
-  'SaaS / dashboard',
-  'Refonte de site existant',
-  'Conseil / autre',
-]
+const TYPE_KEYS = ['vitrine', 'ecom', 'app', 'saas', 'refonte', 'autre'] as const
+const BUDGET_KEYS = ['b1', 'b2', 'b3', 'b4', 'b5', 'b6'] as const
+const CRENEAU_KEYS = ['c1', 'c2', 'c3', 'c4'] as const
+const OFFRE_KEYS = ['siteEssentielle', 'siteConnecte', 'sitePremium', 'ecomStarter', 'ecomPro', 'appMvp', 'appPro', 'surMesure', 'autre'] as const
 
-const BUDGETS = [
-  '< 1 500 €',
-  '1 500 € — 3 000 €',
-  '3 000 € — 6 000 €',
-  '6 000 € — 12 000 €',
-  '> 12 000 €',
-  'À déterminer ensemble',
-]
-
-const OFFRES = [
-  { value: 'site-essentielle', label: 'Site Essentielle (690€ lancement)' },
-  { value: 'site-connecte', label: 'Site Connecté (1050€ lancement)' },
-  { value: 'site-premium', label: 'Site Premium (1750€ lancement)' },
-  { value: 'ecom-starter', label: 'E-commerce Starter (2090€ lancement)' },
-  { value: 'ecom-pro', label: 'E-commerce Pro (3490€ lancement)' },
-  { value: 'app-mvp', label: 'App MVP (3490€ lancement)' },
-  { value: 'app-pro', label: 'App Pro (6990€ lancement)' },
-  { value: 'sur-mesure', label: 'Projet sur-mesure / SaaS' },
-  { value: 'autre', label: 'Je ne sais pas encore' },
-]
-
-const CRENEAUX = [
-  'Matin tôt (avant 9h)',
-  'Midi (12h-14h)',
-  'Fin de journée (17h-19h)',
-  'Soir (après 19h)',
-]
+const OFFRE_VALUES: Record<typeof OFFRE_KEYS[number], string> = {
+  siteEssentielle: 'site-essentielle',
+  siteConnecte: 'site-connecte',
+  sitePremium: 'site-premium',
+  ecomStarter: 'ecom-starter',
+  ecomPro: 'ecom-pro',
+  appMvp: 'app-mvp',
+  appPro: 'app-pro',
+  surMesure: 'sur-mesure',
+  autre: 'autre',
+}
 
 type Status = 'idle' | 'loading' | 'success' | 'error'
 
-function buildFormattedMessage(d: FormData, fullPhone: string): string {
+function buildFormattedMessage(d: FormData, fullPhone: string, locale: string): string {
   const userMessage = String(d.get('message') || '').trim()
   const lines: string[] = []
   if (userMessage) {
@@ -68,11 +49,14 @@ function buildFormattedMessage(d: FormData, fullPhone: string): string {
   push('Budget', String(d.get('budget') || '').trim())
   push('Offre intéressée', String(d.get('offre') || '').trim())
   push('Créneau préféré', String(d.get('creneau') || '').trim())
+  lines.push(`Langue visiteur : ${locale}`)
   lines.push(`Source : ${SITE_SOURCE}`)
   return lines.join('\n')
 }
 
 export default function ContactForm() {
+  const t = useTranslations('contact.form')
+  const locale = useLocale()
   const params = useSearchParams()
   const [status, setStatus] = useState<Status>('idle')
   const [errorMessage, setErrorMessage] = useState('')
@@ -104,12 +88,13 @@ export default function ContactForm() {
           from_name: String(data.get('nom') || ''),
           reply_to: String(data.get('email') || ''),
           project_type: String(data.get('type') || 'Non précisé'),
-          message: buildFormattedMessage(data, fullPhone),
+          message: buildFormattedMessage(data, fullPhone, locale),
           telephone: fullPhone,
           entreprise: String(data.get('entreprise') || ''),
           budget: String(data.get('budget') || ''),
           offre: String(data.get('offre') || ''),
           creneau: String(data.get('creneau') || ''),
+          locale,
           site_source: SITE_SOURCE,
         },
         { publicKey: EMAILJS_PUBLIC_KEY }
@@ -118,8 +103,8 @@ export default function ContactForm() {
       form.reset()
     } catch (err) {
       setStatus('error')
-      const detail = err instanceof Error ? err.message : 'Une erreur est survenue.'
-      setErrorMessage(`${detail} Réessayez ou écrivez à contact@arintegration.fr.`)
+      const detail = err instanceof Error ? err.message : t('errorFallback')
+      setErrorMessage(detail)
     }
   }
 
@@ -129,9 +114,9 @@ export default function ContactForm() {
         <div className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-50 text-emerald-600 dark:bg-emerald-500/15 dark:text-emerald-400">
           <CheckCircle2 size={24} />
         </div>
-        <h2 className="mt-5 text-[24px] font-bold tracking-tight text-ink dark:text-white">Merci.</h2>
+        <h2 className="mt-5 text-[24px] font-bold tracking-tight text-ink dark:text-white">{t('successTitle')}</h2>
         <p className="mt-3 text-[15px] leading-relaxed text-muted dark:text-white/65">
-          Nous vous rappelons dans les 24h ouvrées au numéro indiqué.
+          {t('successText')}
         </p>
       </div>
     )
@@ -141,18 +126,18 @@ export default function ContactForm() {
     <form onSubmit={onSubmit} className="card-bordered space-y-5 p-6 md:p-8">
       <div className="grid gap-5 md:grid-cols-2">
         <div>
-          <label htmlFor="nom" className="label-field">Nom et prénom</label>
+          <label htmlFor="nom" className="label-field">{t('labelNom')}</label>
           <input id="nom" name="nom" type="text" required className="input-field" autoComplete="name" />
         </div>
         <div>
-          <label htmlFor="email" className="label-field">Email professionnel</label>
+          <label htmlFor="email" className="label-field">{t('labelEmail')}</label>
           <input id="email" name="email" type="email" required className="input-field" autoComplete="email" />
         </div>
       </div>
 
       <div className="grid gap-5 md:grid-cols-2">
         <div>
-          <label htmlFor="telephone" className="label-field">Téléphone</label>
+          <label htmlFor="telephone" className="label-field">{t('labelTelephone')}</label>
           <div className="grid grid-cols-[140px_1fr] gap-2">
             <select
               id="indicatif"
@@ -160,7 +145,7 @@ export default function ContactForm() {
               required
               defaultValue="+33"
               className="input-field !px-2 text-[14px]"
-              aria-label="Indicatif pays"
+              aria-label={t('labelIndicatif')}
             >
               {countries.map((c) => (
                 <option key={c.code} value={c.dial}>
@@ -175,32 +160,32 @@ export default function ContactForm() {
               required
               className="input-field"
               autoComplete="tel-national"
-              placeholder="6 67 75 58 50"
+              placeholder={t('phonePlaceholder')}
             />
           </div>
         </div>
         <div>
-          <label htmlFor="entreprise" className="label-field">Entreprise (facultatif)</label>
+          <label htmlFor="entreprise" className="label-field">{t('labelEntreprise')}</label>
           <input id="entreprise" name="entreprise" type="text" className="input-field" autoComplete="organization" />
         </div>
       </div>
 
       <div className="grid gap-5 md:grid-cols-2">
         <div>
-          <label htmlFor="type" className="label-field">Type de projet</label>
+          <label htmlFor="type" className="label-field">{t('labelType')}</label>
           <select id="type" name="type" required defaultValue="" className="input-field">
-            <option value="" disabled>Choisir…</option>
-            {TYPES_PROJET.map((t) => (
-              <option key={t} value={t}>{t}</option>
+            <option value="" disabled>{t('choose')}</option>
+            {TYPE_KEYS.map((k) => (
+              <option key={k} value={t(`types.${k}`)}>{t(`types.${k}`)}</option>
             ))}
           </select>
         </div>
         <div>
-          <label htmlFor="budget" className="label-field">Budget envisagé</label>
+          <label htmlFor="budget" className="label-field">{t('labelBudget')}</label>
           <select id="budget" name="budget" required defaultValue="" className="input-field">
-            <option value="" disabled>Choisir…</option>
-            {BUDGETS.map((b) => (
-              <option key={b} value={b}>{b}</option>
+            <option value="" disabled>{t('choose')}</option>
+            {BUDGET_KEYS.map((k) => (
+              <option key={k} value={t(`budgets.${k}`)}>{t(`budgets.${k}`)}</option>
             ))}
           </select>
         </div>
@@ -208,7 +193,7 @@ export default function ContactForm() {
 
       <div className="grid gap-5 md:grid-cols-2">
         <div>
-          <label htmlFor="offre" className="label-field">Offre intéressée (facultatif)</label>
+          <label htmlFor="offre" className="label-field">{t('labelOffre')}</label>
           <select
             id="offre"
             name="offre"
@@ -216,33 +201,32 @@ export default function ContactForm() {
             defaultValue={defaultOffre || ''}
             className="input-field"
           >
-            <option value="">Aucune offre précise</option>
-            {OFFRES.map((o) => (
-              <option key={o.value} value={o.value}>{o.label}</option>
+            <option value="">{t('offreNone')}</option>
+            {OFFRE_KEYS.map((k) => (
+              <option key={k} value={OFFRE_VALUES[k]}>{t(`offres.${k}`)}</option>
             ))}
           </select>
         </div>
         <div>
-          <label htmlFor="creneau" className="label-field">Créneau préféré pour l'appel</label>
+          <label htmlFor="creneau" className="label-field">{t('labelCreneau')}</label>
           <select id="creneau" name="creneau" required defaultValue="" className="input-field">
-            <option value="" disabled>Choisir…</option>
-            {CRENEAUX.map((c) => (
-              <option key={c} value={c}>{c}</option>
+            <option value="" disabled>{t('choose')}</option>
+            {CRENEAU_KEYS.map((k) => (
+              <option key={k} value={t(`creneaux.${k}`)}>{t(`creneaux.${k}`)}</option>
             ))}
           </select>
         </div>
       </div>
 
       <div>
-        <label htmlFor="message" className="label-field">Décrivez votre projet (facultatif)</label>
-        <textarea id="message" name="message" rows={4} className="textarea-field" placeholder="Quelques lignes pour préparer notre échange…" />
+        <label htmlFor="message" className="label-field">{t('labelMessage')}</label>
+        <textarea id="message" name="message" rows={4} className="textarea-field" placeholder={t('messagePlaceholder')} />
       </div>
 
       <label className="flex items-start gap-3 text-[13.5px] leading-relaxed text-muted dark:text-white/60">
         <input type="checkbox" name="rgpd" required className="mt-1 h-4 w-4 flex-shrink-0 accent-black dark:accent-white" />
         <span>
-          J'accepte que mes données soient utilisées uniquement pour me recontacter dans le cadre
-          de cette demande. Je peux exercer mes droits RGPD à tout moment auprès de{' '}
+          {t('rgpd')}{' '}
           <a href="mailto:contact@arintegration.fr" className="font-medium text-ink underline-offset-4 hover:underline dark:text-white">
             contact@arintegration.fr
           </a>.
@@ -264,15 +248,15 @@ export default function ContactForm() {
         {status === 'loading' ? (
           <>
             <Loader2 size={16} className="animate-spin" />
-            Envoi en cours…
+            {t('submitting')}
           </>
         ) : (
-          'Envoyer ma demande'
+          t('submit')
         )}
       </button>
 
       <p className="text-center text-[12.5px] text-dim dark:text-white/45">
-        Vous préférez parler directement ?{' '}
+        {t('phoneAlt')}{' '}
         <a href="tel:+33667755850" className="font-medium text-ink underline-offset-4 hover:underline dark:text-white">
           06 67 75 58 50
         </a>

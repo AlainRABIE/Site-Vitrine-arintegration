@@ -1,0 +1,349 @@
+{
+  "metadata": {
+    "title": "AR Intégration — Agence web et apps mobiles à Lyon",
+    "description": "Agence web et mobile à Lyon. Sites internet sur-mesure, applications iOS/Android, e-commerce. Conformes RGPD, hébergés en France, livrés rapidement.",
+    "ogDescription": "Sites internet sur-mesure, applications iOS/Android, e-commerce. Conformes RGPD, hébergés en France, livrés rapidement."
+  },
+  "header": {
+    "locationBadge": "Lyon",
+    "nav": {
+      "solutions": "Solutions",
+      "services": "Services",
+      "tarifs": "Tarifs",
+      "apropos": "À propos",
+      "contact": "Contact"
+    },
+    "cta": "Demander un devis",
+    "menuOpen": "Ouvrir le menu",
+    "themeToLight": "Activer le mode clair",
+    "themeToDark": "Activer le mode sombre"
+  },
+  "hero": {
+    "badgeStatus": "Disponible — réponse sous 24h",
+    "h1": "Agence web et apps mobiles, conçues à Lyon, pensées pour vos clients.",
+    "subtitle": "Sites internet, applications mobiles iOS/Android, e-commerce sur-mesure pour PME, indépendants et professions libérales. Conformes RGPD, hébergés en France, livrés rapidement.",
+    "ctaPrimary": "Demander un devis gratuit",
+    "ctaSecondary": "Voir nos tarifs",
+    "trustHosting": "🇫🇷 Hébergement France",
+    "trustRgpd": "🔒 RGPD by design",
+    "trustDelivery": "⚡ Sites livrés en 7 jours",
+    "trustAvailable": "📞 Disponible en 48h"
+  },
+  "secteurs": {
+    "kicker": "Solutions par secteur",
+    "title": "Spécialisés dans plusieurs métiers, attentifs à votre activité.",
+    "subtitle": "3 sous-marques sectorielles avec contraintes métier intégrées (RGPD santé, secret pro, loi Hoguet). Pour les autres secteurs, on construit la solution avec vous.",
+    "medecins": {
+      "name": "Médecins libéraux",
+      "tagline": "Cabinets médicaux, dentaires, kinés, ostéos, sages-femmes. Conforme RGPD santé."
+    },
+    "avocats": {
+      "name": "Cabinets d'avocats",
+      "tagline": "Avocats, notaires, juristes. Compatible secret professionnel (RIN art. 2)."
+    },
+    "immobilier": {
+      "name": "Agences immobilières",
+      "tagline": "Agences, mandataires, conseillers. Sync logiciel métier + conforme loi Hoguet."
+    },
+    "autre": {
+      "name": "Autre secteur ?",
+      "tagline": "Restaurateurs, artisans, coachs, e-commerce, SaaS, indépendants. On adore les défis."
+    },
+    "ctaExternal": "Voir le site dédié",
+    "ctaInternal": "Demander un devis"
+  },
+  "services": {
+    "kicker": "Services",
+    "title": "Tout ce dont vous avez besoin pour exister en ligne.",
+    "vitrine": {
+      "title": "Sites vitrine",
+      "text": "Sites web professionnels responsive, conformes RGPD, hébergés en France. SEO local inclus, livrés en 7 jours.",
+      "starter": "À partir de 690 €"
+    },
+    "ecom": {
+      "title": "E-commerce",
+      "text": "Boutiques en ligne complètes : catalogue, panier, paiement Stripe, gestion stocks et back-office sans complexité.",
+      "starter": "À partir de 2 090 €"
+    },
+    "apps": {
+      "title": "Applications mobiles",
+      "text": "Apps iOS et Android sur-mesure, avec back-office, notifications push, authentification, paiement intégré.",
+      "starter": "À partir de 3 490 €"
+    },
+    "custom": {
+      "title": "Sur-mesure & SaaS",
+      "text": "Projets complexes : SaaS, dashboards, intégrations API, automatisation. Devis personnalisé sous 48h.",
+      "starter": "Sur devis"
+    }
+  },
+  "process": {
+    "kicker": "Méthode",
+    "title": "Un processus simple, transparent, sans surprise.",
+    "step": "ÉTAPE",
+    "step1": {
+      "title": "Appel découverte (15 min)",
+      "text": "On échange par téléphone à l'horaire qui vous arrange. Vous nous présentez votre projet, vos besoins, votre budget. Sans engagement."
+    },
+    "step2": {
+      "title": "Proposition personnalisée (24h)",
+      "text": "Vous recevez un devis détaillé et une maquette de votre futur site / app dans les 24h. Tout est expliqué clairement, sans jargon technique."
+    },
+    "step3": {
+      "title": "Développement (1-8 semaines)",
+      "text": "On code votre projet avec un accès en temps réel à l'avancement. Vous validez chaque étape par email, sans réunion inutile."
+    },
+    "step4": {
+      "title": "Livraison et prise en main (1h)",
+      "text": "Mise en ligne. On fait le point ensemble, on vous transmet les accès, on assure le support pendant 3 mois minimum. Évolutions sous 48h ouvrées."
+    }
+  },
+  "stats": {
+    "kicker": "Engagements",
+    "title": "Des chiffres qui engagent, pas du marketing.",
+    "stat1Label": "Délai moyen de livraison d'un site vitrine",
+    "stat2Label": "Score Lighthouse moyen sur les sites livrés",
+    "stat3Label": "Hébergement Union Européenne, conforme RGPD",
+    "stat4Label": "Délai max pour traiter une demande de modification"
+  },
+  "tarifs": {
+    "kicker": "Tarifs",
+    "title": "Des offres claires, sans surprise.",
+    "launchBanner": "Tarifs de lancement <strong>−30 %</strong> · 10 premiers clients · jusqu'au 31 mars 2026",
+    "category": {
+      "vitrine": "Sites vitrine",
+      "ecom": "E-commerce",
+      "apps": "Applications mobiles"
+    },
+    "vatNotice": "Tarif lancement −30 % · TVA non applicable, art. 293 B du CGI",
+    "recommended": "Recommandé",
+    "choose": "Choisir cette offre",
+    "customQuote": "💼 Projet sur-mesure, SaaS, dashboard, intégration API ?",
+    "customQuoteLink": "Devis personnalisé sous 48h",
+    "plans": {
+      "siteEssentielle": {
+        "name": "Présence Essentielle",
+        "features": [
+          "Site 4 pages responsive",
+          "Formulaire contact RGPD",
+          "Référencement local Google Maps",
+          "Hébergement France 1 an inclus",
+          "Livré en 7 jours"
+        ]
+      },
+      "siteConnecte": {
+        "name": "Site Connecté",
+        "features": [
+          "Tout de l'offre Essentielle",
+          "Module RDV en ligne (Calendly)",
+          "Page équipe étendue",
+          "Newsletter clients",
+          "3 mois de maintenance inclus"
+        ]
+      },
+      "sitePremium": {
+        "name": "Site Premium",
+        "features": [
+          "Tout de l'offre Connecté",
+          "Espace client sécurisé",
+          "Synchronisation Google Calendar",
+          "3 articles SEO rédigés",
+          "6 mois de maintenance",
+          "2 modifications par mois"
+        ]
+      },
+      "ecomStarter": {
+        "name": "E-commerce Starter",
+        "features": [
+          "Boutique 30 produits",
+          "Paiement Stripe sécurisé",
+          "Back-office complet",
+          "Mobile-first",
+          "Hébergement France 1 an"
+        ]
+      },
+      "ecomPro": {
+        "name": "E-commerce Pro",
+        "features": [
+          "Tout de l'offre Starter",
+          "Catalogue illimité",
+          "Espace client + suivi commandes",
+          "Multi-paiements (CB, Apple Pay)",
+          "Newsletter automatisée",
+          "3 mois de maintenance"
+        ]
+      },
+      "appMvp": {
+        "name": "App MVP",
+        "features": [
+          "iOS + Android (cross-platform)",
+          "5 écrans principaux",
+          "Auth + back-office",
+          "Publication App Store + Play Store",
+          "Livré en 4 semaines"
+        ]
+      },
+      "appPro": {
+        "name": "App Pro",
+        "features": [
+          "Tout de l'offre MVP",
+          "Notifications push",
+          "Paiements intégrés",
+          "API custom + intégrations",
+          "Livré en 8 semaines",
+          "6 mois de maintenance"
+        ]
+      }
+    }
+  },
+  "apropos": {
+    "kicker": "À propos",
+    "title": "Une auto-entreprise qui code, à Lyon.",
+    "intro1": "AR Intégration, c'est <strong>Alain Rabie</strong>, développeur web et mobile basé à Villeurbanne (Lyon).",
+    "intro2": "Mon principe : pas de promesses creuses, pas de jargon, pas de coûts cachés. Un échange direct, un devis clair, un code propre, une livraison rapide. Et derrière, un humain joignable pour chaque évolution future.",
+    "infoSiret": "SIRET",
+    "infoStatut": "Statut",
+    "infoStatutValue": "Auto-entrepreneur (TVA non applicable)",
+    "infoAdresse": "Adresse",
+    "infoAdresseValue": "Villeurbanne, Lyon (69100)",
+    "infoZone": "Zone",
+    "infoZoneValue": "Lyon, métropole, Auvergne-Rhône-Alpes, France entière (visio)",
+    "pillar1": {
+      "title": "Lyon, en personne",
+      "text": "Auto-entreprise basée à Villeurbanne (69100). Pas de hotline délocalisée, pas d'agence offshore : vous parlez directement avec votre développeur."
+    },
+    "pillar2": {
+      "title": "Code sur-mesure",
+      "text": "Pas de WordPress / Wix / Shopify. Stack moderne (Next.js, TypeScript, Tailwind) pour des sites rapides, sécurisés, conformes RGPD by design."
+    },
+    "pillar3": {
+      "title": "Engagement long terme",
+      "text": "Pas de \"site jetable\" : maintenance 200€/mois, modifications sous 48h, pas de commission, 100% propriétaire de votre code et de vos données."
+    }
+  },
+  "faq": {
+    "kicker": "FAQ",
+    "title": "Questions fréquentes.",
+    "q1": "Combien coûte un site internet professionnel ?",
+    "a1": "Un site vitrine professionnel chez AR Intégration démarre à 690€ TTC en tarif lancement (Présence Essentielle), 1050€ pour un site Connecté avec module RDV, 1750€ pour un site Premium avec espace client. Une boutique e-commerce démarre à 2090€, une application mobile à 3490€.",
+    "q2": "Combien de temps pour livrer mon site web ou mon app ?",
+    "a2": "7 jours ouvrés pour un site vitrine Présence Essentielle. 10 jours pour Connecté, 15 jours pour Premium. 4 à 8 semaines pour une application mobile selon complexité. Engagement contractuel.",
+    "q3": "Mon site sera-t-il bien référencé sur Google ?",
+    "a3": "Oui. Optimisation SEO local incluse (Google My Business, Schema.org, balises meta). Sites construits avec Next.js et export statique pour des scores Lighthouse 95+. Pour un référencement national avancé, des articles SEO sur-mesure peuvent être ajoutés.",
+    "q4": "Mes données seront-elles hébergées en France ?",
+    "a4": "Oui. Hébergement OVHcloud Roubaix ou Strasbourg sur option dédiée (ou Vercel Edge région Europe en standard). Conformité RGPD by design, aucun service tiers américain (Google Analytics, Facebook Pixel) sans votre consentement explicite.",
+    "q5": "Puis-je modifier mon site moi-même ?",
+    "a5": "Non, les sites AR Intégration sont codés sur-mesure (sans CMS type WordPress) — c'est ce qui garantit leur rapidité, leur sécurité et leur conformité RGPD. Les modifications sont prises en charge par AR Intégration sous 48h ouvrées dans le cadre du contrat de maintenance (200€/mois après les 3 mois inclus).",
+    "q6": "Travaillez-vous avec des secteurs spécifiques ?",
+    "a6": "Oui. Trois sous-marques sectorielles dédiées avec contraintes métier intégrées : medecins.arintegration.fr (RGPD santé, mention HDS), avocats.arintegration.fr (secret professionnel, RIN), immobilier.arintegration.fr (loi Hoguet, sync logiciel métier). Et tous les autres secteurs sur arintegration.fr.",
+    "q7": "Quelle est la différence avec une agence classique ou Wix / Shopify ?",
+    "a7": "Wix et Shopify sont des plateformes locataires : vous n'êtes pas propriétaire du code, le SEO est limité, et le RGPD non garanti. Une agence classique facture souvent 5-10x plus cher. AR Intégration : vous êtes propriétaire à 100%, code sur-mesure performant, et un humain joignable directement à Lyon.",
+    "q8": "Acceptez-vous le règlement par carte bancaire pro ?",
+    "a8": "Oui. CB, virement, ou prélèvement échelonné en 3 fois sans frais sur demande. Acompte de 30% à la commande, solde à la livraison."
+  },
+  "contact": {
+    "section": {
+      "kicker": "Devis gratuit · Sans engagement",
+      "h2": "Parlons de votre projet.",
+      "subtitle": "Échangeons 15 minutes par téléphone. Sans engagement, sans bullshit. Réponse sous <strong>24h ouvrées</strong>.",
+      "phoneLabel": "Téléphone direct",
+      "emailLabel": "Email",
+      "addressLabel": "Adresse",
+      "addressValue": "Villeurbanne, Lyon — Auvergne-Rhône-Alpes"
+    },
+    "form": {
+      "labelNom": "Nom et prénom",
+      "labelEmail": "Email professionnel",
+      "labelTelephone": "Téléphone",
+      "labelEntreprise": "Entreprise (facultatif)",
+      "labelType": "Type de projet",
+      "labelBudget": "Budget envisagé",
+      "labelOffre": "Offre intéressée (facultatif)",
+      "labelCreneau": "Créneau préféré pour l'appel",
+      "labelMessage": "Décrivez votre projet (facultatif)",
+      "labelIndicatif": "Indicatif pays",
+      "messagePlaceholder": "Quelques lignes pour préparer notre échange…",
+      "phonePlaceholder": "6 67 75 58 50",
+      "choose": "Choisir…",
+      "submit": "Envoyer ma demande",
+      "submitting": "Envoi en cours…",
+      "rgpd": "J'accepte que mes données soient utilisées uniquement pour me recontacter dans le cadre de cette demande. Je peux exercer mes droits RGPD à tout moment auprès de",
+      "phoneAlt": "Vous préférez parler directement ?",
+      "successTitle": "Merci.",
+      "successText": "Nous vous rappelons dans les 24h ouvrées au numéro indiqué.",
+      "errorFallback": "Une erreur est survenue. Réessayez ou écrivez à contact@arintegration.fr.",
+      "offreNone": "Aucune offre précise",
+      "types": {
+        "vitrine": "Site vitrine",
+        "ecom": "Site e-commerce",
+        "app": "Application mobile (iOS/Android)",
+        "saas": "SaaS / dashboard",
+        "refonte": "Refonte de site existant",
+        "autre": "Conseil / autre"
+      },
+      "budgets": {
+        "b1": "< 1 500 €",
+        "b2": "1 500 € — 3 000 €",
+        "b3": "3 000 € — 6 000 €",
+        "b4": "6 000 € — 12 000 €",
+        "b5": "> 12 000 €",
+        "b6": "À déterminer ensemble"
+      },
+      "creneaux": {
+        "c1": "Matin tôt (avant 9h)",
+        "c2": "Midi (12h-14h)",
+        "c3": "Fin de journée (17h-19h)",
+        "c4": "Soir (après 19h)"
+      },
+      "offres": {
+        "siteEssentielle": "Site Essentielle (690€ lancement)",
+        "siteConnecte": "Site Connecté (1050€ lancement)",
+        "sitePremium": "Site Premium (1750€ lancement)",
+        "ecomStarter": "E-commerce Starter (2090€ lancement)",
+        "ecomPro": "E-commerce Pro (3490€ lancement)",
+        "appMvp": "App MVP (3490€ lancement)",
+        "appPro": "App Pro (6990€ lancement)",
+        "surMesure": "Projet sur-mesure / SaaS",
+        "autre": "Je ne sais pas encore"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Agence web et mobile à Lyon. Sites internet, applications iOS/Android, e-commerce sur-mesure.",
+    "secteurs": {
+      "title": "Secteurs",
+      "medecins": "Sites pour médecins",
+      "avocats": "Sites pour avocats",
+      "immo": "Sites pour agences immo",
+      "autre": "Autre secteur"
+    },
+    "services": {
+      "title": "Services",
+      "vitrine": "Sites vitrine",
+      "ecom": "E-commerce",
+      "apps": "Applications mobiles",
+      "custom": "Sur-mesure / SaaS"
+    },
+    "ressources": {
+      "title": "Ressources",
+      "process": "Méthode",
+      "apropos": "À propos",
+      "faq": "FAQ",
+      "contact": "Contact"
+    },
+    "legal": {
+      "mentions": "Mentions légales",
+      "privacy": "Politique de confidentialité",
+      "cgv": "CGV",
+      "rgpd": "Contact RGPD"
+    },
+    "copyright": "© 2026 AR Intégration · Conçu et codé à Lyon · Hébergement France"
+  },
+  "language": {
+    "fr": "Français",
+    "en": "English",
+    "es": "Español",
+    "de": "Deutsch",
+    "it": "Italiano",
+    "switcherLabel": "Changer de langue"
+  }
+}
