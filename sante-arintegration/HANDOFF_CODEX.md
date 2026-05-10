@@ -1,34 +1,17 @@
 # 🤝 Handoff Codex — sante-arintegration
-> Snapshot : 2026-05-09 21:14:59
+> Snapshot : 2026-05-10 18:30:10
 > Projet : `/Users/alainrabie/Site-Vitrine-arintegration/sante-arintegration`
 
 ## Fichiers modifiés (git diff)
 - `CONTEXT.md`
 - `HANDOFF_CODEX.md`
+- `immobilier-arintegration/CONTEXT.md`
+- `immobilier-arintegration/HANDOFF_CODEX.md`
+- `sante-arintegration/CONTEXT.md`
+- `sante-arintegration/HANDOFF_CODEX.md`
 
 ## Dernières 10 actions
 
-### [2026-05-09 20:57:29] `Edit`
-- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/sante-arintegration/src/app/politique-confidentialite/page.tsx`
-- Remplacement : `<strong className="text-ink">…`
-### [2026-05-09 20:57:36] `Edit`
-- Fichier modifié : `/Users/alainrabie/Site-Vitrine-arintegration/sante-arintegration/src/app/politique-confidentialite/page.tsx`
-- Remplacement : `font-medium text-ink underline-offset-4 hover:underline…`
-### [2026-05-09 20:57:45] `TodoWrite`
-### [2026-05-09 20:58:01] `Bash`
-- Commande : `rm -rf .next out && npm run build 2>&1 | tail -25`
-- Résultat : `   Generating static pages (0/10) ...
-   Generating static pages (2/10) 
-   Generating static pages (4/10) 
-   Generating static pages (7/10) 
- ✓ Generating static pages (10/10)
-   Finalizing page `
-### [2026-05-09 20:58:06] `Bash`
-- Commande : `npx tsc --noEmit 2>&1 | tail -5`
-### [2026-05-09 20:58:21] `TodoWrite`
-### [2026-05-09 20:58:29] `Edit`
-- Fichier modifié : `/Users/alainrabie/.claude/projects/-Users-alainrabie-Site-Vitrine-arintegration/memory/project_sante_subdomain.md`
-- Remplacement : `- Optionnel : ajouter dark mode plus tard via next-themes (skipped à la refonte …`
 ### [2026-05-09 21:04:44] `Bash`
 - Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/sante-arintegration && rm -rf .next out && npm run build 2>&1 | tail -15`
 - Résultat : `├ ○ /_not-found                          871 B            88 kB
@@ -44,6 +27,35 @@
 ### [2026-05-09 21:14:59] `Bash`
 - Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/sante-arintegration && rm -rf .next && echo "cache cleaned"`
 - Résultat : `cache cleaned`
+### [2026-05-10 18:08:59] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/sante-arintegration && \
+cp -R ../ar-integration/src/i18n src/i18n && \
+`
+- Résultat : `request.ts
+routing.ts
+---
+/** @type {import('next').NextConfig} */
+const createNextIntlPlugin = require('next-intl/plugin')
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
+
+const ne`
+### [2026-05-10 18:09:03] `Read`
+- Fichier lu : `/Users/alainrabie/Site-Vitrine-arintegration/sante-arintegration/next.config.js`
+### [2026-05-10 18:09:10] `Read`
+- Fichier lu : `/Users/alainrabie/.claude/projects/-Users-alainrabie-Site-Vitrine-arintegration/memory/MEMORY.md`
+### [2026-05-10 18:09:38] `Write`
+- Fichier écrit : `/Users/alainrabie/.claude/projects/-Users-alainrabie-Site-Vitrine-arintegration/memory/wip_i18n_verticals.md`
+### [2026-05-10 18:09:52] `Read`
+- Fichier lu : `/Users/alainrabie/.claude/projects/-Users-alainrabie-Site-Vitrine-arintegration/memory/MEMORY.md`
+### [2026-05-10 18:09:57] `Edit`
+- Fichier modifié : `/Users/alainrabie/.claude/projects/-Users-alainrabie-Site-Vitrine-arintegration/memory/MEMORY.md`
+- Remplacement : `- [Politique maintenance & auto-modification](business_maintenance_policy.md) — …`
+### [2026-05-10 18:30:10] `Bash`
+- Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/sante-arintegration && rm -rf .next out && npm run build 2>&1 | tail -10`
+- Résultat : `├ ○ /robots.txt                          0 B                0 B
+└ ○ /sitemap.xml                         0 B                0 B
++ First Load JS shared by all            87.1 kB
+  ├ chunks/23-708970770`
 
 ## Instructions pour Codex
 1. Lis CONTEXT.md pour l historique complet

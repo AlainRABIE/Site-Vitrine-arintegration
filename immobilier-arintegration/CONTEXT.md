@@ -8,7 +8,7 @@
 
 ## Journal des actions
 
-### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### [2026-05-09 12:39:33] `Bash`
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### [2026-05-09 12:39:33] `Bash`
 - Commande : `cd /Users/alainrabie/Site-Vitrine-arintegration/immobilier-arintegration && \
 rm -f CONTEXT.md HANDOFF_CODEX.md && \
 mv `
@@ -165,3 +165,41 @@ added 112 pac`
 --- sante-arintegration ---
 
 ○  (Static)  p`
+### [2026-05-10 16:48:16] `Bash`
+- Commande : `for proj in ar-integration sante-arintegration avocats-arintegration immobilier-arintegration; do
+  cd /Users/alainrabie`
+- Résultat : `All builds done. Status:
+ar-integration : ✓ build OK
+sante-arintegration : ✓ build OK
+avocats-arintegration : ✓ build OK
+immobilier-arintegration : ✓ build OK`
+### [2026-05-10 17:40:16] `Bash`
+- Commande : `for proj in ar-integration sante-arintegration avocats-arintegration immobilier-arintegration; do
+  cd /Users/alainrabie`
+- Résultat : `ar-integration : ✓ build OK
+sante-arintegration : ✓ build OK
+avocats-arintegration : ✓ build OK
+immobilier-arintegration : ✓ build OK`
+### [2026-05-10 18:18:52] `Bash`
+- Commande : `\
+for proj in ar-integration sante-arintegration avocats-arintegration immobilier-arintegration; do
+  cd $proj && rm -rf`
+- Résultat : `=== BUILD STATUS ===
+ar-integration : ✓ build OK (8 routes, shared JS: kB)
+sante-arintegration : ✗ FAILED
+
+./src/i18n/request.ts:2:34
+Type error: Cannot find module 'next-intl/server' or its correspon`
+### [2026-05-10 18:29:47] `Bash`
+- Commande : `pwd && ls`
+- Résultat : `/Users/alainrabie/Site-Vitrine-arintegration/immobilier-arintegration
+CONTEXT.md
+HANDOFF_CODEX.md
+README.md
+next-env.d.ts
+next.config.js
+node_modules
+out
+package-lock.json
+package.json
+postcss.config.`
