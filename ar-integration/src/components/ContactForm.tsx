@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { CheckCircle2, AlertCircle, Loader2 } from 'lucide-react'
+import { countries } from '@/data/countries'
 
 const SITE_SOURCE = 'arintegration.fr (site marque)'
 
@@ -49,25 +50,24 @@ const CRENEAUX = [
 
 type Status = 'idle' | 'loading' | 'success' | 'error'
 
-function buildFormattedMessage(d: FormData): string {
+function buildFormattedMessage(d: FormData, fullPhone: string): string {
   const userMessage = String(d.get('message') || '').trim()
   const lines: string[] = []
   if (userMessage) {
     lines.push('Message du visiteur :', userMessage, '')
   }
   lines.push('— Détails du contact —')
-  const push = (label: string, key: string) => {
-    const v = String(d.get(key) || '').trim()
-    if (v) lines.push(`${label} : ${v}`)
+  const push = (label: string, value: string) => {
+    if (value) lines.push(`${label} : ${value}`)
   }
-  push('Nom', 'nom')
-  push('Email', 'email')
-  push('Téléphone', 'telephone')
-  push('Entreprise', 'entreprise')
-  push('Type de projet', 'type')
-  push('Budget', 'budget')
-  push('Offre intéressée', 'offre')
-  push('Créneau préféré', 'creneau')
+  push('Nom', String(d.get('nom') || '').trim())
+  push('Email', String(d.get('email') || '').trim())
+  push('Téléphone', fullPhone)
+  push('Entreprise', String(d.get('entreprise') || '').trim())
+  push('Type de projet', String(d.get('type') || '').trim())
+  push('Budget', String(d.get('budget') || '').trim())
+  push('Offre intéressée', String(d.get('offre') || '').trim())
+  push('Créneau préféré', String(d.get('creneau') || '').trim())
   lines.push(`Source : ${SITE_SOURCE}`)
   return lines.join('\n')
 }
@@ -91,6 +91,9 @@ export default function ContactForm() {
 
     const form = e.currentTarget
     const data = new FormData(form)
+    const indicatif = String(data.get('indicatif') || '+33').trim()
+    const rawTel = String(data.get('telephone') || '').trim()
+    const fullPhone = rawTel ? `${indicatif} ${rawTel}` : ''
 
     try {
       const { default: emailjs } = await import('@emailjs/browser')
@@ -101,8 +104,8 @@ export default function ContactForm() {
           from_name: String(data.get('nom') || ''),
           reply_to: String(data.get('email') || ''),
           project_type: String(data.get('type') || 'Non précisé'),
-          message: buildFormattedMessage(data),
-          telephone: String(data.get('telephone') || ''),
+          message: buildFormattedMessage(data, fullPhone),
+          telephone: fullPhone,
           entreprise: String(data.get('entreprise') || ''),
           budget: String(data.get('budget') || ''),
           offre: String(data.get('offre') || ''),
@@ -150,7 +153,31 @@ export default function ContactForm() {
       <div className="grid gap-5 md:grid-cols-2">
         <div>
           <label htmlFor="telephone" className="label-field">Téléphone</label>
-          <input id="telephone" name="telephone" type="tel" required className="input-field" autoComplete="tel" />
+          <div className="grid grid-cols-[140px_1fr] gap-2">
+            <select
+              id="indicatif"
+              name="indicatif"
+              required
+              defaultValue="+33"
+              className="input-field !px-2 text-[14px]"
+              aria-label="Indicatif pays"
+            >
+              {countries.map((c) => (
+                <option key={c.code} value={c.dial}>
+                  {c.flag} {c.dial} {c.name}
+                </option>
+              ))}
+            </select>
+            <input
+              id="telephone"
+              name="telephone"
+              type="tel"
+              required
+              className="input-field"
+              autoComplete="tel-national"
+              placeholder="6 67 75 58 50"
+            />
+          </div>
         </div>
         <div>
           <label htmlFor="entreprise" className="label-field">Entreprise (facultatif)</label>
