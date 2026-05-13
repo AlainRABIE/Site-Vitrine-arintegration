@@ -71,7 +71,7 @@ export default function Tarifs() {
         <Reveal delay={0.05}>
           <div className="mx-auto mt-8 flex w-fit max-w-full items-center gap-2.5 rounded-full border border-ink bg-ink-soft px-4 py-2 text-[13px] font-semibold text-white dark:border-white/30">
             <Sparkles size={14} strokeWidth={2} className="flex-shrink-0" />
-            <span>Tarifs de lancement <strong>−30 %</strong> · 10 premiers cabinets · jusqu'au 31 mars 2026</span>
+            <span>Tarifs de lancement <strong>−30 %</strong> · 10 premiers cabinets · jusqu'au 31 mai 2026</span>
           </div>
         </Reveal>
 

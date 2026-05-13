@@ -48,7 +48,7 @@ export default function Temoignages() {
 
             <div className="mt-7 flex flex-col items-start gap-4 border-t border-line pt-6 dark:border-white/10 sm:flex-row sm:items-center sm:justify-between">
               <p className="text-[13.5px] text-muted dark:text-white/65">
-                Réservez votre place avant le <strong className="text-ink dark:text-white">31 mars 2026</strong>.
+                Réservez votre place avant le <strong className="text-ink dark:text-white">31 mai 2026</strong>.
               </p>
               <Link href="/#contact" className="btn-primary !h-11 !px-5 text-[14px]">
                 Devenir partenaire fondateur
